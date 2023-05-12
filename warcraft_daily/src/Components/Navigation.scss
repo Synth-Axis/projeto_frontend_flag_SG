@@ -1,0 +1,48 @@
+@import "./textstyles";
+@import "./colors";
+
+.header {
+  font-family: $font-main;
+  background-color: $primary-color;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 80px;
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 55px;
+      filter: brightness(0) invert(1);
+      margin-right: 12px;
+    }
+
+    span {
+      @include h3;
+    }
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+      @include text-primary;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      li {
+        margin: 0 12px;
+        cursor: pointer;
+      }
+      li:last-child {
+        margin-right: 36px;
+      }
+    }
+  }
+}

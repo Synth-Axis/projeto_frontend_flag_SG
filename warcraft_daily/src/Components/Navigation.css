@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "myFont";
+  src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
+}
+.header {
+  font-family: "myFont", sans-serif;
+  background-color: #232536;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 80px;
+}
+.header .logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .logo-container img {
+  width: 55px;
+  filter: brightness(0) invert(1);
+  margin-right: 12px;
+}
+.header .logo-container span {
+  font-size: 1.75rem;
+  line-heigth: 2.25;
+  font-weigth: 700;
+}
+.header .nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .nav ul {
+  font-size: 1rem;
+  line-heigth: 1.75;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .nav ul li {
+  margin: 0 12px;
+  cursor: pointer;
+}
+.header .nav ul li:last-child {
+  margin-right: 36px;
+}/*# sourceMappingURL=Navigation.css.map */
