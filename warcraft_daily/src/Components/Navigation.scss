@@ -36,10 +36,33 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      li {
+
+      .nav-link {
+        position: relative;
         margin: 0 12px;
         cursor: pointer;
       }
+
+      .nav-link::before {
+        content: "";
+        position: absolute;
+        transition: 250ms;
+        height: 2px;
+        left: 50%;
+        background-color: $white;
+        transition: all 250ms ease;
+      }
+
+      .nav-link-underline::before {
+        width: 0%;
+        bottom: -0.5rem;
+      }
+
+      .nav-link-underline:hover::before {
+        width: 100%;
+        left: 0;
+      }
+
       li:last-child {
         margin-right: 36px;
       }

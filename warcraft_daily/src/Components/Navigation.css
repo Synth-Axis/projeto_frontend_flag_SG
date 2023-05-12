@@ -38,9 +38,27 @@
   align-items: center;
   justify-content: center;
 }
-.header .nav ul li {
+.header .nav ul .nav-link {
+  position: relative;
   margin: 0 12px;
   cursor: pointer;
+}
+.header .nav ul .nav-link::before {
+  content: "";
+  position: absolute;
+  transition: 250ms;
+  height: 2px;
+  left: 50%;
+  background-color: #ffffff;
+  transition: all 250ms ease;
+}
+.header .nav ul .nav-link-underline::before {
+  width: 0%;
+  bottom: -0.5rem;
+}
+.header .nav ul .nav-link-underline:hover::before {
+  width: 100%;
+  left: 0;
 }
 .header .nav ul li:last-child {
   margin-right: 36px;

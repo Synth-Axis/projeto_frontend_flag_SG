@@ -11,10 +11,10 @@ function Navigation() {
       </div>
       <div className="nav">
         <ul>
-          <li>Home</li>
-          <li>Blog</li>
-          <li>About Us</li>
-          <li>Contact Us</li>
+          <li className="nav-link nav-link-underline">Home</li>
+          <li className="nav-link nav-link-underline">Blog</li>
+          <li className="nav-link nav-link-underline">About Us</li>
+          <li className="nav-link nav-link-underline">Contact Us</li>
         </ul>
         <Button section="btn-nav" text="Subscribe" />
       </div>
