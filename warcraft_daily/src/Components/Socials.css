@@ -1,0 +1,15 @@
+.socials {
+  display: flex;
+  gap: 30px;
+}
+.socials a .socials-icon {
+  background-color: #232536;
+  width: 16px;
+  height: 16px;
+  border-radius: 10%;
+  opacity: 0.6;
+  transition: opacity 0.18s ease;
+}
+.socials a .socials-icon:hover {
+  opacity: 0.9;
+}/*# sourceMappingURL=Socials.css.map */

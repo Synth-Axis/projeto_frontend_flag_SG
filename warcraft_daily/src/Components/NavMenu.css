@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "myFont";
+  src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
+}
+.nav {
+  font-size: 16px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav .nav-link {
+  position: relative;
+  margin: 0 12px;
+  cursor: pointer;
+}
+.nav .nav-link::before {
+  content: "";
+  position: absolute;
+  transition: 250ms;
+  height: 2px;
+  left: 50%;
+  background-color: #ffffff;
+  transition: all 250ms ease;
+}
+.nav .nav-link-underline::before {
+  width: 0%;
+  bottom: -4px;
+}
+.nav .nav-link-underline:hover::before {
+  width: 100%;
+  left: 0;
+}/*# sourceMappingURL=NavMenu.css.map */

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "myFont";
+  src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-container img {
+  width: 40px;
+  filter: brightness(0) invert(1);
+  margin-right: 12px;
+}
+.logo-container span {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 700;
+}/*# sourceMappingURL=Logo.css.map */

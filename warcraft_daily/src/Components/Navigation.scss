@@ -8,64 +8,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 80px;
+  padding: 25px 80px;
 
-  .logo-container {
+  .nav-block {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    img {
-      width: 55px;
-      filter: brightness(0) invert(1);
-      margin-right: 12px;
-    }
-
-    span {
-      @include h3;
-    }
-  }
-
-  .nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    ul {
-      @include text-primary;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      .nav-link {
-        position: relative;
-        margin: 0 12px;
-        cursor: pointer;
-      }
-
-      .nav-link::before {
-        content: "";
-        position: absolute;
-        transition: 250ms;
-        height: 2px;
-        left: 50%;
-        background-color: $white;
-        transition: all 250ms ease;
-      }
-
-      .nav-link-underline::before {
-        width: 0%;
-        bottom: -0.5rem;
-      }
-
-      .nav-link-underline:hover::before {
-        width: 100%;
-        left: 0;
-      }
-
-      li:last-child {
-        margin-right: 36px;
-      }
-    }
   }
 }

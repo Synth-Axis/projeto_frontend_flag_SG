@@ -1,0 +1,21 @@
+@import "./colors";
+
+.socials {
+  display: flex;
+  gap: 30px;
+
+  a {
+    .socials-icon {
+      background-color: $primary-color;
+      width: 16px;
+      height: 16px;
+      border-radius: 10%;
+      opacity: 0.6;
+      transition: opacity 0.18s ease;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}

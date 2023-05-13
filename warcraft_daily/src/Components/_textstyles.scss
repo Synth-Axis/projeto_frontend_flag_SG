@@ -12,58 +12,58 @@ $font-main: "myFont", sans-serif;
 // $poppins: Montserrat, 'Poppins', sans-serif;
 
 @mixin hero {
-  font-size: 3.5rem;
-  line-heigth: 4;
-  font-weigth: 700;
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: 700;
 }
 
 @mixin h1 {
-  font-size: 3rem;
-  line-heigth: 4;
-  font-weigth: 700;
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 700;
 }
 
 @mixin h2 {
-  font-size: 2.25rem;
-  line-heigth: 3;
-  font-weigth: 700;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 700;
 }
 
 @mixin h3 {
-  font-size: 1.75rem;
-  line-heigth: 2.25;
-  font-weigth: 700;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 700;
 }
 
 @mixin h4 {
-  font-size: 1.5rem;
-  line-heigth: 2;
-  font-weigth: 700;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
 }
 
 @mixin h5 {
-  font-size: 1.25rem;
-  line-heigth: 2;
-  font-weigth: 700;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 700;
 }
 
 @mixin h6 {
-  font-size: 1rem;
-  line-heigth: 1.5;
-  font-weigth: 700;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
 }
 
 @mixin text-primary {
-  font-size: 1rem;
-  line-heigth: 1.75;
+  font-size: 16px;
+  line-height: 28px;
 }
 @mixin text-secondary {
-  font-size: 0.875rem;
-  line-heigth: 1.25;
+  font-size: 14px;
+  line-height: 28px;
 }
 
 @mixin text-label {
-  font-size: 0.875rem;
-  line-heigth: 1.25;
-  font-weigth: 600;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
 }

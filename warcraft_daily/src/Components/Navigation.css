@@ -9,57 +9,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 80px;
+  padding: 25px 80px;
 }
-.header .logo-container {
+.header .nav-block {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.header .logo-container img {
-  width: 55px;
-  filter: brightness(0) invert(1);
-  margin-right: 12px;
-}
-.header .logo-container span {
-  font-size: 1.75rem;
-  line-heigth: 2.25;
-  font-weigth: 700;
-}
-.header .nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.header .nav ul {
-  font-size: 1rem;
-  line-heigth: 1.75;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.header .nav ul .nav-link {
-  position: relative;
-  margin: 0 12px;
-  cursor: pointer;
-}
-.header .nav ul .nav-link::before {
-  content: "";
-  position: absolute;
-  transition: 250ms;
-  height: 2px;
-  left: 50%;
-  background-color: #ffffff;
-  transition: all 250ms ease;
-}
-.header .nav ul .nav-link-underline::before {
-  width: 0%;
-  bottom: -0.5rem;
-}
-.header .nav ul .nav-link-underline:hover::before {
-  width: 100%;
-  left: 0;
-}
-.header .nav ul li:last-child {
-  margin-right: 36px;
 }/*# sourceMappingURL=Navigation.css.map */
