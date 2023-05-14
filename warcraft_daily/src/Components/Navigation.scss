@@ -14,5 +14,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    .nav {
+      li:last-child {
+        display: none;
+      }
+    }
+
+    .btn-nav {
+      margin-left: 32px;
+    }
   }
 }

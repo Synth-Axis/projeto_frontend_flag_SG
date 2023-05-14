@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "myFont";
+  src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
+}
+.container {
+  font-family: "myFont", sans-serif;
+  padding: 64px 80px;
+}
+.container .word-box {
+  padding: 16px;
+  border-radius: 2px;
+  border: 0;
+  background-color: #232536;
+  color: #ffffff;
+  box-shadow: 6px 6px 10px #000000;
+}
+.container span {
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 700;
+}
+.container span:last-child {
+  margin-left: 16px;
+  filter: drop-shadow(6px 6px 10px #000000);
+}
+.container .main-wrp-about {
+  margin: 64px auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.container .main-wrp-about div p {
+  font-size: 16px;
+  line-height: 28px;
+  margin: 16px 0;
+}
+.container h2 {
+  margin: 128px 0;
+}
+.container .staff-list {
+  display: flex;
+  flex-flow: row wrap;
+  place-content: flex-start;
+  align-items: stretch;
+  gap: 32px;
+}/*# sourceMappingURL=AboutUs.css.map */

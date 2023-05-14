@@ -1,13 +1,24 @@
 import "./NavMenu.scss";
+import { Link } from "react-router-dom";
 
-const NavMenu = () => {
+const NavMenu = (props) => {
   return (
-    <ul className="nav">
-      <li className="nav-link nav-link-underline">Home</li>
-      <li className="nav-link nav-link-underline">Blog</li>
-      <li className="nav-link nav-link-underline">About Us</li>
-      <li className="nav-link nav-link-underline">Contact Us</li>
-      <li className="nav-link nav-link-underline">Privacy Policy</li>
+    <ul className={"nav " + props.class}>
+      <li className="nav-link nav-link-underline">
+        <Link to="/"> Home</Link>
+      </li>
+      <li className="nav-link nav-link-underline">
+        <Link to="/blog">Blog</Link>
+      </li>
+      <li className="nav-link nav-link-underline">
+        <Link to="/about">About Us</Link>
+      </li>
+      <li className="nav-link nav-link-underline">
+        <Link to="/contact">Contact Us</Link>
+      </li>
+      <li className="nav-link nav-link-underline">
+        <Link to="/policy"> Privacy Policy</Link>
+      </li>
     </ul>
   );
 };

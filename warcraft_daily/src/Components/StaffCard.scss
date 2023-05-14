@@ -1,0 +1,29 @@
+@import "./textstyles";
+@import "./colors";
+
+.staff-card {
+  color: $white;
+  background-color: $primary-color;
+  display: flex;
+  flex: 1 1 calc(50% - 32px);
+}
+
+.image-container {
+  display: flex;
+  width: 50%;
+  align-items: flex-start;
+
+  .player-image {
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
+
+.player-text {
+  margin: 0 16px;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  place-content: flex-start;
+  align-items: flex-start;
+}

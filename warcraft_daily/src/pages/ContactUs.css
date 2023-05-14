@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "myFont";
+  src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
+}
+.contact-wrapper {
+  font-family: "myFont", sans-serif;
+  margin: 128px 336px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-wrapper .contact-top {
+  text-align: center;
+}
+.contact-wrapper .contact-top p:first-child {
+  letter-spacing: 3px;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 20px;
+}
+.contact-wrapper .contact-top h1 {
+  letter-spacing: -1px;
+}
+.contact-wrapper .contact-top p:last-child {
+  font-size: 16px;
+  line-height: 28px;
+  color: #6d6e76;
+}
+.contact-wrapper .company-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #592ea9;
+  margin-top: 64px;
+  width: 100%;
+}
+.contact-wrapper .company-info .inner-wrapper {
+  margin: 48px 64px;
+  width: 100%;
+  align-self: baseline;
+}
+.contact-wrapper .company-info .inner-wrapper .inner-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+}
+.contact-wrapper .company-info .inner-wrapper .inner-title p {
+  font-size: 14px;
+  line-height: 28px;
+  color: #ffffff;
+  opacity: 0.6;
+  padding-bottom: 16px;
+}
+.contact-wrapper .company-info .inner-wrapper .info-details {
+  color: #ffffff;
+  margin-top: 16px;
+}
+.contact-wrapper .company-info .inner-wrapper .info-details h5 {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 700;
+}
+.contact-wrapper .company-info .inner-wrapper .info-details p {
+  font-size: 16px;
+  line-height: 28px;
+  opacity: 0.6;
+}
+.contact-wrapper .form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 32px;
+  width: 100%;
+}
+.contact-wrapper .form .input,
+.contact-wrapper .form select {
+  font-size: 16px;
+  line-height: 28px;
+  background-color: transparent;
+  border-radius: 2px;
+  border: 1px solid rgba(109, 110, 118, 0.5);
+  padding: 24px;
+}
+.contact-wrapper .btn-send-msg {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  width: 100%;
+  padding: 24px;
+}/*# sourceMappingURL=ContactUs.css.map */

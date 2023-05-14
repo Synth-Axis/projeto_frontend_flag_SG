@@ -9,7 +9,7 @@ const Navigation = () => {
       <Logo />
       <div className="nav-block">
         <NavMenu />
-        <Button section="btn-nav" text="Subscribe" />
+        <Button class="btn-nav" text="Subscribe" />
       </div>
     </nav>
   );
