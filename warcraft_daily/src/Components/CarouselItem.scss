@@ -1,0 +1,48 @@
+@import "./textstyles";
+@import "./colors";
+
+.caroussel-item {
+  font-family: $font-main;
+  color: $white;
+  height: 720px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carrousel-details {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 24px;
+  margin-right: 80px;
+
+  .posted-on {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+
+  .title {
+    @include hero;
+    letter-spacing: -2px;
+  }
+
+  p {
+    @include text-primary;
+    span {
+      color: $primaryaccent-yellow;
+    }
+  }
+
+  .description {
+    @include text-primary;
+    width: 60%;
+    text-align: end;
+  }
+}
