@@ -11,11 +11,11 @@ const StaffCard = (props) => {
 
       <div className="player-text">
         <div>
-          <p className="text_primary_nav">{props.name}</p>
-          <p className="text_primary_strong">{props.position}</p>
+          <p className="name">{props.name}</p>
+          <p className="position">{props.position}</p>
         </div>
 
-        <p className="text_primary">{props.description}</p>
+        <p className="description">{props.description}</p>
 
         <Socials />
       </div>
