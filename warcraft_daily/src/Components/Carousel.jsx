@@ -3,8 +3,11 @@ import CarouselItem from "./CarouselItem";
 import fyrak from "../assets/media/fyrakk-bg.jpg";
 import dragonriding from "../assets/media/dragonriding-bg.jpg";
 import augmentationevoker from "../assets/media/augmentationevoker-bg.jpg";
+import { useState, useEffect } from "react";
 
 const Carousel = (props) => {
+  const [activeIndex, SetActiveIndex] = useState(0);
+
   const data = [
     {
       id: 1,
@@ -38,16 +41,62 @@ const Carousel = (props) => {
     },
   ];
 
+  const updateIndex = (newIndex) => {
+    if (newIndex < 0) {
+      newIndex = data.length - 1;
+    } else if (newIndex >= data.length) {
+      newIndex = 0;
+    }
+
+    SetActiveIndex(newIndex);
+  };
+
+  const handleClickPrev = () => {
+    updateIndex(activeIndex - 1);
+  };
+
+  const handleClickNext = () => {
+    updateIndex(activeIndex + 1);
+  };
+
+  useEffect(() => {
+    setTimeout(() => {
+      SetActiveIndex((state) => (state < data.length - 1 ? state + 1 : 0));
+    }, 6000);
+  }, [activeIndex]);
+
   return (
     <div className="carousel">
-      {data &&
-        data.map((element) => (
-          <div>
-            <CarouselItem key={element.id} data={element} />
-            <span>Tras</span>
-            <span>Frente</span>
+      <div className="inner-carousel">
+        {data &&
+          data.map((element) => (
+            <div>
+              {activeIndex === element.id - 1 && (
+                <CarouselItem key={element.id} data={element} />
+              )}
+            </div>
+          ))}
+        <div className="carousel-buttons">
+          <button className={""} onClick={handleClickPrev}>
+            Arrow Left
+          </button>
+          <div className="indicators">
+            {data &&
+              data.map((item, index) => (
+                <button
+                  onClick={() => {
+                    updateIndex(index);
+                  }}
+                  className="indicator-buttons"
+                >
+                  <span>O</span>
+                </button>
+              ))}
           </div>
-        ))}
+
+          <button onClick={handleClickNext}>Arrow Right</button>
+        </div>
+      </div>
     </div>
   );
 };
