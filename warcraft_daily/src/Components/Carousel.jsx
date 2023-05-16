@@ -62,7 +62,7 @@ const Carousel = (props) => {
   useEffect(() => {
     setTimeout(() => {
       SetActiveIndex((state) => (state < data.length - 1 ? state + 1 : 0));
-    }, 6000);
+    }, 5000);
   }, [activeIndex]);
 
   return (
@@ -77,24 +77,35 @@ const Carousel = (props) => {
             </div>
           ))}
         <div className="carousel-buttons">
-          <button className={""} onClick={handleClickPrev}>
-            Arrow Left
+          <button className="button-arrow" onClick={handleClickPrev}>
+            <span className="material-symbols-outlined">arrow_back_ios</span>
           </button>
           <div className="indicators">
             {data &&
               data.map((item, index) => (
                 <button
+                  className="indicator-buttons"
+                  key={index}
                   onClick={() => {
                     updateIndex(index);
                   }}
-                  className="indicator-buttons"
                 >
-                  <span>O</span>
+                  <span
+                    className={`material-symbols-outlined ${
+                      index === activeIndex
+                        ? "indicators-symbol-active"
+                        : "indicators-symbol"
+                    }`}
+                  >
+                    radio_button_checked
+                  </span>
                 </button>
               ))}
           </div>
 
-          <button onClick={handleClickNext}>Arrow Right</button>
+          <button className="button-arrow" onClick={handleClickNext}>
+            <span className="material-symbols-outlined">arrow_forward_ios</span>
+          </button>
         </div>
       </div>
     </div>
