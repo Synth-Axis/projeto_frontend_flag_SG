@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "myFont";
+  src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
+}
+.caroussel-item {
+  font-family: "myFont", sans-serif;
+  color: #ffffff;
+  height: 720px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carrousel-details {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 24px;
+  margin-right: 80px;
+}
+.carrousel-details .posted-on {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.carrousel-details .title {
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+.carrousel-details p {
+  font-size: 16px;
+  line-height: 28px;
+}
+.carrousel-details p span {
+  color: #ffd050;
+}
+.carrousel-details .description {
+  font-size: 16px;
+  line-height: 28px;
+  width: 60%;
+  text-align: end;
+}/*# sourceMappingURL=CarouselItem.css.map */

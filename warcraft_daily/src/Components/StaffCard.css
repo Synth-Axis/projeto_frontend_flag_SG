@@ -3,28 +3,45 @@
   src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
 }
 .staff-card {
+  font-family: "myFont", sans-serif;
   color: #ffffff;
-  background-color: #232536;
+  background-color: #f4f4f4;
   display: flex;
   flex: 1 1 calc(50% - 32px);
 }
-
-.image-container {
+.staff-card .image-container {
   display: flex;
   width: 50%;
-  align-items: flex-start;
 }
-.image-container .player-image {
+.staff-card .image-container .player-image {
   max-width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-.player-text {
+.staff-card .player-text {
   margin: 0 16px;
   display: flex;
   width: 50%;
   flex-direction: column;
   place-content: flex-start;
   align-items: flex-start;
+  padding: 16px 8px;
+  gap: 32px;
+}
+.staff-card .player-text .name {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #232536;
+}
+.staff-card .player-text .position {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #592ea9;
+}
+.staff-card .description {
+  font-size: 16px;
+  line-height: 28px;
+  color: #6d6e76;
 }/*# sourceMappingURL=StaffCard.css.map */

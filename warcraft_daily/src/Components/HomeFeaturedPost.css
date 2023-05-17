@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "myFont";
+  src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
+}
+.featured-post-wrapper {
+  font-family: "myFont", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 128px 80px;
+}
+.featured-post-wrapper .featured-post-header {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  letter-spacing: -2px;
+}
+.featured-post-wrapper .featured-post-inner {
+  background-color: rgba(229, 229, 229, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid rgba(109, 110, 118, 0.1);
+  padding: 32px;
+}
+.featured-post-wrapper .featured-post-inner .post-image {
+  width: 100%;
+  margin-bottom: 32px;
+}
+.featured-post-wrapper .featured-post-inner p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.featured-post-wrapper .featured-post-inner p span {
+  color: #ffd050;
+}
+.featured-post-wrapper .featured-post-inner .title {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.featured-post-wrapper .featured-post-inner .description {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400px;
+  color: #6d6e76;
+  margin-bottom: 32px;
+}/*# sourceMappingURL=HomeFeaturedPost.css.map */
