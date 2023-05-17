@@ -1,5 +1,4 @@
-import "./HomeFeaturedPost.scss";
-import Button from "./Button";
+import "./HomeAllPosts.scss";
 import fyrak from "../assets/media/fyrakk-bg.jpg";
 import dragonriding from "../assets/media/dragonriding-bg.jpg";
 import augmentationevoker from "../assets/media/augmentationevoker-bg.jpg";
@@ -7,7 +6,7 @@ import gearupgrade from "../assets/media/gearupgrade-bg.jpg";
 import greatvault from "../assets/media/greatvault-bg.jpg";
 import catalyst from "../assets/media/catalyst-bg.jpg";
 
-const HomeFeaturedPost = () => {
+const HomeAllPosts = () => {
   const data = [
     {
       id: 1,
@@ -71,27 +70,25 @@ const HomeFeaturedPost = () => {
     },
   ];
 
-  //Extra
-  //   const [randomPost, setRandomPost] = useState();
-  //   setRandomPost(Math.floor(data.length * Math.random()));
+  const newData = data.slice(0, 4);
 
   return (
-    <div className="featured-post-wrapper">
-      <p className="featured-post-header">Featured Post</p>
-      <div className="featured-post-inner">
-        <img src={data[1].image} className="post-image" alt="Post Banner"></img>
-        <div className="post-details">
-          <p>
-            By <span>{data[1].author}</span> | {data[1].date}
-          </p>
-          <h1 className="title">{data[1].title}</h1>
-
-          <p className="description">{data[1].description}</p>
-          <Button text="Read More >" />
-        </div>
+    <div className="all-post-wrapper">
+      <div className="all-post-header">
+        <span>All Posts</span>
+        <span>View All</span>
       </div>
+      {newData &&
+        newData.map((element) => (
+          <div key={element.id} className="all-post-inner">
+            <p>
+              By <span>{element.author}</span> | {element.date}
+            </p>
+            <h1 className="all-post-title">{element.title}</h1>
+          </div>
+        ))}
     </div>
   );
 };
 
-export default HomeFeaturedPost;
+export default HomeAllPosts;

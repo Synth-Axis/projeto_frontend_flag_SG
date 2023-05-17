@@ -103,7 +103,7 @@ const Carousel = (props) => {
       <div className="inner-carousel">
         {data &&
           data.map((element) => (
-            <div>
+            <div key={element.id}>
               {activeIndex === element.id - 1 && (
                 <CarouselItem key={element.id} data={element} />
               )}

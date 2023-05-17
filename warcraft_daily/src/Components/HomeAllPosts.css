@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "myFont";
+  src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
+}
+.all-post-wrapper {
+  font-family: "myFont", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 80px;
+}
+.all-post-wrapper .all-post-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.all-post-wrapper .all-post-header span:first-child {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 700;
+}
+.all-post-wrapper .all-post-header span:last-child {
+  font-size: 16px;
+  line-height: 28px;
+  align-self: flex-end;
+}
+.all-post-wrapper .all-post-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 32px;
+}
+.all-post-wrapper .all-post-inner:hover {
+  background-color: #fbf6ea;
+}
+.all-post-wrapper .all-post-inner p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.all-post-wrapper .all-post-inner p span {
+  color: #592ea9;
+}
+.all-post-wrapper .all-post-inner .all-post-title {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}/*# sourceMappingURL=HomeAllPosts.css.map */
