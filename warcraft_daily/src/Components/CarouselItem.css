@@ -29,21 +29,21 @@
   font-weight: 500;
 }
 .carrousel-details .title {
-  font-size: 56px;
-  line-height: 64px;
+  font-size: 3.5vw;
+  line-height: 4vw;
   font-weight: 700;
   letter-spacing: -2px;
 }
 .carrousel-details p {
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 1vw;
+  line-height: 1.75vw;
 }
 .carrousel-details p span {
   color: #ffd050;
 }
 .carrousel-details .description {
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 1vw;
+  line-height: 1.75vw;
   width: 60%;
   text-align: end;
 }/*# sourceMappingURL=CarouselItem.css.map */

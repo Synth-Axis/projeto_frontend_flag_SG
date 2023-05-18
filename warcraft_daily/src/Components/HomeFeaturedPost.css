@@ -10,8 +10,8 @@
   margin-left: 80px;
 }
 .featured-post-wrapper .featured-post-header {
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 2.25vw;
+  line-height: 3vw;
   font-weight: 700;
   margin-bottom: 32px;
   letter-spacing: -2px;
@@ -30,8 +30,8 @@
   margin-bottom: 32px;
 }
 .featured-post-wrapper .featured-post-inner p {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 0.875vw;
+  line-height: 1.25vw;
   font-weight: 600;
   font-weight: 500;
   margin-bottom: 16px;
@@ -40,14 +40,14 @@
   color: #ffd050;
 }
 .featured-post-wrapper .featured-post-inner .title {
-  font-size: 28px;
-  line-height: 36px;
+  font-size: 1.75vw;
+  line-height: 2.25vw;
   font-weight: 700;
   margin-bottom: 16px;
 }
 .featured-post-wrapper .featured-post-inner .description {
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 1vw;
+  line-height: 1.75vw;
   font-weight: 400px;
   color: #6d6e76;
   margin-bottom: 32px;

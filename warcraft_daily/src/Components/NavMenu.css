@@ -3,8 +3,8 @@
   src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
 }
 .nav {
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 1vw;
+  line-height: 1.75vw;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -32,19 +32,23 @@ const ResumeTabs = () => {
       {activeTab === "tab1" && (
         <div className="info-wrapper">
           <div className="info">
-            <p className="info-subject">ABOUT US</p>
+            <p className="info-subject">BLOG</p>
             <h4 className="info-title">
-              We are a community of players and content writers who share
-              knowledge and work to deliver relevant content spread throught the
-              main World of Warcraft communities.
+              Hot topics, guides and offcial Blizzard news
             </h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-              praesentium veritatis nihil ipsam tempora harum corrupti deserunt
-              obcaecati vero impedit, hic repellat cupiditate dolorem
-              repellendus velit excepturi sapiente maiores perspiciatis!
+            <p className="info-description">
+              Head to our articles and blog posts section and see what's
+              trending at the moment.
             </p>
             <Button text="Read More >" />
+          </div>
+          <div className="info">
+            <p className="info-subject">WHAT'S NEW</p>
+            <h4 className="info-title-right">Stay tuned on the daily news</h4>
+            <p className="info-description">
+              Always be up to date on content and patches, as well as updated
+              guides.
+            </p>
           </div>
         </div>
       )}
@@ -52,19 +56,22 @@ const ResumeTabs = () => {
       {activeTab === "tab2" && (
         <div className="info-wrapper">
           <div className="info">
-            <p>
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using Lorem Ipsum is that it has a more-or-less normal
-              distribution of letters, as opposed to using 'Content here,
-              content here', making it look like readable English. Many desktop
-              publishing packages and web page editors now use Lorem Ipsum as
-              their default model text, and a search for 'lorem ipsum' will
-              uncover many web sites still in their infancy. Various versions
-              have evolved over the years, sometimes by accident, sometimes on
-              purpose (injected humour and the like).
+            <p className="info-subject">ABOUT US</p>
+            <h4 className="info-title">Real Gamers delivering what's new</h4>
+            <p className="info-description">
+              We are a community of players and content writers who share
+              knowledge and work to deliver relevant content spread throught the
+              main World of Warcraft communities.
             </p>
             <Button text="Read More >" />
+          </div>
+          <div className="info">
+            <p className="info-subject">WHAT WE DO</p>
+            <h4 className="info-title-right">Big News in little time</h4>
+            <p className="info-description">
+              We gather the information across multiple sites to deliver you all
+              the information in one place.
+            </p>
           </div>
         </div>
       )}
@@ -72,19 +79,26 @@ const ResumeTabs = () => {
       {activeTab === "tab3" && (
         <div className="info-wrapper">
           <div className="info">
-            <p className="info-subject">ABOUT US</p>
+            <p className="info-subject">CONTACT US</p>
             <h4 className="info-title">
-              We are a community of players and content writers who share
-              knowledge and work to deliver relevant content spread throught the
-              main World of Warcraft communities.
+              Are you looking to join our content writers or partnerships?
             </h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-              praesentium veritatis nihil ipsam tempora harum corrupti deserunt
-              obcaecati vero impedit, hic repellat cupiditate dolorem
-              repellendus velit excepturi sapiente maiores perspiciatis!
+            <p className="info-description">
+              Drop us you message and tell us about your background or business
+              enquiries. We are also looking for contribuitors for Addon
+              development in LUA.
             </p>
             <Button text="Read More >" />
+          </div>
+          <div className="info">
+            <p className="info-subject">JOIN US</p>
+            <h4 className="info-title-right">
+              Let's Talk, Stay a while and listen
+            </h4>
+            <p className="info-description">
+              If have something to say, then say it! This may be a great
+              opportunity
+            </p>
           </div>
         </div>
       )}

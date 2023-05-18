@@ -23,8 +23,8 @@
   letter-spacing: -1px;
 }
 .contact-wrapper .contact-top p:last-child {
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 1vw;
+  line-height: 1.75vw;
   color: #6d6e76;
 }
 .contact-wrapper .company-info {
@@ -49,8 +49,8 @@
   width: 100%;
 }
 .contact-wrapper .company-info .inner-wrapper .inner-title p {
-  font-size: 14px;
-  line-height: 28px;
+  font-size: 0.875vw;
+  line-height: 1.75vw;
   color: #ffffff;
   opacity: 0.6;
   padding-bottom: 16px;
@@ -60,13 +60,13 @@
   margin-top: 16px;
 }
 .contact-wrapper .company-info .inner-wrapper .info-details h5 {
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 1.25vw;
+  line-height: 2vw;
   font-weight: 700;
 }
 .contact-wrapper .company-info .inner-wrapper .info-details p {
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 1vw;
+  line-height: 1.75vw;
   opacity: 0.6;
 }
 .contact-wrapper .form {
@@ -78,16 +78,16 @@
 }
 .contact-wrapper .form .input,
 .contact-wrapper .form select {
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 1vw;
+  line-height: 1.75vw;
   background-color: transparent;
   border-radius: 2px;
   border: 1px solid rgba(109, 110, 118, 0.5);
   padding: 24px;
 }
 .contact-wrapper .btn-send-msg {
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.5vw;
+  line-height: 2vw;
   font-weight: 700;
   width: 100%;
   padding: 24px;

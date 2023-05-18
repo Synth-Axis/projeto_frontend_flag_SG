@@ -29,19 +29,19 @@
   gap: 32px;
 }
 .staff-card .player-text .name {
-  font-size: 28px;
-  line-height: 36px;
+  font-size: 1.75vw;
+  line-height: 2.25vw;
   font-weight: 700;
   color: #232536;
 }
 .staff-card .player-text .position {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1vw;
+  line-height: 1.5vw;
   font-weight: 700;
   color: #592ea9;
 }
 .staff-card .description {
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 1vw;
+  line-height: 1.75vw;
   color: #6d6e76;
 }/*# sourceMappingURL=StaffCard.css.map */

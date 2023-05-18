@@ -15,13 +15,13 @@
   margin-bottom: 32px;
 }
 .all-post-wrapper .all-post-header span:first-child {
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 2.25vw;
+  line-height: 3vw;
   font-weight: 700;
 }
 .all-post-wrapper .all-post-header span:last-child {
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 1vw;
+  line-height: 1.75vw;
   align-self: flex-end;
 }
 .all-post-wrapper .all-post-inner {
@@ -35,8 +35,8 @@
   background-color: #fbf6ea;
 }
 .all-post-wrapper .all-post-inner p {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 0.875vw;
+  line-height: 1.25vw;
   font-weight: 600;
   font-weight: 500;
   margin-bottom: 8px;
@@ -45,7 +45,7 @@
   color: #592ea9;
 }
 .all-post-wrapper .all-post-inner .all-post-title {
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.5vw;
+  line-height: 2vw;
   font-weight: 700;
 }/*# sourceMappingURL=HomeAllPosts.css.map */
