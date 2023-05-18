@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "myFont";
+  src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
+}
+.container {
+  font-style: "myFont", sans-serif;
+  color: #232536;
+  display: flex;
+  flex-direction: column;
+}
+.container .tabs {
+  display: flex;
+  height: 23px;
+}
+.container .tabs .title {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 700;
+  background-color: #f4f4f4;
+  width: 25%;
+}
+.container .tabs .title:nth-child(2) {
+  background-color: #ffd050;
+  width: 50%;
+}
+.container .tabs .title:nth-child(3) {
+  background-color: #592ea9;
+  width: 25%;
+}
+.container .info-wrapper {
+  background-color: #f4f0f8;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 96px 80px;
+}
+.container .info-wrapper .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}/*# sourceMappingURL=SumaryTabs.css.map */

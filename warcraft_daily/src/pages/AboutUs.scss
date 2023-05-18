@@ -17,7 +17,7 @@
     @include h1;
   }
 
-  span:last-child {
+  .drop-shadow {
     margin-left: 16px;
     filter: drop-shadow(6px 6px 10px #000000);
   }

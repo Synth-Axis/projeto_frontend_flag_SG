@@ -19,7 +19,7 @@
   line-height: 64px;
   font-weight: 700;
 }
-.container span:last-child {
+.container .drop-shadow {
   margin-left: 16px;
   filter: drop-shadow(6px 6px 10px #000000);
 }

@@ -1,0 +1,44 @@
+@import "./textstyles";
+@import "./colors";
+
+.container {
+  font-style: $font-main;
+  color: $primary-color;
+  display: flex;
+  flex-direction: column;
+
+  .tabs {
+    display: flex;
+    height: 23px;
+
+    .title {
+      @include text-primary;
+      font-weight: 700;
+      background-color: $bgaccent-light-grey;
+      width: 25%;
+      &:nth-child(2) {
+        background-color: $primaryaccent-yellow;
+        width: 50%;
+      }
+      &:nth-child(3) {
+        background-color: $secondaryaccent-purple;
+        width: 25%;
+      }
+    }
+  }
+
+  .info-wrapper {
+    background-color: $bgaccent-lavander;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 96px 80px;
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  }
+}

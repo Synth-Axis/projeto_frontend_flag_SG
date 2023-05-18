@@ -46,7 +46,7 @@ const AboutUs = () => {
     <div className="container">
       <h1 className=" slide_down page-title">
         <span className="word-box">WHO</span>
-        <span>WE ARE</span>
+        <span class="drop-shadow">WE ARE</span>
       </h1>
 
       <section className="main-wrp-about slide_right">
