@@ -6,10 +6,11 @@ import augmentationevoker from "../assets/media/augmentationevoker-bg.jpg";
 import gearupgrade from "../assets/media/gearupgrade-bg.jpg";
 import greatvault from "../assets/media/greatvault-bg.jpg";
 import catalyst from "../assets/media/catalyst-bg.jpg";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const Carousel = (props) => {
   const [activeIndex, SetActiveIndex] = useState(0);
+  const timeoutRef = useRef(null);
 
   const data = [
     {
@@ -92,10 +93,20 @@ const Carousel = (props) => {
     updateIndex(activeIndex + 1);
   };
 
+  function resetTimeout() {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+  }
+
   useEffect(() => {
-    setTimeout(() => {
+    resetTimeout();
+    timeoutRef.current = setTimeout(() => {
       SetActiveIndex((state) => (state < data.length - 1 ? state + 1 : 0));
     }, 5000);
+    return () => {
+      resetTimeout();
+    };
   }, [activeIndex]);
 
   return (
