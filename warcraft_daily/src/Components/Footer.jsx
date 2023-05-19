@@ -1,9 +1,9 @@
+import "./Footer.scss";
 import Logo from "./Logo";
 import NavMenu from "./NavMenu";
 import Button from "./Button";
 import Input from "./Input";
 import Socials from "./Socials";
-import "./Footer.scss";
 
 const Footer = () => {
   return (

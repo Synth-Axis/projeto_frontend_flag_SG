@@ -1,8 +1,8 @@
+import "./Partners.scss";
 import elgato from "../assets/media/elgato_logo_white.png";
 import curseforge from "../assets/media/curseforgelogo.png";
 import corsair from "../assets/media/corsair_white_logo.webp";
 import secretlabs from "../assets/media/secretlablogo.png";
-import "./Partners.scss";
 
 const Partners = () => {
   return (

@@ -1,13 +1,12 @@
-import "./App.css";
-import Navigation from "./Components/Navigation";
-import Footer from "./Components/Footer";
-import Home from "./pages/Home";
-import Blog from "./pages/Blog";
-import AboutUs from "./pages/AboutUs";
-import ContactUs from "./pages/ContactUs";
-import Policy from "./pages/Policy";
+import "./App.scss";
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
+import Home from "./pages/home/Home";
+import Blog from "./pages/blog/Blog";
+import AboutUs from "./pages/about/AboutUs";
+import ContactUs from "./pages/contact/ContactUs";
+import Policy from "./pages/policy/Policy";
 import { Route, Routes } from "react-router-dom";
-import Partners from "./Components/Partners";
 
 function App() {
   return (

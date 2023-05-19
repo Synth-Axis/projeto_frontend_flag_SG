@@ -1,0 +1,49 @@
+@import "../../sassStyles/main";
+
+.container {
+  font-family: $font-main;
+  padding: 64px 80px;
+
+  .word-box {
+    padding: 16px;
+    border-radius: 2px;
+    border: 0;
+    background-color: $primary-color;
+    color: $white;
+    box-shadow: 6px 6px 10px #000000;
+  }
+  span {
+    @include h1;
+  }
+
+  .drop-shadow {
+    margin-left: 16px;
+    filter: drop-shadow(6px 6px 10px #000000);
+  }
+
+  .main-wrp-about {
+    margin: 64px auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    div {
+      p {
+        @include text-primary;
+        margin: 16px 0;
+      }
+    }
+  }
+
+  h2 {
+    margin: 128px 0;
+  }
+
+  .staff-list {
+    display: flex;
+    flex-flow: row wrap;
+    place-content: flex-start;
+    align-items: stretch;
+    gap: 32px;
+  }
+}

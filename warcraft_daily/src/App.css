@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "myFont";
+  src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
+}
 .general {
   margin: 0 auto;
   font-family: inherit;

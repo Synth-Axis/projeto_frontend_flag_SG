@@ -1,1 +1,1 @@
-{"version":3,"sources":["_textstyles.scss","Input.css"],"names":[],"mappings":"AAAA;EACE,qBAAA;EACA,mEAAA;ACCF","file":"Input.css"}
+{"version":3,"sources":["../sassStyles/_textstyles.scss","Input.css"],"names":[],"mappings":"AAAA;EACE,qBAAA;EACA,mEAAA;ACCF","file":"Input.css"}

@@ -1,5 +1,4 @@
-@import "./textstyles";
-@import "./colors";
+@import "../sassStyles/main";
 
 .nav {
   @include text-primary;

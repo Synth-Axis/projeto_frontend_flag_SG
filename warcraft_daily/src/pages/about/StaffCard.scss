@@ -1,0 +1,45 @@
+@import "../../sassStyles/main";
+
+.staff-card {
+  font-family: $font-main;
+  color: $white;
+  background-color: $bgaccent-light-grey;
+  display: flex;
+  flex: 1 1 calc(50% - 32px);
+
+  .image-container {
+    display: flex;
+    width: 50%;
+
+    .player-image {
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .player-text {
+    margin: 0 16px;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    place-content: flex-start;
+    align-items: flex-start;
+    padding: 16px 8px;
+    gap: 32px;
+
+    .name {
+      @include h3;
+      color: $primary-color;
+    }
+
+    .position {
+      @include h6;
+      color: $secondaryaccent-purple;
+    }
+  }
+
+  .description {
+    @include text-primary;
+    color: $bgaccent-grey;
+  }
+}
