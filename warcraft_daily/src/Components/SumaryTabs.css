@@ -78,4 +78,13 @@
   line-height: 1.75vw;
   color: #6d6e76;
   margin-bottom: 1vw;
+}
+.container .info-wrapper .info .link-to {
+  font-size: 1.125vw;
+  line-height: 2vw;
+  color: #592ea9;
+  cursor: pointer;
+}
+.container .info-wrapper .info .link-to:hover {
+  filter: drop-shadow(2px 2px 15px black);
 }/*# sourceMappingURL=SumaryTabs.css.map */

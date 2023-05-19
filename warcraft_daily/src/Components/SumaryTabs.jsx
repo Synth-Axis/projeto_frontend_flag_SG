@@ -1,6 +1,6 @@
 import "./SumaryTabs.scss";
-import Button from "../Components/Button";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const ResumeTabs = () => {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -34,13 +34,15 @@ const ResumeTabs = () => {
           <div className="info">
             <p className="info-subject">BLOG</p>
             <h4 className="info-title">
-              Hot topics, guides and offcial Blizzard news
+              Hot topics, guides and official Blizzard news
             </h4>
             <p className="info-description">
               Head to our articles and blog posts section and see what's
               trending at the moment.
             </p>
-            <Button text="Read More >" />
+            <div className="link-to">
+              <Link to="/blog">Read More &gt; </Link>
+            </div>
           </div>
           <div className="info">
             <p className="info-subject">WHAT'S NEW</p>
@@ -63,7 +65,9 @@ const ResumeTabs = () => {
               knowledge and work to deliver relevant content spread throught the
               main World of Warcraft communities.
             </p>
-            <Button text="Read More >" />
+            <div className="link-to">
+              <Link to="/about">Read More &gt; </Link>
+            </div>
           </div>
           <div className="info">
             <p className="info-subject">WHAT WE DO</p>
@@ -88,12 +92,14 @@ const ResumeTabs = () => {
               enquiries. We are also looking for contribuitors for Addon
               development in LUA.
             </p>
-            <Button text="Read More >" />
+            <div className="link-to">
+              <Link to="/contact">Contact Us &gt; </Link>
+            </div>
           </div>
           <div className="info">
             <p className="info-subject">JOIN US</p>
             <h4 className="info-title-right">
-              Let's Talk, Stay a while and listen
+              Let's talk, stay a while and listen
             </h4>
             <p className="info-description">
               If have something to say, then say it! This may be a great

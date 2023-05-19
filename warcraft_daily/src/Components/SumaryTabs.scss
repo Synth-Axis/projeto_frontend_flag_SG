@@ -76,6 +76,17 @@
         color: $bgaccent-grey;
         margin-bottom: 1vw;
       }
+
+      .link-to {
+        font-size: 1.125vw;
+        line-height: 2vw;
+        color: $secondaryaccent-purple;
+        cursor: pointer;
+
+        &:hover {
+          filter: drop-shadow(2px 2px 15px black);
+        }
+      }
     }
   }
 }
