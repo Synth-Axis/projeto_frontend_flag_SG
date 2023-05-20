@@ -1,0 +1,24 @@
+@import "../../sassStyles/main";
+
+.category-card-wrapper {
+  @include give-flex-column(flex-start, stretch);
+  width: 25%;
+  padding: 2vw;
+  border: 1px solid rgba(109, 110, 118, 0.3);
+
+  .category-icon {
+    width: 3vw;
+    margin-bottom: 1vw;
+  }
+
+  .category-title {
+    @include h3;
+    letter-spacing: -1px;
+    margin-bottom: 0.25vw;
+  }
+
+  .category-description {
+    @include text-primary;
+    color: $bgaccent-grey;
+  }
+}

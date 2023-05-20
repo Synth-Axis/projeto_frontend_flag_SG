@@ -1,11 +1,10 @@
 @import "../../sassStyles/main";
 
 .container {
-  font-family: $font-main;
-  padding: 64px 80px;
+  padding: 4vw 5vw;
 
   .word-box {
-    padding: 16px;
+    padding: 1vw;
     border-radius: 2px;
     border: 0;
     background-color: $primary-color;
@@ -17,12 +16,12 @@
   }
 
   .drop-shadow {
-    margin-left: 16px;
+    margin-left: 1vw;
     filter: drop-shadow(6px 6px 10px #000000);
   }
 
   .main-wrp-about {
-    margin: 64px auto;
+    margin: 4vw auto;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -30,13 +29,13 @@
     div {
       p {
         @include text-primary;
-        margin: 16px 0;
+        margin: 1vw 0;
       }
     }
   }
 
   h2 {
-    margin: 128px 0;
+    margin-bottom: 4vw;
   }
 
   .staff-list {
@@ -44,6 +43,6 @@
     flex-flow: row wrap;
     place-content: flex-start;
     align-items: stretch;
-    gap: 32px;
+    gap: 2vw;
   }
 }

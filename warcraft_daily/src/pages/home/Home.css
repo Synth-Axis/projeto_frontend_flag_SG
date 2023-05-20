@@ -3,7 +3,6 @@
   src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
 }
 .home-posts {
-  font-family: "myFont", sans-serif;
   display: grid;
   grid-template-columns: 55% 1fr;
   place-content: start;
@@ -14,4 +13,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.categories-wrapper {
+  display: flex;
+  margin: 5vw;
+  gap: 2vw;
 }/*# sourceMappingURL=Home.css.map */

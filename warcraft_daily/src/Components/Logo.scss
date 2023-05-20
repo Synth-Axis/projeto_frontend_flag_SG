@@ -1,14 +1,12 @@
 @import "../sassStyles/main";
 
 .logo-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include give-flex-row(center, center);
 
   img {
     width: 40px;
     filter: brightness(0) invert(1);
-    margin-right: 12px;
+    margin-right: 0.75vw;
   }
 
   span {

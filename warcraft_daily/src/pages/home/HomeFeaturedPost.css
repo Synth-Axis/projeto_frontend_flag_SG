@@ -3,52 +3,52 @@
   src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
 }
 .featured-post-wrapper {
-  font-family: "myFont", sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  margin-left: 80px;
+  align-items: flex-start;
+  justify-content: stretch;
+  margin-left: 5vw;
 }
 .featured-post-wrapper .featured-post-header {
-  font-size: 2.25vw;
-  line-height: 3vw;
+  font-size: 2.25rem;
+  line-height: 3rem;
   font-weight: 700;
-  margin-bottom: 32px;
+  margin-bottom: 2vw;
   letter-spacing: -2px;
 }
 .featured-post-wrapper .featured-post-inner {
-  background-color: rgba(229, 229, 229, 0.1);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(229, 229, 229, 0.1);
   border: 1px solid rgba(109, 110, 118, 0.1);
-  padding: 32px;
+  padding: 2vw;
 }
 .featured-post-wrapper .featured-post-inner .post-image {
   width: 100%;
-  margin-bottom: 32px;
+  margin-bottom: 2vw;
 }
 .featured-post-wrapper .featured-post-inner p {
-  font-size: 0.875vw;
-  line-height: 1.25vw;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   font-weight: 600;
   font-weight: 500;
-  margin-bottom: 16px;
+  margin-bottom: 1vw;
 }
 .featured-post-wrapper .featured-post-inner p span {
   color: #ffd050;
 }
 .featured-post-wrapper .featured-post-inner .title {
-  font-size: 1.75vw;
-  line-height: 2.25vw;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
   font-weight: 700;
-  margin-bottom: 16px;
+  margin-bottom: 1vw;
 }
 .featured-post-wrapper .featured-post-inner .description {
-  font-size: 1vw;
-  line-height: 1.75vw;
+  font-size: 1rem;
+  line-height: 28px;
   font-weight: 400px;
   color: #6d6e76;
-  margin-bottom: 32px;
+  margin-bottom: 2vw;
 }/*# sourceMappingURL=HomeFeaturedPost.css.map */

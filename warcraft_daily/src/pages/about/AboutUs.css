@@ -3,11 +3,10 @@
   src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
 }
 .container {
-  font-family: "myFont", sans-serif;
-  padding: 64px 80px;
+  padding: 4vw 5vw;
 }
 .container .word-box {
-  padding: 16px;
+  padding: 1vw;
   border-radius: 2px;
   border: 0;
   background-color: #232536;
@@ -15,32 +14,32 @@
   box-shadow: 6px 6px 10px #000000;
 }
 .container span {
-  font-size: 3vw;
-  line-height: 4vw;
+  font-size: 3rem;
+  line-height: 4rem;
   font-weight: 700;
 }
 .container .drop-shadow {
-  margin-left: 16px;
+  margin-left: 1vw;
   filter: drop-shadow(6px 6px 10px #000000);
 }
 .container .main-wrp-about {
-  margin: 64px auto;
+  margin: 4vw auto;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
 }
 .container .main-wrp-about div p {
-  font-size: 1vw;
-  line-height: 1.75vw;
-  margin: 16px 0;
+  font-size: 1rem;
+  line-height: 28px;
+  margin: 1vw 0;
 }
 .container h2 {
-  margin: 128px 0;
+  margin-bottom: 4vw;
 }
 .container .staff-list {
   display: flex;
   flex-flow: row wrap;
   place-content: flex-start;
   align-items: stretch;
-  gap: 32px;
+  gap: 2vw;
 }/*# sourceMappingURL=AboutUs.css.map */

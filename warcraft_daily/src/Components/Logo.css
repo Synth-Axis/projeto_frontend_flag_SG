@@ -10,10 +10,10 @@
 .logo-container img {
   width: 40px;
   filter: brightness(0) invert(1);
-  margin-right: 12px;
+  margin-right: 0.75vw;
 }
 .logo-container span {
-  font-size: 1.25vw;
-  line-height: 2vw;
+  font-size: 1.25rem;
+  line-height: 2rem;
   font-weight: 700;
 }/*# sourceMappingURL=Logo.css.map */

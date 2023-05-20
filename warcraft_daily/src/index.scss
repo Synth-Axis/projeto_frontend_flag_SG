@@ -1,0 +1,18 @@
+@import "./sassStyles/main";
+@import "./sassStyles/_reset.scss";
+
+body {
+  margin: 0;
+  font-family: $font-main;
+  color: $primary-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 1600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

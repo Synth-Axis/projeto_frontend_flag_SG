@@ -2,14 +2,15 @@
 
 .socials {
   display: flex;
-  gap: 30px;
+  gap: 1.875vw;
 
   a {
     .socials-icon {
-      background-color: $primary-color;
+      background-color: $bglight;
       width: 16px;
       height: 16px;
-      border-radius: 10%;
+      border-radius: 25%;
+      border: none;
       opacity: 0.6;
       transition: opacity 0.18s ease;
 

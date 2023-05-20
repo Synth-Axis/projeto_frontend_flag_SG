@@ -1,22 +1,20 @@
 @import "../../sassStyles/main";
 
 .carousel {
-  margin-bottom: 128px;
+  margin-bottom: 8vw;
 
   .inner-carousel {
     .carousel-buttons {
+      @include give-flex-row(stretch, center);
       position: relative;
-      display: flex;
-      justify-content: center;
-      gap: 64px;
-
-      margin: 0 16px;
+      gap: 4vw;
+      margin: 0 1vw;
 
       .button-arrow {
         background: none;
         border: none;
         cursor: pointer;
-        margin-top: 8px;
+        margin-top: 0.5vw;
         transition: all 200ms ease;
 
         &:hover {
@@ -24,10 +22,9 @@
         }
       }
       .indicators {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        margin-top: 8px;
+        @include give-flex-row(center, center);
+        gap: 0.5vw;
+        margin-top: 0.5vw;
 
         .indicator-buttons {
           border: none;

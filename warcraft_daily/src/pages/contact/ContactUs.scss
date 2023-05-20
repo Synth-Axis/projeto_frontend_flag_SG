@@ -1,12 +1,8 @@
 @import "../../sassStyles/main";
 
 .contact-wrapper {
-  font-family: $font-main;
-  margin: 128px 336px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  @include give-flex-column(center, space-between);
+  margin: 8vw 21vw;
 
   .contact-top {
     text-align: center;
@@ -14,8 +10,8 @@
     p:first-child {
       letter-spacing: 3px;
       font-weight: 900;
-      font-size: 16px;
-      line-height: 20px;
+      font-size: 1rem;
+      line-height: 1.25rem;
     }
 
     h1 {
@@ -29,23 +25,18 @@
   }
 
   .company-info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include give-flex-row(center, space-between);
     background-color: $secondaryaccent-purple;
-    margin-top: 64px;
+    margin-top: 4vw;
     width: 100%;
 
     .inner-wrapper {
-      margin: 48px 64px;
+      margin: 3vw 4vw;
       width: 100%;
       align-self: baseline;
 
       .inner-title {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
+        @include give-flex-row(center, flex-start);
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         width: 100%;
 
@@ -53,13 +44,13 @@
           @include text-secondary;
           color: $white;
           opacity: 0.6;
-          padding-bottom: 16px;
+          padding-bottom: 1vw;
         }
       }
 
       .info-details {
         color: $white;
-        margin-top: 16px;
+        margin-top: 1vw;
         h5 {
           @include h5;
         }
@@ -74,8 +65,8 @@
   .form {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    margin-top: 32px;
+    gap: 1vw;
+    margin-top: 2vw;
     width: 100%;
 
     .input,
@@ -84,12 +75,12 @@
       background-color: transparent;
       border-radius: 2px;
       border: 1px solid rgba(109, 110, 118, 0.5);
-      padding: 24px;
+      padding: 1.5vw;
     }
   }
   .btn-send-msg {
     @include h4;
     width: 100%;
-    padding: 24px;
+    padding: 1.5vw;
   }
 }

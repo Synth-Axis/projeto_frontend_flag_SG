@@ -1,15 +1,11 @@
 @import "../sassStyles/main";
 
 .btn {
-  font-family: $font-main;
+  @include give-flex-row(center, center);
   font-weight: 700;
-  font-size: 1.25vw;
-  line-height: 1.5vw;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
   background-color: $primaryaccent-yellow;
-  color: $primary-color;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 1vw 3vw;
   border: none;
   cursor: pointer;

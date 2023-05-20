@@ -1,35 +1,30 @@
 @import "../../sassStyles/main";
 
 .featured-post-wrapper {
-  font-family: $font-main;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-left: 80px;
+  @include give-flex-column(flex-start, stretch);
+  margin-left: 5vw;
 
   .featured-post-header {
     @include h2;
-    margin-bottom: 32px;
+    margin-bottom: 2vw;
     letter-spacing: -2px;
   }
   .featured-post-inner {
+    @include give-flex-column(center, flex-start);
     background-color: rgba(229, 229, 229, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
     border: 1px solid rgba(109, 110, 118, 0.1);
-    padding: 32px;
+    padding: 2vw;
 
     .post-image {
       width: 100%;
-      margin-bottom: 32px;
+      margin-bottom: 2vw;
     }
 
     p {
       @include text-label;
       font-weight: 500;
-      margin-bottom: 16px;
+      margin-bottom: 1vw;
+
       span {
         color: $primaryaccent-yellow;
       }
@@ -37,14 +32,14 @@
 
     .title {
       @include h3;
-      margin-bottom: 16px;
+      margin-bottom: 1vw;
     }
 
     .description {
       @include text-primary;
       font-weight: 400px;
       color: $bgaccent-grey;
-      margin-bottom: 32px;
+      margin-bottom: 2vw;
     }
   }
 }

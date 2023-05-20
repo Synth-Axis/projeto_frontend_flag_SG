@@ -2,9 +2,7 @@
 
 .nav {
   @include text-primary;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include give-flex-row(center, center);
 
   .nav-link {
     position: relative;
