@@ -1,43 +1,49 @@
 @import "../../sassStyles/main";
 
-.category-container {
-  @include give-flex-row(stretch, center);
-  gap: 2vw;
+.category-wrapper {
+  @include give-flex-column(center, center);
 
-  .category-card-wrapper {
-    @include give-flex-column(flex-start, stretch);
-    width: 25%;
-    padding: 2vw;
-    border: 1px solid rgba(109, 110, 118, 0.3);
-    transition: all 200ms ease;
+  .choose-category {
+    @include h2;
+    margin-bottom: 3vw;
+    text-align: center;
+  }
 
-    &:hover {
-      background-color: $primaryaccent-yellow;
-    }
+  .category-container {
+    @include give-flex-row(stretch, center);
+    gap: 2vw;
+    margin: 0 5vw;
 
-    .category-icon {
-      width: 3vw;
-      margin-bottom: 1vw;
-    }
+    .category-card-wrapper {
+      @include give-flex-column(stretch, stretch);
+      padding: 2vw;
+      border: 1px solid rgba(109, 110, 118, 0.3);
+      cursor: pointer;
+      transition: all 200ms ease;
 
-    .category-title {
-      @include h3;
-      letter-spacing: -1px;
-      margin-bottom: 0.25vw;
-    }
+      &:hover {
+        background-color: $primaryaccent-yellow;
+      }
 
-    .category-description {
-      @include text-primary;
-      color: $bgaccent-grey;
+      .category-icon {
+        width: 3vw;
+        margin-bottom: 1vw;
+      }
+
+      .category-title {
+        @include h3;
+        letter-spacing: -1px;
+        margin-bottom: 0.25vw;
+      }
+
+      .category-description {
+        @include text-primary;
+        color: $bgaccent-grey;
+      }
     }
   }
 }
 
 .card-active {
   background-color: $primaryaccent-yellow;
-  transform: scale(1.05);
-}
-
-.article-container {
-  @include give-flex-row(center, center);
 }

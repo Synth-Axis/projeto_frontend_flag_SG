@@ -1,0 +1,42 @@
+@import "../../sassStyles/main";
+
+.article-container {
+  @include give-flex-row(flex-end, flex-start);
+  position: relative;
+  margin: 8vw 5vw;
+
+  .article-img {
+    width: 75%;
+    height: 100%;
+  }
+
+  .article-details {
+    @include give-flex-column(flex-start, flex-start);
+    position: absolute;
+    right: 0;
+    background-color: $white;
+
+    width: 40%;
+    padding: 5vw;
+
+    .article-spec {
+      font-size: 1rem;
+      line-height: 1.25;
+      font-weight: 600;
+      letter-spacing: 3px;
+      margin-bottom: 1.5vw;
+    }
+
+    .article-title {
+      @include h1;
+      letter-spacing: -2px;
+      margin-bottom: 1vw;
+    }
+
+    .article-sumary {
+      @include text-primary;
+      color: $bgaccent-grey;
+      margin-bottom: 2vw;
+    }
+  }
+}
