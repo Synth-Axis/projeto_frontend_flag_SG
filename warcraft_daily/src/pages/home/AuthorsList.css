@@ -1,4 +1,10 @@
 @font-face {
   font-family: "myFont";
   src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
+}
+.authors-list-container {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 2vw;
 }/*# sourceMappingURL=AuthorsList.css.map */

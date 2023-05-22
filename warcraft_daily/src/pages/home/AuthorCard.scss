@@ -1,0 +1,28 @@
+@import "../../sassStyles/main";
+
+.author-container {
+  @include give-flex-column(center, center);
+  background-color: $bgaccent-light-grey;
+  width: 25%;
+  padding: 2.5vw 5.25vw;
+
+  &:hover {
+    background-color: $bgaccent-light-yellow;
+  }
+
+  .author-icon {
+    width: 128px;
+    border-radius: 50%;
+    margin-bottom: 1.25vw;
+  }
+
+  .author-name {
+    @include h3;
+  }
+
+  .author-position {
+    @include text-secondary;
+    color: $bgaccent-grey;
+    margin-bottom: 1.25vw;
+  }
+}

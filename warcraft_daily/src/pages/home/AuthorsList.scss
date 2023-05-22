@@ -1,1 +1,6 @@
 @import "../../sassStyles/main";
+
+.authors-list-container {
+  @include give-flex-row(stretch, center);
+  gap: 2vw;
+}

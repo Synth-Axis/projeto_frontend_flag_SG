@@ -1,0 +1,76 @@
+@import "../../sassStyles/main";
+
+.category-slider-container {
+  overflow: hidden;
+  padding: 64px;
+
+  .choose-category {
+    @include h2;
+    margin-bottom: 3vw;
+    text-align: center;
+  }
+
+  .category-card-container {
+    @include give-flex-row(stretch, center);
+    position: relative;
+    gap: 2vw;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .btn-prev,
+    .btn-next {
+      background-color: none;
+      position: absolute;
+      background-color: none;
+      border: none;
+      width: 2vw;
+      height: 25%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .btn-prev {
+      left: 0;
+    }
+
+    .btn-next {
+      right: 0;
+    }
+
+    .card-item {
+      padding: 2vw;
+      border: 1px solid rgba(109, 110, 118, 0.3);
+      cursor: pointer;
+      width: 25%;
+
+      &:hover {
+        background-color: $primaryaccent-yellow;
+      }
+
+      .category-icon {
+        width: 3vw;
+        margin-bottom: 1vw;
+      }
+
+      .category-title {
+        @include h3;
+        letter-spacing: -1px;
+        margin-bottom: 0.25vw;
+      }
+
+      .category-description {
+        @include text-primary;
+        color: $bgaccent-grey;
+      }
+    }
+  }
+}
+
+.card-active {
+  background-color: $primaryaccent-yellow;
+}
