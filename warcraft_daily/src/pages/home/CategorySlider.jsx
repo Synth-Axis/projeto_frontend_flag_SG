@@ -94,15 +94,11 @@ const CategorySlider = () => {
   };
 
   const handlePrev = () => {
-    indexStart = indexStart - 1;
-    indexEnd = indexEnd - 1;
-    updateSlides([(indexStart, indexEnd)]);
+    updateSlides([(indexStart - 1, indexEnd - 1)]);
   };
 
   const handleNext = () => {
-    indexStart = indexStart + 1;
-    indexEnd = indexEnd + 1;
-    updateSlides([(indexStart, indexEnd)]);
+    updateSlides([(indexStart + 1, indexEnd + 1)]);
   };
 
   return (
@@ -116,7 +112,7 @@ const CategorySlider = () => {
 
       <div className="category-card-container">
         {currentSlides &&
-          categories(currentSlides).map((element) => (
+          categories.slice([currentSlides]).map((element) => (
             <div key={element.id} className="card-item">
               <p>{element.title}</p>
             </div>
