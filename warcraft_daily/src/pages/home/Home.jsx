@@ -7,6 +7,7 @@ import ResumeTabs from "./SumaryTabs";
 import Partners from "../../components/Partners";
 import CategorySlider from "./CategorySlider";
 import AuthorsList from "./AuthorsList";
+import Testimonials from "./Testimonials";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <CategorySlider />
       <AuthorsList />
       <Partners />
+      <Testimonials />
       <div className="join-us-app">
         <JoinUs />
       </div>

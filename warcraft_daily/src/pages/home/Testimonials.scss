@@ -1,0 +1,17 @@
+@import "../../sassStyles/main";
+
+.testimonials-container {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  background-color: $bgaccent-light-yellow;
+  padding: 5vw 7vw;
+
+  .testimonials-sumary,
+  .testimonials-details {
+    @include give-flex-column(flex-start, flex-start);
+  }
+
+  .testimonials-sumary {
+    border-right: 1px solid $bgaccent-grey;
+  }
+}

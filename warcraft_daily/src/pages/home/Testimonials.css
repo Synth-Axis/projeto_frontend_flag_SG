@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "myFont";
+  src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
+}
+.testimonials-container {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  background-color: #fbf6ea;
+  padding: 5vw 7vw;
+}
+.testimonials-container .testimonials-sumary,
+.testimonials-container .testimonials-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.testimonials-container .testimonials-sumary {
+  border-right: 1px solid #6d6e76;
+}/*# sourceMappingURL=Testimonials.css.map */
