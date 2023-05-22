@@ -9,9 +9,6 @@ import catalyst from "../../assets/media/catalyst-bg.jpg";
 import { useState, useEffect, useRef } from "react";
 
 const Carousel = (props) => {
-  const [activeIndex, SetActiveIndex] = useState(0);
-  const timeoutRef = useRef(null);
-
   const data = [
     {
       id: 1,
@@ -74,6 +71,9 @@ const Carousel = (props) => {
         "The Revival Catalyst allows players to turn in a non-set piece gear item and receive a set piece of the same item level in return. This guide covers all you need to know about the Catalyst, including what it is, where it is, what you need to use it, and what it can do for you.",
     },
   ];
+
+  const [activeIndex, SetActiveIndex] = useState(0);
+  const timeoutRef = useRef(null);
 
   const updateIndex = (newIndex) => {
     if (newIndex < 0) {

@@ -2,37 +2,51 @@
   font-family: "myFont";
   src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
 }
-.category-container {
+.category-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.category-wrapper .choose-category {
+  font-size: 2.25rem;
+  line-height: 3rem;
+  font-weight: 700;
+  margin-bottom: 3vw;
+  text-align: center;
+}
+.category-wrapper .category-container {
   display: flex;
   align-items: stretch;
   justify-content: center;
   gap: 2vw;
+  margin: 0 5vw;
 }
-.category-container .category-card-wrapper {
+.category-wrapper .category-container .category-card-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: stretch;
-  width: 25%;
   padding: 2vw;
   border: 1px solid rgba(109, 110, 118, 0.3);
+  cursor: pointer;
   transition: all 200ms ease;
 }
-.category-container .category-card-wrapper:hover {
+.category-wrapper .category-container .category-card-wrapper:hover {
   background-color: #ffd050;
 }
-.category-container .category-card-wrapper .category-icon {
+.category-wrapper .category-container .category-card-wrapper .category-icon {
   width: 3vw;
   margin-bottom: 1vw;
 }
-.category-container .category-card-wrapper .category-title {
+.category-wrapper .category-container .category-card-wrapper .category-title {
   font-size: 1.75rem;
   line-height: 2.25rem;
   font-weight: 700;
   letter-spacing: -1px;
   margin-bottom: 0.25vw;
 }
-.category-container .category-card-wrapper .category-description {
+.category-wrapper .category-container .category-card-wrapper .category-description {
   font-size: 1rem;
   line-height: 28px;
   color: #6d6e76;
@@ -40,11 +54,4 @@
 
 .card-active {
   background-color: #ffd050;
-  transform: scale(1.05);
-}
-
-.article-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }/*# sourceMappingURL=CategoryCardList.css.map */

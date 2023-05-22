@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "myFont";
+  src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
+}
+.article-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  position: relative;
+  margin: 8vw 5vw;
+}
+.article-container .article-img {
+  width: 75%;
+  height: 100%;
+}
+.article-container .article-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  right: 0;
+  background-color: #ffffff;
+  width: 40%;
+  padding: 5vw;
+}
+.article-container .article-details .article-spec {
+  font-size: 1rem;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 1.5vw;
+}
+.article-container .article-details .article-title {
+  font-size: 3rem;
+  line-height: 4rem;
+  font-weight: 700;
+  letter-spacing: -2px;
+  margin-bottom: 1vw;
+}
+.article-container .article-details .article-sumary {
+  font-size: 1rem;
+  line-height: 28px;
+  color: #6d6e76;
+  margin-bottom: 2vw;
+}/*# sourceMappingURL=CategoryDetail.css.map */

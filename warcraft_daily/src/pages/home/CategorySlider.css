@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "myFont";
+  src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
+}
+.category-slider-container {
+  position: relative;
+  overflow: hidden;
+  padding: 64px;
+}
+.category-slider-container .category-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 0 64px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.category-slider-container .category-card-container::-webkit-scrollbar {
+  display: none;
+}
+.category-slider-container .category-card-container .card-item {
+  min-width: 25%;
+  height: 200px;
+  background-color: grey;
+}
+.category-slider-container .btn-prev,
+.category-slider-container .btn-next {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 60px;
+  height: 60%;
+}
+.category-slider-container .btn-prev {
+  left: 0;
+}
+.category-slider-container .btn-next {
+  right: 0;
+}/*# sourceMappingURL=CategorySlider.css.map */
