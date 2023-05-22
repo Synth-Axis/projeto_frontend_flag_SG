@@ -1,13 +1,18 @@
-import { useState } from "react";
 import "./CategorySlider.scss";
 import demonhunter from "../../assets/media/demonhunter_icon.png";
 import priest from "../../assets/media/priest_icon.png";
 import mage from "../../assets/media/mage_icon.png";
 import paladin from "../../assets/media/paladin_icon.png";
+import hunter from "../../assets/media/hunter_icon.png";
+import warrior from "../../assets/media/warrior_icon.png";
 import demonhunterbg from "../../assets/media/demonhunter.jpg";
 import shadowpriestbg from "../../assets/media/shadowpriest.jpg";
 import frostmagebg from "../../assets/media/frostmage.jpg";
 import paladinbg from "../../assets/media/paladin.jpg";
+import hunterbg from "../../assets/media/hunter.jpg";
+import warriorbg from "../../assets/media/warrior.jpg";
+import CategoryDetail from "./CategoryDetail";
+import { useState } from "react";
 
 const CategorySlider = () => {
   let categories = [
@@ -57,67 +62,100 @@ const CategorySlider = () => {
     },
     {
       id: 5,
-      icon: paladin,
-      title: "Paladin",
-      bg: paladinbg,
+      icon: hunter,
+      title: "Hunter",
+      bg: hunterbg,
       description:
         "This guide will help you master your in all aspects of the game including raids and dungeons.",
-      guideTitle:
-        "The Light is with me. Even in the darkest of all places... Even Here!",
-      guideDescription: "Forged by valor and also by honor - For the Alliance",
+      guideTitle: "Hunter is a ranged-wielding DPS.",
+      guideDescription:
+        "If you like taking down your enemies from afar with carefully considered, powerful shots while focusing on moving as little as possible, Marksmanship is a spec for you.",
     },
     {
       id: 6,
-      icon: paladin,
-      title: "Paladin",
-      bg: paladinbg,
+      icon: warrior,
+      title: "Warrior",
+      bg: warriorbg,
       description:
         "This guide will help you master your in all aspects of the game including raids and dungeons.",
-      guideTitle:
-        "The Light is with me. Even in the darkest of all places... Even Here!",
-      guideDescription: "Forged by valor and also by honor - For the Alliance",
+      guideTitle: "Arms Warriors are high intensity damage dealers.",
+      guideDescription:
+        "Fast-paced playstyle which focuses on sustained damage rather than spikes of big burst.",
     },
   ];
 
-  let indexStart = 0;
-  let indexEnd = 4;
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const [currentSlides, setCurrentSlides] = useState([(indexStart, indexEnd)]);
+  let newArray = [
+    categories[currentIndex],
+    categories[currentIndex + 1],
+    categories[currentIndex + 2],
+    categories[currentIndex + 3],
+  ];
 
-  const updateSlides = ([newSlides]) => {
-    //   // if (newIndex < 0) {
-    //   //   newIndex = data.length - 1;
-    //   // } else if (newIndex >= data.length) {
-    //   //   newIndex = 0;
-    //   // }
-    setCurrentSlides(newSlides);
-  };
-
-  const handlePrev = () => {
-    updateSlides([(indexStart - 1, indexEnd - 1)]);
+  const updateSlides = (newSlides) => {
+    // if (currentIndex - 1 < 0) {
+    //   newSlides = categories.length - 1;
+    // } else if (currentIndex >= categories.length) {
+    //   newSlides = 0;
+    // }
+    setCurrentIndex(newSlides);
   };
 
   const handleNext = () => {
-    updateSlides([(indexStart + 1, indexEnd + 1)]);
+    updateSlides(currentIndex + 1);
+  };
+
+  const handlePrev = () => {
+    updateSlides(currentIndex - 1);
+  };
+
+  const [activeCategory, setActiveCategory] = useState("Demon Hunter");
+
+  const unhide = (eventArgs) => {
+    let clickedCategory = eventArgs.target.id;
+
+    setActiveCategory(clickedCategory);
   };
 
   return (
     <div className="category-slider-container">
-      <button className="btn-prev" onClick={handlePrev}>
-        &lt;
-      </button>
-      <button className="btn-next" onClick={handleNext}>
-        &gt;
-      </button>
-
+      <h2 className="choose-category">Choose A Category</h2>
       <div className="category-card-container">
-        {currentSlides &&
-          categories.slice([currentSlides]).map((element) => (
-            <div key={element.id} className="card-item">
-              <p>{element.title}</p>
+        <button className="btn-prev" onClick={handlePrev}>
+          &lt;
+        </button>
+
+        {newArray &&
+          newArray.map((element) => (
+            <div
+              key={element.id}
+              className={`card-item ${
+                activeCategory === element.title && "card-active"
+              }`}
+              id={element.title}
+              onClick={unhide}
+            >
+              <img
+                className="category-icon"
+                src={element.icon}
+                alt="Class icon"
+              />
+              <h3 className="category-title">{element.title}</h3>
+              <p className="category-description">{element.description}</p>
             </div>
           ))}
+        <button className="btn-next" onClick={handleNext}>
+          &gt;
+        </button>
       </div>
+      {categories.map((element) => (
+        <div key={element.id}>
+          {activeCategory === element.title && (
+            <CategoryDetail data={element} />
+          )}
+        </div>
+      ))}
     </div>
   );
 };

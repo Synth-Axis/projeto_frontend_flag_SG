@@ -4,7 +4,6 @@ import HomeFeaturedPost from "./HomeFeaturedPost";
 import HomeAllPosts from "./HomeAllPosts";
 import JoinUs from "../../components/JoinUs";
 import ResumeTabs from "./SumaryTabs";
-import CategoryCardList from "./CategoryCardList";
 import Partners from "../../components/Partners";
 import CategorySlider from "./CategorySlider";
 
@@ -17,9 +16,8 @@ const Home = () => {
         <HomeAllPosts />
       </div>
       <ResumeTabs />
-      <CategoryCardList />
-      <Partners />
       <CategorySlider />
+      <Partners />
       <div className="join-us-app">
         <JoinUs />
       </div>

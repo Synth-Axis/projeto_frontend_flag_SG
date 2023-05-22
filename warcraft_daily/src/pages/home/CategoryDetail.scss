@@ -3,7 +3,7 @@
 .article-container {
   @include give-flex-row(flex-end, flex-start);
   position: relative;
-  margin: 8vw 5vw;
+  margin: 8vw 0;
 
   .article-img {
     width: 75%;

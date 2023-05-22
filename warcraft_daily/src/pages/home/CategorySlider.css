@@ -3,16 +3,22 @@
   src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
 }
 .category-slider-container {
-  position: relative;
   overflow: hidden;
   padding: 64px;
 }
+.category-slider-container .choose-category {
+  font-size: 2.25rem;
+  line-height: 3rem;
+  font-weight: 700;
+  margin-bottom: 3vw;
+  text-align: center;
+}
 .category-slider-container .category-card-container {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
-  gap: 32px;
-  padding: 0 64px;
+  position: relative;
+  gap: 2vw;
   overflow-x: scroll;
   scroll-behavior: smooth;
   scrollbar-width: none;
@@ -20,24 +26,49 @@
 .category-slider-container .category-card-container::-webkit-scrollbar {
   display: none;
 }
-.category-slider-container .category-card-container .card-item {
-  min-width: 25%;
-  height: 200px;
-  background-color: grey;
-}
-.category-slider-container .btn-prev,
-.category-slider-container .btn-next {
+.category-slider-container .category-card-container .btn-prev,
+.category-slider-container .category-card-container .btn-next {
+  background-color: none;
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: none;
   border: none;
-  width: 60px;
-  height: 60%;
+  width: 2vw;
+  height: 25%;
+  top: 50%;
+  transform: translateY(-50%);
 }
-.category-slider-container .btn-prev {
+.category-slider-container .category-card-container .btn-prev {
   left: 0;
 }
-.category-slider-container .btn-next {
+.category-slider-container .category-card-container .btn-next {
   right: 0;
+}
+.category-slider-container .category-card-container .card-item {
+  padding: 2vw;
+  border: 1px solid rgba(109, 110, 118, 0.3);
+  cursor: pointer;
+  width: 25%;
+}
+.category-slider-container .category-card-container .card-item:hover {
+  background-color: #ffd050;
+}
+.category-slider-container .category-card-container .card-item .category-icon {
+  width: 3vw;
+  margin-bottom: 1vw;
+}
+.category-slider-container .category-card-container .card-item .category-title {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 0.25vw;
+}
+.category-slider-container .category-card-container .card-item .category-description {
+  font-size: 1rem;
+  line-height: 28px;
+  color: #6d6e76;
+}
+
+.card-active {
+  background-color: #ffd050;
 }/*# sourceMappingURL=CategorySlider.css.map */

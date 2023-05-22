@@ -7,7 +7,7 @@
   align-items: flex-end;
   justify-content: flex-start;
   position: relative;
-  margin: 8vw 5vw;
+  margin: 8vw 0;
 }
 .article-container .article-img {
   width: 75%;
