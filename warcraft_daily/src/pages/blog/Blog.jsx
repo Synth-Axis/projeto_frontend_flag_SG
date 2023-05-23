@@ -12,6 +12,9 @@ import frostmage from "../../assets/media/mage-frost.jpg";
 import retributionpaladin from "../../assets/media/paladin-retribution.jpg";
 import restorationshaman from "../../assets/media/shaman-restoration.jpg";
 import BlogFeaturedPost from "./BlogFeaturedPost";
+import AllPosts from "./AllPosts";
+import CategorySlider from "../home/CategorySlider";
+import JoinUs from "../../components/JoinUs";
 
 const Blog = () => {
   const allPosts = [
@@ -146,6 +149,11 @@ const Blog = () => {
   return (
     <div>
       <BlogFeaturedPost data={allPosts[generateRandomPost()]} />
+      <AllPosts data={allPosts} />
+      <CategorySlider />
+      <div className="join-us-app">
+        <JoinUs />
+      </div>
     </div>
   );
 };

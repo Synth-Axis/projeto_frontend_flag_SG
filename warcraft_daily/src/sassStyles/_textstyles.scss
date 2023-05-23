@@ -49,11 +49,11 @@ $font-main: "myFont", sans-serif;
 
 @mixin text-primary {
   font-size: 1rem;
-  line-height: 28px;
+  line-height: 1.75rem;
 }
 @mixin text-secondary {
   font-size: 14px;
-  line-height: 1.25;
+  line-height: 1.25rem;
 }
 
 @mixin text-label {
