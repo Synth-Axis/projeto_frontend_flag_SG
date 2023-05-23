@@ -5,6 +5,7 @@
   grid-template-columns: 40% 1fr;
   background-color: $bgaccent-light-yellow;
   padding: 5vw 7vw;
+  margin-bottom: 8vw;
 
   .testimonials-sumary,
   .testimonials-details {
@@ -12,6 +13,89 @@
   }
 
   .testimonials-sumary {
-    border-right: 1px solid $bgaccent-grey;
+    padding-right: 6vw;
+    border-right: 1px solid rgba(109, 110, 118, 0.4);
+
+    .testimonials-title {
+      font-size: 1rem;
+      line-height: 1.25rem;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 0.75vw;
+    }
+
+    h2 {
+      @include h2;
+      margin-bottom: 1vw;
+    }
+
+    p {
+      @include text-primary;
+    }
+  }
+
+  .testimonials-details-wrapper {
+    padding-left: 6vw;
+    margin-right: 4vw;
+
+    .testimonials-details {
+      position: relative;
+
+      h4 {
+        @include h4;
+        margin-bottom: 7.5vw;
+      }
+
+      .user-details {
+        @include give-flex-row(flex-start, flex-start);
+
+        img {
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+        }
+
+        .user-inner-wrapper {
+          @include give-flex-column(flex-start, center);
+          margin-left: 1vw;
+
+          .user-details-name {
+            @include h4;
+            margin: 0;
+          }
+
+          .user-details-location {
+            @include text-primary;
+            color: $bgaccent-grey;
+          }
+        }
+      }
+    }
+
+    .buttons-container {
+      display: flex;
+      position: absolute;
+      right: 6.875vw;
+      bottom: 0vw;
+      gap: 2vw;
+
+      .arrow-key-left,
+      .arrow-key-right {
+        color: $primary-color;
+        background-color: $white;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        transition: all 250ms ease;
+
+        &:hover {
+          color: $white;
+          background-color: $primary-color;
+          transform: scale(1.25);
+        }
+      }
+    }
   }
 }

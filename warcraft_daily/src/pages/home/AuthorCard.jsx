@@ -7,7 +7,7 @@ const AuthorCard = (props) => {
       <img
         className="author-icon gradient-border"
         src={props.data.photo}
-        alt={`${props.data.name} photo`}
+        alt={props.data.name}
       />
 
       <h3 className="author-name">{props.data.name}</h3>
