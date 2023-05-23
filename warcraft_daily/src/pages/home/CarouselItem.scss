@@ -28,7 +28,7 @@
     letter-spacing: -2px;
   }
 
-  p {
+  .carrousel-author {
     @include text-primary;
     span {
       color: $primaryaccent-yellow;

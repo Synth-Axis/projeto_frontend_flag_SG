@@ -5,6 +5,13 @@ import augmentationevoker from "../../assets/media/augmentationevoker-bg.jpg";
 import gearupgrade from "../../assets/media/gearupgrade-bg.jpg";
 import greatvault from "../../assets/media/greatvault-bg.jpg";
 import catalyst from "../../assets/media/catalyst-bg.jpg";
+import blooddk from "../../assets/media/death-knight-blood.jpg";
+import frostdk from "../../assets/media/death-knight-frost.jpg";
+import unholydk from "../../assets/media/death-knight-unholy.jpg";
+import frostmage from "../../assets/media/mage-frost.jpg";
+import retributionpaladin from "../../assets/media/paladin-retribution.jpg";
+import restorationshaman from "../../assets/media/shaman-restoration.jpg";
+import BlogFeaturedPost from "./BlogFeaturedPost";
 
 const Blog = () => {
   const allPosts = [
@@ -68,11 +75,77 @@ const Blog = () => {
       description:
         "The Revival Catalyst allows players to turn in a non-set piece gear item and receive a set piece of the same item level in return. This guide covers all you need to know about the Catalyst, including what it is, where it is, what you need to use it, and what it can do for you.",
     },
+    {
+      id: 7,
+      image: blooddk,
+      category: "Classes",
+      title: "Blood Death Knight",
+      author: "Synthaxis",
+      date: "May 23, 2023",
+      description:
+        "As one of the six tank specializations in the game, our design as Blood Death Knights involves a reactive, optimization-driven playstyle: generating as much Runic Power as possible through spells and abilities.",
+    },
+    {
+      id: 8,
+      image: frostdk,
+      category: "Classes",
+      title: "Frost Death Knight",
+      author: "Jahel",
+      date: "April 16, 2023",
+      description:
+        "Frost Death Knight is a 2-hand/dual-wield, plate wearer DPS specialisation focusing on physical and magical damage. We can pump out huge hits with our beefed up Obliterates, breathe ice on our enemies with Breath of Sindragosa and Frostwyrm's Fury.",
+    },
+    {
+      id: 9,
+      image: unholydk,
+      category: "Classes",
+      title: "Unholy Death Knight",
+      author: "Perky, the Pug",
+      date: "January 3, 2023",
+      description:
+        "Unholy Death Knight is a 2-hand, plate wearer dps specialisation that focuses on diseases, pets and shadow damage. We summon armies of undead minions, infect our enemies with multiple different plagues and blow up packs of enemies in shadow damage.",
+    },
+    {
+      id: 10,
+      image: frostmage,
+      category: "Classes",
+      title: "Frost Mage",
+      author: "Synthaxis",
+      date: "May 10, 2023",
+      description:
+        "Frost Mage is a cloth wearing ranged damage dealer that excels at dealing sustained damage against any number of stacked targets. It is designed around dealing frequent small bursts of damage with Shatter.",
+    },
+    {
+      id: 11,
+      image: retributionpaladin,
+      category: "Classes",
+      title: "Retribution Paladin",
+      author: "Elethriel",
+      date: "May 24, 2023",
+      description:
+        "Retribution Paladins are holy crusaders, who use a two-handed weapon to turn the power of the light into powerful damaging abilities and bring justice and vengeance to their enemies.",
+    },
+    {
+      id: 12,
+      image: restorationshaman,
+      category: "Classes",
+      title: "Restoration Shaman",
+      author: "Jahel",
+      date: "February 14, 2023",
+      description:
+        "Restoration Shaman call upon the healing properties of water and their iconic totems to keep their group members alive using Mana as the primary resource. We can see far into the distance with Far Sight and have our own separate Hearthstone with Astral Recall.",
+    },
   ];
+
+  const generateRandomPost = () => {
+    let randomPost = Math.random() * allPosts.length;
+    randomPost = Math.floor(randomPost);
+    return randomPost;
+  };
 
   return (
     <div>
-      <p>Blog</p>
+      <BlogFeaturedPost data={allPosts[generateRandomPost()]} />
     </div>
   );
 };
