@@ -1,5 +1,6 @@
 import "./AllPosts.scss";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const AllPosts = (props) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -33,11 +34,13 @@ const AllPosts = (props) => {
     <div className="blog-all-posts-wrapper">
       <h1>All Posts</h1>
       {newArray.map(
-        (element) =>
+        (element, index) =>
           element && (
             <div key={element.id} className="blog-all-posts-container">
               <div className="blog-image-container">
-                <img src={element.image} alt="Post scenario" />
+                <Link to={`/blogpost/${index + 1}`}>
+                  <img src={element.image} alt="Post scenario" />
+                </Link>
               </div>
               <div className="blog-all-posts-details">
                 <p className="blog-all-posts-details-category">

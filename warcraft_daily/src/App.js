@@ -6,7 +6,9 @@ import Blog from "./pages/blog/Blog";
 import AboutUs from "./pages/about/AboutUs";
 import ContactUs from "./pages/contact/ContactUs";
 import Policy from "./pages/policy/Policy";
+import BlogPost from "./pages/blogpost/BlogPost";
 import { Route, Routes } from "react-router-dom";
+import PostData from "../src/assets/objects/PostData";
 
 function App() {
   return (
@@ -15,10 +17,11 @@ function App() {
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog" element={<Blog data={PostData} />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/policy" element={<Policy />} />
+          <Route path="/blogpost/:postId" element={<BlogPost />} />
         </Routes>
       </div>
 
