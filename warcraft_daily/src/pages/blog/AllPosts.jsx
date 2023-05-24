@@ -34,13 +34,11 @@ const AllPosts = (props) => {
     <div className="blog-all-posts-wrapper">
       <h1>All Posts</h1>
       {newArray.map(
-        (element, index) =>
+        (element) =>
           element && (
             <div key={element.id} className="blog-all-posts-container">
               <div className="blog-image-container">
-                <Link to={`/blogpost/${index + 1}`}>
-                  <img src={element.image} alt="Post scenario" />
-                </Link>
+                <img src={element.image} alt="Post scenario" />
               </div>
               <div className="blog-all-posts-details">
                 <p className="blog-all-posts-details-category">
@@ -52,6 +50,9 @@ const AllPosts = (props) => {
                 <p className="blog-all-posts-details-description">
                   {element.description}
                 </p>
+                <Link id={element.id} to={`/blogpost/${element.id}`}>
+                  Read More &gt;
+                </Link>
               </div>
             </div>
           )
