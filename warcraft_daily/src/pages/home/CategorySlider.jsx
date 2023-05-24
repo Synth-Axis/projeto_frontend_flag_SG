@@ -110,12 +110,15 @@ const CategorySlider = () => {
     updateSlides(currentIndex - 1);
   };
 
-  const [activeCategory, setActiveCategory] = useState("Demon Hunter");
+  const [activeCategory, setActiveCategory] = useState("");
 
   const unhide = (eventArgs) => {
     let clickedCategory = eventArgs.target.id;
-
-    setActiveCategory(clickedCategory);
+    if (activeCategory === clickedCategory) {
+      setActiveCategory("");
+    } else {
+      setActiveCategory(clickedCategory);
+    }
   };
 
   return (

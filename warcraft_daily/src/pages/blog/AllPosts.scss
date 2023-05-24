@@ -8,11 +8,16 @@
 
   h1 {
     @include h1;
+    width: 100%;
+    padding-bottom: 2vw;
     letter-spacing: -2px;
+    padding-top: 4vw;
+    border-bottom: 1px solid rgba(109, 110, 118, 0.32);
   }
 
   .blog-all-posts-container {
     @include give-flex-row(center, center);
+    margin-bottom: 2vw;
 
     .blog-image-container {
       width: 70vw;
@@ -62,11 +67,12 @@
       background: none;
       border: none;
       cursor: pointer;
+      transition: all 200ms ease;
+    }
+
+    .btn-disabled {
+      @include h4;
+      color: $bgaccent-grey;
     }
   }
-}
-
-.btn-disabled {
-  @include h4;
-  color: $bgaccent-grey;
 }

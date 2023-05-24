@@ -32,23 +32,27 @@ const AllPosts = (props) => {
   return (
     <div className="blog-all-posts-wrapper">
       <h1>All Posts</h1>
-      {newArray &&
-        newArray.map((element) => (
-          <div key={element.id} className="blog-all-posts-container">
-            <div className="blog-image-container">
-              <img src={element.image} alt="Post scenario" />
+      {newArray.map(
+        (element) =>
+          element && (
+            <div key={element.id} className="blog-all-posts-container">
+              <div className="blog-image-container">
+                <img src={element.image} alt="Post scenario" />
+              </div>
+              <div className="blog-all-posts-details">
+                <p className="blog-all-posts-details-category">
+                  {element.category}
+                </p>
+                <h2 className="blog-all-posts-details-title">
+                  {element.title}
+                </h2>
+                <p className="blog-all-posts-details-description">
+                  {element.description}
+                </p>
+              </div>
             </div>
-            <div className="blog-all-posts-details">
-              <p className="blog-all-posts-details-category">
-                {element.category}
-              </p>
-              <h2 className="blog-all-posts-details-title">{element.title}</h2>
-              <p className="blog-all-posts-details-description">
-                {element.description}
-              </p>
-            </div>
-          </div>
-        ))}
+          )
+      )}
       <div className="all-posts-buttons">
         <input
           disabled={currentIndex === 0 ? true : false}
@@ -58,8 +62,10 @@ const AllPosts = (props) => {
           onClick={handlePrev}
         />
         <input
-          disabled={currentIndex >= props.data.length ? true : false}
-          className={`${currentIndex >= props.data.length && "btn-disabled"}`}
+          disabled={currentIndex + 1 === props.data.length - 1 ? true : false}
+          className={`${
+            currentIndex + 1 === props.data.length - 1 && "btn-disabled"
+          }`}
           type="button"
           value="Next >"
           onClick={handleNext}
