@@ -14,8 +14,8 @@ import { useState } from "react";
 function App() {
   const [postId, setPostId] = useState();
 
-  const sendPostId = (post) => {
-    setPostId(post);
+  const getPostId = (number) => {
+    setPostId(number);
   };
 
   return (
@@ -24,13 +24,16 @@ function App() {
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/blog" element={<Blog data={PostData} />} />
+          <Route
+            path="/blog"
+            element={<Blog postId={getPostId} data={PostData} />}
+          />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/policy" element={<Policy />} />
           <Route
-            path="/blogpost/:postId"
-            element={<BlogPost setPost={sendPostId} data={PostData[postId]} />}
+            path="/blogpost/:id"
+            element={<BlogPost data={PostData[postId]} />}
           />
         </Routes>
       </div>

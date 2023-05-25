@@ -14,7 +14,7 @@ const Blog = (props) => {
   return (
     <div>
       <BlogFeaturedPost data={props.data[generateRandomPost()]} />
-      <AllPosts handleClick={props.setPost} data={props.data} />
+      <AllPosts handleClick={props.postId} data={props.data} />
       <CategorySlider />
       <div className="join-us-app">
         <JoinUs />

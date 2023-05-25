@@ -1,1 +1,64 @@
 @import "../../sassStyles/main";
+
+.post-wrapper {
+  @include give-flex-column(flex-start, center);
+  margin: 8vw 0;
+
+  .author-details {
+    @include give-flex-row(flex-start, flex-start);
+    gap: 1vw;
+    margin: 0 21vw;
+    margin-bottom: 1.5vw;
+
+    .post-author {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+    }
+
+    .post-author-name {
+      @include h3;
+      color: $secondaryaccent-purple;
+    }
+
+    .post-author-date {
+      @include text-primary;
+      color: $bgaccent-grey;
+    }
+  }
+
+  h1 {
+    @include h1;
+    margin: 0 21vw;
+    margin-bottom: 1.125vw;
+  }
+
+  .post-category {
+    @include h4;
+    margin: 0 21vw;
+    margin-bottom: 4vw;
+  }
+
+  .post-background-container {
+    height: 100%;
+    margin: 0 5vw;
+    margin-bottom: 4vw;
+  }
+
+  .post-article-wrapper {
+    @include give-flex-column(center, center);
+    margin: 0 21vw;
+
+    h2 {
+      @include h2;
+      letter-spacing: -2px;
+      margin-bottom: 1vw;
+    }
+
+    .post-sub-text {
+      @include text-primary;
+      color: $bgaccent-grey;
+      margin-bottom: 4vw;
+    }
+  }
+}

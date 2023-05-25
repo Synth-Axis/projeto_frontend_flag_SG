@@ -1,0 +1,32 @@
+@import "../../sassStyles/main";
+
+.post-card-container {
+  @include give-flex-column(center, center);
+
+  .post-image {
+    margin-bottom: 2vw;
+  }
+
+  .post-card-author {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    color: $bglight;
+    margin-bottom: 1vw;
+
+    span {
+      color: $secondaryaccent-purple;
+    }
+  }
+
+  .post-card-title {
+    @include h3;
+    letter-spacing: -1px;
+    margin-bottom: 1vw;
+  }
+
+  .post-card-description {
+    @include text-primary;
+    color: rgba(35, 37, 54, 0.7);
+  }
+}

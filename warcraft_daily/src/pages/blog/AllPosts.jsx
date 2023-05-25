@@ -53,7 +53,9 @@ const AllPosts = (props) => {
                 <Link
                   id={element.id}
                   to={`/blogpost/${element.id}`}
-                  onClick={props.handleCLick(element.id)}
+                  onClick={() => {
+                    props.handleClick(element.id - 1);
+                  }}
                 >
                   Read More &gt;
                 </Link>
