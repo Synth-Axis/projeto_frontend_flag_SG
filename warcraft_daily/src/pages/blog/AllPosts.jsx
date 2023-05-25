@@ -50,7 +50,11 @@ const AllPosts = (props) => {
                 <p className="blog-all-posts-details-description">
                   {element.description}
                 </p>
-                <Link id={element.id} to={`/blogpost/${element.id}`}>
+                <Link
+                  id={element.id}
+                  to={`/blogpost/${element.id}`}
+                  onClick={props.handleCLick(element.id)}
+                >
                   Read More &gt;
                 </Link>
               </div>

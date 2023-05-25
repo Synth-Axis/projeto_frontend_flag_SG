@@ -9,11 +9,13 @@ import Policy from "./pages/policy/Policy";
 import BlogPost from "./pages/blogpost/BlogPost";
 import { Route, Routes } from "react-router-dom";
 import PostData from "../src/assets/objects/PostData";
+import { useState } from "react";
 
 function App() {
-  const handleClick = () => {
-    let postId = 5;
-    return postId;
+  const [postId, setPostId] = useState();
+
+  const sendPostId = (post) => {
+    setPostId(post);
   };
 
   return (
@@ -28,7 +30,7 @@ function App() {
           <Route path="/policy" element={<Policy />} />
           <Route
             path="/blogpost/:postId"
-            element={<BlogPost data={PostData[handleClick()]} />}
+            element={<BlogPost setPost={sendPostId} data={PostData[postId]} />}
           />
         </Routes>
       </div>
