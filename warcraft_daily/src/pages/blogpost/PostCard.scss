@@ -2,9 +2,16 @@
 
 .post-card-container {
   @include give-flex-column(center, center);
+  width: 33%;
 
   .post-image {
     margin-bottom: 2vw;
+    height: 25vw;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   .post-card-author {

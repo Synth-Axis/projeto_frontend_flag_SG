@@ -1,6 +1,6 @@
 import "./BlogPost.scss";
 import JoinUs from "../../components/JoinUs";
-import PostCard from "./PostCard";
+import PostCardSlider from "./PostCardSlider";
 
 const BlogPost = (props) => {
   return (
@@ -33,7 +33,7 @@ const BlogPost = (props) => {
         </div>
       </div>
 
-      <PostCard data={props.data} />
+      <PostCardSlider data={props.data} />
       <JoinUs />
     </div>
   );

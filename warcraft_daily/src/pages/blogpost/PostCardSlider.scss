@@ -1,0 +1,51 @@
+@import "../../sassStyles/main";
+
+.post-card-slider-container {
+  @include give-flex-column(flex-start, center);
+  position: relative;
+  margin: 8vw 5vw;
+  gap: 4vw;
+  padding: 4vw;
+  border-bottom: 1px solid rgba(109, 110, 118, 0.3);
+
+  h2 {
+    @include h2;
+    letter-spacing: -2px;
+  }
+
+  .post-card-slider-inner-container {
+    @include give-flex-row(flex-start, center);
+    gap: 2vw;
+  }
+}
+
+.post-card-slider-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .prev,
+  .next {
+    @include h3;
+    position: absolute;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 200ms ease;
+  }
+
+  .prev {
+    top: 40%;
+    left: 0;
+  }
+
+  .next {
+    top: 40%;
+    right: 0;
+  }
+
+  .btn-disabled {
+    @include h4;
+    color: $bgaccent-grey;
+  }
+}
