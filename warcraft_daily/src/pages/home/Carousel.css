@@ -3,30 +3,43 @@
   src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
 }
 .carousel {
-  margin-bottom: 8vw;
+  width: 100%;
+}
+.carousel .inner-carousel {
+  position: relative;
 }
 .carousel .inner-carousel .carousel-buttons {
   display: flex;
-  align-items: stretch;
+  align-items: center;
   justify-content: center;
-  position: relative;
-  gap: 4vw;
-  margin: 0 1vw;
 }
 .carousel .inner-carousel .carousel-buttons .button-arrow {
+  color: #ffd050;
+  position: absolute;
+  top: 45%;
   background: none;
   border: none;
   cursor: pointer;
-  margin-top: 0.5vw;
   transition: all 200ms ease;
+}
+.carousel .inner-carousel .carousel-buttons .button-arrow span {
+  font-size: 4vw;
 }
 .carousel .inner-carousel .carousel-buttons .button-arrow:hover {
   transform: scale(1.3);
+}
+.carousel .inner-carousel .carousel-buttons .prev-arrow {
+  left: 1.5vw;
+}
+.carousel .inner-carousel .carousel-buttons .next-arrow {
+  right: 0.6vw;
 }
 .carousel .inner-carousel .carousel-buttons .indicators {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  bottom: 2vw;
   gap: 0.5vw;
   margin-top: 0.5vw;
 }
@@ -40,8 +53,12 @@
   transform: scale(1.2);
 }
 .carousel .inner-carousel .carousel-buttons .indicators .indicator-buttons .indicators-symbol {
-  color: #6d6e76;
+  color: #ffd050;
+  filter: brightness(1.5);
+  transition: all 250ms ease;
 }
 .carousel .inner-carousel .carousel-buttons .indicators .indicator-buttons .indicators-symbol-active {
-  color: #232536;
+  color: #592ea9;
+  transform: scale(1.3);
+  filter: brightness(2);
 }/*# sourceMappingURL=Carousel.css.map */

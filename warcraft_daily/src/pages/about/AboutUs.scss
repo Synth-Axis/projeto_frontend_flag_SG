@@ -1,41 +1,65 @@
 @import "../../sassStyles/main";
 
-.container {
-  padding: 4vw 5vw;
+.about-us-container {
+  @include give-flex-column(center, center);
+  gap: 8vw;
+  margin: 0 5vw;
+  padding-top: 4vw;
 
-  .word-box {
-    padding: 1vw;
-    border-radius: 2px;
-    border: 0;
-    background-color: $primary-color;
-    color: $white;
-    box-shadow: 6px 6px 10px #000000;
-  }
-  span {
-    @include h1;
-  }
+  .intro {
+    .word-box {
+      padding: 1vw;
+      border-radius: 2px;
+      border: 0;
+      background-color: $primary-color;
+      color: $white;
+      box-shadow: 6px 6px 10px #000000;
+    }
+    h1 {
+      margin-bottom: 2vw;
+      span {
+        @include h1;
+        margin-bottom: 4vw;
+      }
+    }
 
-  .drop-shadow {
-    margin-left: 1vw;
-    filter: drop-shadow(6px 6px 10px #000000);
-  }
+    .drop-shadow {
+      margin-left: 1vw;
+      filter: drop-shadow(6px 6px 10px #000000);
+    }
 
-  .main-wrp-about {
-    margin: 4vw auto;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
+    .main-wrp-about {
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
 
-    div {
-      p {
-        @include text-primary;
-        margin: 1vw 0;
+      .about-us-text {
+        p {
+          @include text-primary;
+          margin: 1vw 0;
+        }
+        p:last-child {
+          margin-bottom: 0;
+        }
       }
     }
   }
 
   h2 {
-    margin-bottom: 4vw;
+    align-self: flex-start;
+
+    .word-box {
+      padding: 1vw;
+      border-radius: 2px;
+      border: 0;
+      background-color: $primary-color;
+      color: $white;
+      box-shadow: 6px 6px 10px #000000;
+    }
+    span {
+      @include h1;
+      text-align: left;
+    }
   }
 
   .staff-list {

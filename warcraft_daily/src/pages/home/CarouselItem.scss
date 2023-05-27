@@ -26,6 +26,7 @@
   .title {
     @include hero;
     letter-spacing: -2px;
+    text-align: right;
   }
 
   .carrousel-author {

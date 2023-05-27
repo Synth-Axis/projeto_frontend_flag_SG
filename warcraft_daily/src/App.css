@@ -1,1 +1,10 @@
-/*# sourceMappingURL=App.css.map */
+@font-face {
+  font-family: "myFont";
+  src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}/*# sourceMappingURL=App.css.map */

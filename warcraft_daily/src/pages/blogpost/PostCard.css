@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "myFont";
+  src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
+}
+.post-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 33%;
+}
+.post-card-container .post-image {
+  margin-bottom: 2vw;
+  height: 25vw;
+}
+.post-card-container .post-image img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.post-card-container .post-card-author {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  color: #4c4c4c;
+  margin-bottom: 1vw;
+}
+.post-card-container .post-card-author span {
+  color: #592ea9;
+}
+.post-card-container .post-card-title {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 1vw;
+}
+.post-card-container .post-card-description {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  color: rgba(35, 37, 54, 0.7);
+}/*# sourceMappingURL=PostCard.css.map */

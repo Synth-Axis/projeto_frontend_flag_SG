@@ -1,18 +1,19 @@
 @import "../../sassStyles/main";
 
-.home-posts {
-  display: grid;
-  grid-template-columns: 55% 1fr;
-  place-content: start;
-  gap: 32px;
-}
+.home-container {
+  @include give-flex-column(center, center);
+  gap: 8vw;
 
-.join-us-app {
-  @include give-flex-row(center, center);
-}
+  .home-posts {
+    display: grid;
+    grid-template-columns: 55% 1fr;
+    place-content: start;
+    gap: 32px;
+  }
 
-.categories-wrapper {
-  display: flex;
-  margin: 5vw;
-  gap: 2vw;
+  .categories-wrapper {
+    display: flex;
+    margin: 5vw;
+    gap: 2vw;
+  }
 }

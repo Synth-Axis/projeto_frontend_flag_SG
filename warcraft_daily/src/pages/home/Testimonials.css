@@ -7,7 +7,7 @@
   grid-template-columns: 40% 1fr;
   background-color: #fbf6ea;
   padding: 5vw 7vw;
-  margin-bottom: 8vw;
+  margin: 0 5vw;
 }
 .testimonials-container .testimonials-sumary,
 .testimonials-container .testimonials-details {
@@ -35,7 +35,7 @@
 }
 .testimonials-container .testimonials-sumary p {
   font-size: 1rem;
-  line-height: 28px;
+  line-height: 1.75rem;
 }
 .testimonials-container .testimonials-details-wrapper {
   padding-left: 6vw;
@@ -75,7 +75,7 @@
 }
 .testimonials-container .testimonials-details-wrapper .testimonials-details .user-details .user-inner-wrapper .user-details-location {
   font-size: 1rem;
-  line-height: 28px;
+  line-height: 1.75rem;
   color: #6d6e76;
 }
 .testimonials-container .testimonials-details-wrapper .buttons-container {
@@ -83,6 +83,7 @@
   position: absolute;
   right: 6.875vw;
   bottom: 0vw;
+  right: 0;
   gap: 2vw;
 }
 .testimonials-container .testimonials-details-wrapper .buttons-container .arrow-key-left,

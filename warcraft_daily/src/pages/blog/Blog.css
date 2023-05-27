@@ -1,4 +1,11 @@
 @font-face {
   font-family: "myFont";
   src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
+}
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8vw;
 }/*# sourceMappingURL=Blog.css.map */

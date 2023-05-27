@@ -3,7 +3,7 @@
 .author-container {
   @include give-flex-column(center, center);
   background-color: $bgaccent-light-grey;
-  width: 25%;
+  width: 100%;
   padding: 2.5vw;
 
   &:hover {
@@ -11,7 +11,7 @@
   }
 
   .author-icon {
-    width: 128px;
+    width: 50%;
     border-radius: 50%;
     margin-bottom: 1.25vw;
   }

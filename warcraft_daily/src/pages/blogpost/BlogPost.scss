@@ -2,7 +2,9 @@
 
 .post-wrapper {
   @include give-flex-column(flex-start, center);
-  margin: 8vw 0;
+  margin: 8vw 5vw;
+  margin-bottom: 0;
+  gap: 8vw;
 
   .author-details {
     @include give-flex-row(flex-start, flex-start);
@@ -41,24 +43,25 @@
 
   .post-background-container {
     height: 100%;
-    margin: 0 5vw;
     margin-bottom: 4vw;
   }
 
   .post-article-wrapper {
     @include give-flex-column(center, center);
     margin: 0 21vw;
+    gap: 4vw;
 
     h2 {
       @include h2;
+      text-align: center;
       letter-spacing: -2px;
       margin-bottom: 1vw;
     }
 
     .post-sub-text {
       @include text-primary;
+      text-align: center;
       color: $bgaccent-grey;
-      margin-bottom: 4vw;
     }
   }
 }

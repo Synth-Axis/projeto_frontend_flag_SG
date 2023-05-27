@@ -1,4 +1,4 @@
-import "./SumaryTabs.scss";
+import "./ResumeTabs.scss";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -7,11 +7,7 @@ const ResumeTabs = () => {
 
   const unhide = (eventArgs) => {
     let clickedTab = eventArgs.target.id;
-    if (clickedTab === activeTab) {
-      setActiveTab("");
-    } else {
-      setActiveTab(clickedTab);
-    }
+    setActiveTab(clickedTab);
   };
 
   //   const getTabColor = (clickedQuestion) => {
@@ -21,12 +17,18 @@ const ResumeTabs = () => {
   //   };
 
   return (
-    <div className="container">
+    <div className="resume-tabs-container">
       <div className="tabs">
         {/* <h3 id="tab1" onClick={unhide} className={"title" + getTabColor(id)}> */}
-        <span id="tab1" onClick={unhide} className="title"></span>
-        <span id="tab2" onClick={unhide} className="title"></span>
-        <span id="tab3" onClick={unhide} className="title"></span>
+        <span id="tab1" onClick={unhide} className="title">
+          What's New
+        </span>
+        <span id="tab2" onClick={unhide} className="title">
+          What we do
+        </span>
+        <span id="tab3" onClick={unhide} className="title">
+          Join us
+        </span>
       </div>
 
       {activeTab === "tab1" && (

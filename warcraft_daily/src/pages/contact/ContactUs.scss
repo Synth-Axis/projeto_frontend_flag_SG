@@ -2,23 +2,24 @@
 
 .contact-wrapper {
   @include give-flex-column(center, space-between);
-  margin: 8vw 336px;
+  margin: 8vw 21vw;
+  gap: 8vw;
+  margin-bottom: 0;
 
   .contact-top {
     text-align: center;
 
-    p:first-child {
-      letter-spacing: 3px;
-      font-weight: 900;
-      font-size: 1rem;
-      line-height: 1.25rem;
+    .contact-title {
+      margin-bottom: 0.75vw;
     }
 
-    h1 {
-      letter-spacing: -1px;
+    .contact-subtitle {
+      @include h1;
+      letter-spacing: -2px;
+      margin-bottom: 1.5vw;
     }
 
-    p:last-child {
+    .contact-text {
       @include text-primary;
       color: $bgaccent-grey;
     }
@@ -27,7 +28,6 @@
   .company-info {
     @include give-flex-row(center, space-between);
     background-color: $secondaryaccent-purple;
-    margin-top: 4vw;
     width: 100%;
 
     .inner-wrapper {

@@ -1,46 +1,14 @@
 import "./Testimonials.scss";
-import preheat from "../../assets/media/preheat.png";
-import gingi from "../../assets/media/gingi.jpg";
-import annie from "../../assets/media/anniefucshia.jpg";
+
 import { useState } from "react";
 
 const Testimonials = (props) => {
-  const users = [
-    {
-      id: 1,
-      name: "PreHeat",
-      photo: preheat,
-      city: "Berlin",
-      country: "GERMANY",
-      review:
-        "Everything you need to know to master your Devastation Evoker character.",
-    },
-    {
-      id: 2,
-      name: "Gingi",
-      photo: gingi,
-      city: "Hannover",
-      country: "HOLLAND",
-      review:
-        "In truth, it's quite possible to reach the level cap significantly faster than Adelio's record",
-    },
-    {
-      id: 3,
-      name: "AnnieFucshia",
-      photo: annie,
-      city: "Brussels",
-      country: "BELGIUM",
-      review:
-        "Very happy overall with how Season 4 played out as a greatest hits of Shadowlands.",
-    },
-  ];
-
   const [activeIndex, SetActiveIndex] = useState(0);
 
   const updateIndex = (newIndex) => {
     if (newIndex < 0) {
-      newIndex = users.length - 1;
-    } else if (newIndex >= users.length) {
+      newIndex = props.data.length - 1;
+    } else if (newIndex >= props.data.length) {
       newIndex = 0;
     }
     SetActiveIndex(newIndex);
@@ -66,8 +34,8 @@ const Testimonials = (props) => {
       </div>
 
       <div className="testimonials-details-wrapper">
-        {users &&
-          users.map((element) => (
+        {props.data &&
+          props.data.map((element) => (
             <div key={element.id} className="testimonials-details">
               {activeIndex === element.id - 1 && (
                 <div>

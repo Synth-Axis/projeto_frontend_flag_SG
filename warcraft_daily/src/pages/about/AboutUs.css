@@ -2,10 +2,16 @@
   font-family: "myFont";
   src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
 }
-.container {
-  padding: 4vw 5vw;
+.about-us-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8vw;
+  margin: 0 5vw;
+  padding-top: 4vw;
 }
-.container .word-box {
+.about-us-container .intro .word-box {
   padding: 1vw;
   border-radius: 2px;
   border: 0;
@@ -13,30 +19,50 @@
   color: #ffffff;
   box-shadow: 6px 6px 10px #000000;
 }
-.container span {
+.about-us-container .intro h1 {
+  margin-bottom: 2vw;
+}
+.about-us-container .intro h1 span {
   font-size: 3rem;
   line-height: 4rem;
   font-weight: 700;
+  margin-bottom: 4vw;
 }
-.container .drop-shadow {
+.about-us-container .intro .drop-shadow {
   margin-left: 1vw;
   filter: drop-shadow(6px 6px 10px #000000);
 }
-.container .main-wrp-about {
-  margin: 4vw auto;
+.about-us-container .intro .main-wrp-about {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
 }
-.container .main-wrp-about div p {
+.about-us-container .intro .main-wrp-about .about-us-text p {
   font-size: 1rem;
-  line-height: 28px;
+  line-height: 1.75rem;
   margin: 1vw 0;
 }
-.container h2 {
-  margin-bottom: 4vw;
+.about-us-container .intro .main-wrp-about .about-us-text p:last-child {
+  margin-bottom: 0;
 }
-.container .staff-list {
+.about-us-container h2 {
+  align-self: flex-start;
+}
+.about-us-container h2 .word-box {
+  padding: 1vw;
+  border-radius: 2px;
+  border: 0;
+  background-color: #232536;
+  color: #ffffff;
+  box-shadow: 6px 6px 10px #000000;
+}
+.about-us-container h2 span {
+  font-size: 3rem;
+  line-height: 4rem;
+  font-weight: 700;
+  text-align: left;
+}
+.about-us-container .staff-list {
   display: flex;
   flex-flow: row wrap;
   place-content: flex-start;

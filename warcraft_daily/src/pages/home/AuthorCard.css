@@ -8,14 +8,14 @@
   align-items: center;
   justify-content: center;
   background-color: #f4f4f4;
-  width: 25%;
+  width: 100%;
   padding: 2.5vw;
 }
 .author-container:hover {
   background-color: #fbf6ea;
 }
 .author-container .author-icon {
-  width: 128px;
+  width: 50%;
   border-radius: 50%;
   margin-bottom: 1.25vw;
 }
@@ -26,7 +26,7 @@
 }
 .author-container .author-position {
   font-size: 14px;
-  line-height: 1.75;
+  line-height: 1.25rem;
   color: #6d6e76;
   margin-bottom: 1.25vw;
 }/*# sourceMappingURL=AuthorCard.css.map */

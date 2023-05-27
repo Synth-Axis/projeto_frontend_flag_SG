@@ -24,12 +24,18 @@ const BlogPost = (props) => {
           <img src={props.data.image} alt="post scenario" />
         </div>
         <div className="post-article-wrapper">
-          <h2>{props.data.subTitle1}</h2>
-          <p className="post-sub-text">{props.data.subText1}</p>
-          <h2>{props.data.subTitle2}</h2>
-          <p className="post-sub-text">{props.data.subText2}</p>
-          <h2>{props.data.subTitle3}</h2>
-          <p className="post-sub-text">{props.data.subText3}</p>
+          <div>
+            <h2>{props.data.subTitle1}</h2>
+            <p className="post-sub-text">{props.data.subText1}</p>
+          </div>
+          <div>
+            <h2>{props.data.subTitle2}</h2>
+            <p className="post-sub-text">{props.data.subText2}</p>
+          </div>
+          <div>
+            <h2>{props.data.subTitle3}</h2>
+            <p className="post-sub-text">{props.data.subText3}</p>
+          </div>
         </div>
       </div>
 

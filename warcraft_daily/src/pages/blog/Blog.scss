@@ -1,1 +1,6 @@
 @import "../../sassStyles/main";
+
+.blog-container {
+  @include give-flex-column(center, center);
+  gap: 8vw;
+}

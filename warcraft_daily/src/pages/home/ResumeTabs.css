@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "myFont";
+  src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
+}
+.resume-tabs-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5vw;
+  gap: 0.2vw;
+}
+.resume-tabs-container .tabs {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  cursor: pointer;
+  gap: 0.2vw;
+}
+.resume-tabs-container .tabs #tab1,
+.resume-tabs-container .tabs #tab2,
+.resume-tabs-container .tabs #tab3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  border-radius: 0.2rem;
+  transition: all 200ms ease;
+  text-align: center;
+  padding: 1vw;
+}
+.resume-tabs-container .tabs #tab1:hover,
+.resume-tabs-container .tabs #tab2:hover,
+.resume-tabs-container .tabs #tab3:hover {
+  transform: scaleY(1.1);
+}
+.resume-tabs-container .tabs .title {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  background-color: #f4f4f4;
+  width: 25%;
+}
+.resume-tabs-container .tabs .title:nth-child(2) {
+  background-color: #ffd050;
+  width: 50%;
+}
+.resume-tabs-container .tabs .title:nth-child(3) {
+  background-color: #592ea9;
+  width: 25%;
+}
+.resume-tabs-container .info-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #f4f0f8;
+  padding: 6vw 5vw;
+  gap: 5.125vw;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.resume-tabs-container .info-wrapper .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+}
+.resume-tabs-container .info-wrapper .info .info-subject {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.188vw;
+  margin-bottom: 1.5vw;
+}
+.resume-tabs-container .info-wrapper .info .info-title {
+  font-size: 2.25rem;
+  line-height: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.125vw;
+  margin-bottom: 1vw;
+}
+.resume-tabs-container .info-wrapper .info .info-title-right {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1vw;
+}
+.resume-tabs-container .info-wrapper .info .info-description {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  color: #6d6e76;
+  margin-bottom: 1vw;
+}
+.resume-tabs-container .info-wrapper .info .link-to {
+  font-size: 1.125rem;
+  line-height: 2vw;
+  color: #592ea9;
+  cursor: pointer;
+}
+.resume-tabs-container .info-wrapper .info .link-to:hover {
+  filter: drop-shadow(2px 2px 15px black);
+}/*# sourceMappingURL=ResumeTabs.css.map */

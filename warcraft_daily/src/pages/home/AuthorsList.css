@@ -6,5 +6,6 @@
   display: flex;
   align-items: stretch;
   justify-content: center;
+  margin: 0 5vw;
   gap: 2vw;
 }/*# sourceMappingURL=AuthorsList.css.map */

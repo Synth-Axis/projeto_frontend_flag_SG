@@ -32,17 +32,18 @@
   line-height: 4rem;
   font-weight: 700;
   letter-spacing: -2px;
+  text-align: right;
 }
-.carrousel-details p {
+.carrousel-details .carrousel-author {
   font-size: 1rem;
-  line-height: 28px;
+  line-height: 1.75rem;
 }
-.carrousel-details p span {
+.carrousel-details .carrousel-author span {
   color: #ffd050;
 }
 .carrousel-details .description {
   font-size: 1rem;
-  line-height: 28px;
+  line-height: 1.75rem;
   width: 60%;
   text-align: end;
 }/*# sourceMappingURL=CarouselItem.css.map */

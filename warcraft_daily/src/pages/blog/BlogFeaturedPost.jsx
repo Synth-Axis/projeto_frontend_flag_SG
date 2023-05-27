@@ -3,7 +3,7 @@ import Button from "../../components/Button";
 
 const BlogFeaturedPost = (props) => {
   return (
-    <div className="blog-wrapper">
+    <div className="blog-featured-post-wrapper">
       <div className="all-post-details">
         <p className="all-posts-posted-on">FEATURED POST</p>
         <h1 className="all-posts-title">{props.data.title}</h1>

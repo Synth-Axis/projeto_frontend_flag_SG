@@ -3,22 +3,20 @@ import BlogFeaturedPost from "./BlogFeaturedPost";
 import AllPosts from "./AllPosts";
 import CategorySlider from "../home/CategorySlider";
 import JoinUs from "../../components/JoinUs";
+import Categories from "../../assets/objects/Categories";
 
 const Blog = (props) => {
   const generateRandomPost = () => {
-    let randomPost = Math.random() * props.data.length;
-    randomPost = Math.floor(randomPost);
+    let randomPost = Math.floor(Math.random() * props.data.length);
     return randomPost;
   };
 
   return (
-    <div>
+    <div className="blog-container">
       <BlogFeaturedPost data={props.data[generateRandomPost()]} />
       <AllPosts handleClick={props.postId} data={props.data} />
-      <CategorySlider />
-      <div className="join-us-app">
-        <JoinUs />
-      </div>
+      <CategorySlider data={Categories} />
+      <JoinUs />
     </div>
   );
 };

@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "myFont";
+  src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
+}
+.post-card-slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  gap: 4vw;
+  border-bottom: 1px solid rgba(109, 110, 118, 0.3);
+}
+.post-card-slider-container h2 {
+  font-size: 2.25rem;
+  line-height: 3rem;
+  font-weight: 700;
+  letter-spacing: -2px;
+}
+.post-card-slider-container .post-card-slider-inner-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2vw;
+  padding: 0 2vw;
+}
+
+.post-card-slider-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.post-card-slider-buttons .prev,
+.post-card-slider-buttons .next {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+.post-card-slider-buttons .prev {
+  top: 40%;
+  left: 0;
+}
+.post-card-slider-buttons .next {
+  top: 40%;
+  right: 0;
+}
+.post-card-slider-buttons .btn-disabled {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: #6d6e76;
+}/*# sourceMappingURL=PostCardSlider.css.map */

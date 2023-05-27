@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "myFont";
+  src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
+}
+.post-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 8vw 5vw;
+  margin-bottom: 0;
+  gap: 8vw;
+}
+.post-wrapper .author-details {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1vw;
+  margin: 0 21vw;
+  margin-bottom: 1.5vw;
+}
+.post-wrapper .author-details .post-author {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.post-wrapper .author-details .post-author-name {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  color: #592ea9;
+}
+.post-wrapper .author-details .post-author-date {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  color: #6d6e76;
+}
+.post-wrapper h1 {
+  font-size: 3rem;
+  line-height: 4rem;
+  font-weight: 700;
+  margin: 0 21vw;
+  margin-bottom: 1.125vw;
+}
+.post-wrapper .post-category {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  margin: 0 21vw;
+  margin-bottom: 4vw;
+}
+.post-wrapper .post-background-container {
+  height: 100%;
+  margin-bottom: 4vw;
+}
+.post-wrapper .post-article-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 21vw;
+  gap: 4vw;
+}
+.post-wrapper .post-article-wrapper h2 {
+  font-size: 2.25rem;
+  line-height: 3rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: -2px;
+  margin-bottom: 1vw;
+}
+.post-wrapper .post-article-wrapper .post-sub-text {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  text-align: center;
+  color: #6d6e76;
+}/*# sourceMappingURL=BlogPost.css.map */
