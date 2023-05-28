@@ -12,13 +12,21 @@ import PostData from "../../assets/objects/PostData";
 import Categories from "../../assets/objects/Categories";
 import Users from "../../assets/objects/Users";
 
-const Home = () => {
+const Home = (props) => {
+  const generateRandomPost = () => {
+    let randomPost = Math.floor(Math.random() * props.data.length);
+    return randomPost;
+  };
+
   return (
     <div className="home-container">
-      <Carousel data={PostData} />
+      <Carousel getPostId={props.postId} data={PostData} />
       <div className="home-posts">
-        <HomeFeaturedPost />
-        <HomeAllPosts data={PostData} />
+        <HomeFeaturedPost
+          handleClick={props.postId}
+          data={PostData[generateRandomPost()]}
+        />
+        <HomeAllPosts handleClick={props.postId} data={PostData} />
       </div>
       <ResumeTabs />
       <CategorySlider data={Categories} />

@@ -23,7 +23,7 @@
   transition: all 200ms ease;
 }
 .carousel .inner-carousel .carousel-buttons .button-arrow span {
-  font-size: 4vw;
+  font-size: 2vw;
 }
 .carousel .inner-carousel .carousel-buttons .button-arrow:hover {
   transform: scale(1.3);

@@ -1,5 +1,6 @@
 import "./CarouselItem.scss";
 import Button from "../../components/Button";
+import { Link } from "react-router-dom";
 
 const CarouselItem = (props) => {
   return (
@@ -14,7 +15,9 @@ const CarouselItem = (props) => {
           By <span>{props.data.author}</span> | {props.data.date}
         </p>
         <p className="description">{props.data.description}</p>
-        <Button text="Read More >" />
+        <Link to={`/blogpost/${props.data.id}`}>
+          <Button text="Read More >" onClick={props.handleClick} />
+        </Link>
       </div>
     </div>
   );

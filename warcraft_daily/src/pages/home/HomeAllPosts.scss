@@ -10,34 +10,52 @@
     @include give-flex-row(center, space-between);
     margin-bottom: 2vw;
 
-    span:first-child {
+    .all-posts-inner-title {
       @include h2;
     }
-    span:last-child {
+
+    .view-all-link {
       @include text-primary;
       align-self: flex-end;
+      cursor: pointer;
+
+      &:hover {
+        filter: drop-shadow(2px 2px 5px black);
+      }
     }
   }
 
-  .all-post-inner {
-    @include give-flex-column(flex-start, center);
-    padding: 2vw;
+  .all-posts-scroll-container {
+    height: 650px;
+    scrollbar-width: none;
+    overflow-y: auto;
+    scroll-behavior: smooth;
 
-    &:hover {
-      background-color: $bgaccent-light-yellow;
+    &::-webkit-scrollbar {
+      display: none;
     }
 
-    p {
-      @include text-label;
-      font-weight: 500;
-      margin-bottom: 0.5vw;
-      span {
-        color: $secondaryaccent-purple;
+    .all-post-inner {
+      @include give-flex-column(flex-start, center);
+      padding: 2vw;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $bgaccent-light-yellow;
       }
-    }
 
-    .all-post-title {
-      @include h4;
+      p {
+        @include text-label;
+        font-weight: 500;
+        margin-bottom: 0.5vw;
+        span {
+          color: $secondaryaccent-purple;
+        }
+      }
+
+      .all-post-title {
+        @include h4;
+      }
     }
   }
 }

@@ -1,5 +1,6 @@
 import "./JoinUs.scss";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const JoinUs = () => {
   return (
@@ -8,7 +9,10 @@ const JoinUs = () => {
       <p>
         Would you like to become a contributing writer or partner up with us?
       </p>
-      <Button text="Join Now" />
+
+      <Link to="/contact">
+        <Button text="Join Now" />
+      </Link>
     </div>
   );
 };

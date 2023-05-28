@@ -28,6 +28,9 @@
 .featured-post-wrapper .featured-post-inner .post-image {
   width: 100%;
   margin-bottom: 2vw;
+  height: 310px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .featured-post-wrapper .featured-post-inner p {
   font-size: 0.875rem;

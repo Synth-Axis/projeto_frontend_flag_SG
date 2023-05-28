@@ -14,37 +14,51 @@
   justify-content: space-between;
   margin-bottom: 2vw;
 }
-.all-post-wrapper .all-post-header span:first-child {
+.all-post-wrapper .all-post-header .all-posts-inner-title {
   font-size: 2.25rem;
   line-height: 3rem;
   font-weight: 700;
 }
-.all-post-wrapper .all-post-header span:last-child {
+.all-post-wrapper .all-post-header .view-all-link {
   font-size: 1rem;
   line-height: 1.75rem;
   align-self: flex-end;
+  cursor: pointer;
 }
-.all-post-wrapper .all-post-inner {
+.all-post-wrapper .all-post-header .view-all-link:hover {
+  filter: drop-shadow(2px 2px 5px black);
+}
+.all-post-wrapper .all-posts-scroll-container {
+  height: 650px;
+  scrollbar-width: none;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+.all-post-wrapper .all-posts-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+.all-post-wrapper .all-posts-scroll-container .all-post-inner {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   padding: 2vw;
+  cursor: pointer;
 }
-.all-post-wrapper .all-post-inner:hover {
+.all-post-wrapper .all-posts-scroll-container .all-post-inner:hover {
   background-color: #fbf6ea;
 }
-.all-post-wrapper .all-post-inner p {
+.all-post-wrapper .all-posts-scroll-container .all-post-inner p {
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 600;
   font-weight: 500;
   margin-bottom: 0.5vw;
 }
-.all-post-wrapper .all-post-inner p span {
+.all-post-wrapper .all-posts-scroll-container .all-post-inner p span {
   color: #592ea9;
 }
-.all-post-wrapper .all-post-inner .all-post-title {
+.all-post-wrapper .all-posts-scroll-container .all-post-inner .all-post-title {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;

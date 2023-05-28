@@ -23,7 +23,10 @@ function App() {
       <Navigation />
       <div>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route
+            path="/"
+            element={<Home postId={getPostId} data={PostData} />}
+          />
           <Route
             path="/blog"
             element={<Blog postId={getPostId} data={PostData} />}

@@ -49,7 +49,11 @@ const Carousel = (props) => {
           props.data.map((element) => (
             <div key={element.id}>
               {activeIndex === element.id - 1 && (
-                <CarouselItem key={element.id} data={element} />
+                <CarouselItem
+                  key={element.id}
+                  data={element}
+                  handleClick={props.getPostId(element.id - 1)}
+                />
               )}
             </div>
           ))}

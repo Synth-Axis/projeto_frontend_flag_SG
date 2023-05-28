@@ -4,17 +4,20 @@ import NavMenu from "./NavMenu";
 import Button from "./Button";
 import Input from "./Input";
 import Socials from "./Socials";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <div className="footer">
       <div className="footer-top">
-        <Logo />
+        <Link to="/">
+          <Logo />
+        </Link>
         <NavMenu />
       </div>
       <div className="subscribe">
         <p>Subscribe to our news letter to get latest updates and news</p>
-        <div className="hero-box">
+        <div id="subscribe" className="hero-box">
           <Input
             class="input-email"
             type="email"
