@@ -2,10 +2,47 @@
   font-family: "myFont";
   src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
 }
+@media only screen and (max-width: 1440px) {
+  :root {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  :root {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  :root {
+    font-size: 10px;
+  }
+}
 .blog-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 60px;
   gap: 8vw;
+}
+
+@media only screen and (max-width: 576px) {
+  .post-image-container {
+    display: none;
+  }
+  .blog-image-container {
+    display: none;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .category-slider-container {
+    width: 95%;
+  }
+  .category-slider-container .category-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .category-slider-container .category-card-container .card-item {
+    width: auto;
+  }
 }/*# sourceMappingURL=Blog.css.map */

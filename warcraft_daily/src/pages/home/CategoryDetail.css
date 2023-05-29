@@ -2,12 +2,27 @@
   font-family: "myFont";
   src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
 }
+@media only screen and (max-width: 1440px) {
+  :root {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  :root {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  :root {
+    font-size: 10px;
+  }
+}
 .article-container {
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
   position: relative;
-  margin: 8vw 0;
+  margin-top: 4vw;
 }
 .article-container .article-img {
   width: 75%;
@@ -43,4 +58,26 @@
   line-height: 1.75rem;
   color: #6d6e76;
   margin-bottom: 2vw;
+}
+
+@media only screen and (max-width: 1440px) {
+  .article-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .article-container .article-img {
+    width: 100%;
+  }
+  .article-container .article-details {
+    bottom: 0;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .category-description {
+    display: none;
+  }
+  .article-container .article-details {
+    position: relative;
+    width: auto;
+  }
 }/*# sourceMappingURL=CategoryDetail.css.map */

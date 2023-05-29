@@ -1,4 +1,19 @@
 @font-face {
   font-family: "myFont";
   src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
+}
+@media only screen and (max-width: 1440px) {
+  :root {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  :root {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  :root {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=Policy.css.map */

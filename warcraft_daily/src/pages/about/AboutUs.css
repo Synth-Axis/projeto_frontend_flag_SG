@@ -2,13 +2,28 @@
   font-family: "myFont";
   src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
 }
+@media only screen and (max-width: 1440px) {
+  :root {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  :root {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  :root {
+    font-size: 10px;
+  }
+}
 .about-us-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 8vw;
-  margin: 0 5vw;
+  margin: 60px 5vw 0 5vw;
   padding-top: 4vw;
 }
 .about-us-container .drop-shadow {
@@ -80,10 +95,13 @@
   .about-us-container .staff-list {
     flex-direction: column;
   }
-  .about-us-container .staff-list .image-container {
+  .about-us-container .staff-list .staff-card {
+    flex-direction: row;
+  }
+  .about-us-container .staff-list .staff-card .image-container {
     height: 50vw;
   }
-  .about-us-container .staff-list .player-text {
+  .about-us-container .staff-list .staff-card .player-text {
     width: 100%;
   }
 }

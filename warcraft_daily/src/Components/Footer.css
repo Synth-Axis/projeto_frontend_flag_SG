@@ -2,12 +2,27 @@
   font-family: "myFont";
   src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
 }
+@media only screen and (max-width: 1440px) {
+  :root {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  :root {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  :root {
+    font-size: 10px;
+  }
+}
 .footer {
   background-color: #232536;
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  padding: 60px 80px;
+  padding: 3.75vw 5vw;
   margin-top: 8vw;
 }
 .footer .footer-top {

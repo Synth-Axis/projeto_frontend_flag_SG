@@ -2,6 +2,21 @@
   font-family: "myFont";
   src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
 }
+@media only screen and (max-width: 1440px) {
+  :root {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  :root {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  :root {
+    font-size: 10px;
+  }
+}
 .logo-container {
   display: flex;
   align-items: center;
@@ -17,4 +32,8 @@
   font-size: 1.25rem;
   line-height: 2rem;
   font-weight: 700;
+}
+
+.logo-nav {
+  margin-left: 5vw;
 }/*# sourceMappingURL=Logo.css.map */

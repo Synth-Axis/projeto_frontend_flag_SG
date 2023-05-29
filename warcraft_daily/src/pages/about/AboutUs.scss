@@ -3,7 +3,7 @@
 .about-us-container {
   @include give-flex-column(center, center);
   gap: 8vw;
-  margin: 0 5vw;
+  margin: 60px 5vw 0 5vw;
   padding-top: 4vw;
 
   .drop-shadow {
@@ -81,12 +81,17 @@
 
     .staff-list {
       flex-direction: column;
-      .image-container {
-        height: 50vw;
-      }
 
-      .player-text {
-        width: 100%;
+      .staff-card {
+        flex-direction: row;
+
+        .image-container {
+          height: 50vw;
+        }
+
+        .player-text {
+          width: 100%;
+        }
       }
     }
   }

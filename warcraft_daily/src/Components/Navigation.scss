@@ -1,22 +1,33 @@
 @import "../sassStyles/main";
 
-.header {
-  @include give-flex-row(center, space-between);
-  background-color: $primary-color;
-  color: $white;
-  padding: 0.75vw 5vw;
+.header-wrapper {
+  padding: 0 5vw;
+  .header {
+    @include give-flex-row(center, space-between);
+    background-color: $primary-color;
+    color: $white;
+    padding: 0.75vw 0vw;
+    position: fixed;
+    height: 60px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    margin: 0 auto;
+    max-width: 1600px;
 
-  .nav-block {
-    @include give-flex-row(center, center);
+    .nav-block {
+      @include give-flex-row(center, center);
 
-    .nav {
-      li:last-child {
-        display: none;
+      .nav {
+        li:last-child {
+          display: none;
+        }
       }
-    }
 
-    .btn-nav {
-      margin-left: 2vw;
+      .btn-nav {
+        margin-left: 2vw;
+      }
     }
   }
 }

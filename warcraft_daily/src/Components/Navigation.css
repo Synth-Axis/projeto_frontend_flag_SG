@@ -2,22 +2,48 @@
   font-family: "myFont";
   src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
 }
-.header {
+@media only screen and (max-width: 1440px) {
+  :root {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  :root {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  :root {
+    font-size: 10px;
+  }
+}
+.header-wrapper {
+  padding: 0 5vw;
+}
+.header-wrapper .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #232536;
   color: #ffffff;
-  padding: 0.75vw 5vw;
+  padding: 0.75vw 0vw;
+  position: fixed;
+  height: 60px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  margin: 0 auto;
+  max-width: 1600px;
 }
-.header .nav-block {
+.header-wrapper .header .nav-block {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.header .nav-block .nav li:last-child {
+.header-wrapper .header .nav-block .nav li:last-child {
   display: none;
 }
-.header .nav-block .btn-nav {
+.header-wrapper .header .nav-block .btn-nav {
   margin-left: 2vw;
 }/*# sourceMappingURL=Navigation.css.map */

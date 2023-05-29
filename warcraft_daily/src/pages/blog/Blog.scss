@@ -2,5 +2,33 @@
 
 .blog-container {
   @include give-flex-column(center, center);
+  margin-top: 60px;
   gap: 8vw;
+}
+
+//Mobile: 576px
+
+@media only screen and (max-width: $mobile) {
+  .post-image-container {
+    display: none;
+  }
+
+  .blog-image-container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .category-slider-container {
+    width: 95%;
+
+    .category-card-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .card-item {
+        width: auto;
+      }
+    }
+  }
 }
