@@ -14,7 +14,7 @@
 
   .subscribe {
     @include h2;
-    @include give-flex-row(baseline, space-between);
+    @include give-flex-row(center, space-between);
     gap: 1.5vw;
     background-color: rgba(255, 255, 255, 0.05);
     margin: 3.75vw 0 3vw 0;
@@ -54,6 +54,38 @@
 
     div {
       @include give-flex-row(baseline, space-between);
+    }
+  }
+}
+
+//Desktop: 1440px
+@media only screen and (max-width: $desktop) {
+  .footer {
+    #subscribe {
+      @include give-flex-column(center, center);
+      gap: 2vw;
+
+      .input-email {
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+}
+
+//Tablet: 1200px
+@media only screen and (max-width: $tablet) {
+  .footer {
+    .subscribe {
+      flex-direction: column;
+
+      p {
+        text-align: center;
+        width: 100%;
+      }
+    }
+    #subscribe {
+      margin-left: 3vw;
     }
   }
 }

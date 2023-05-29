@@ -30,3 +30,12 @@
     left: 0;
   }
 }
+
+//Tablet: 1200px
+@media only screen and (max-width: $tablet) {
+  .nav {
+    margin-left: 4vw;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+}

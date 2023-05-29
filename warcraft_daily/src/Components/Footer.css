@@ -20,7 +20,7 @@
   line-height: 3rem;
   font-weight: 700;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   gap: 1.5vw;
   background-color: rgba(255, 255, 255, 0.05);
@@ -62,4 +62,30 @@
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 1440px) {
+  .footer #subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+  }
+  .footer #subscribe .input-email {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .footer .subscribe {
+    flex-direction: column;
+  }
+  .footer .subscribe p {
+    text-align: center;
+    width: 100%;
+  }
+  .footer #subscribe {
+    margin-left: 3vw;
+  }
 }/*# sourceMappingURL=Footer.css.map */

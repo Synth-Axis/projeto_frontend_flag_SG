@@ -30,4 +30,12 @@
 .nav .nav-link-underline:hover::before {
   width: 100%;
   left: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .nav {
+    margin-left: 4vw;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=NavMenu.css.map */
