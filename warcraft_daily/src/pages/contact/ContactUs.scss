@@ -84,3 +84,14 @@
     padding: 1.5vw;
   }
 }
+
+//Tablet-min: 768px
+@media only screen and (max-width: 768px) {
+  .company-info {
+    flex-direction: column;
+
+    .inner-wrapper {
+      width: auto !important;
+    }
+  }
+}
