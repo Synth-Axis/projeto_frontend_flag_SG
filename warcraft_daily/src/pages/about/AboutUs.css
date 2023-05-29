@@ -11,6 +11,13 @@
   margin: 0 5vw;
   padding-top: 4vw;
 }
+.about-us-container .drop-shadow {
+  margin-left: 1vw;
+  filter: drop-shadow(6px 6px 10px #000000);
+}
+.about-us-container .intro {
+  padding: 0 1vw;
+}
 .about-us-container .intro .word-box {
   padding: 1vw;
   border-radius: 2px;
@@ -27,10 +34,6 @@
   line-height: 4rem;
   font-weight: 700;
   margin-bottom: 4vw;
-}
-.about-us-container .intro .drop-shadow {
-  margin-left: 1vw;
-  filter: drop-shadow(6px 6px 10px #000000);
 }
 .about-us-container .intro .main-wrp-about {
   display: flex;
@@ -68,4 +71,34 @@
   place-content: flex-start;
   align-items: stretch;
   gap: 2vw;
+}
+
+@media only screen and (max-width: 1200px) {
+  .about-us-container .intro {
+    padding: 0 2vw;
+  }
+  .about-us-container .staff-list {
+    flex-direction: column;
+  }
+  .about-us-container .staff-list .image-container {
+    height: 50vw;
+  }
+  .about-us-container .staff-list .player-text {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .about-us-container .staff-list {
+    gap: 6vw;
+  }
+  .about-us-container .staff-list .staff-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-us-container .staff-list .staff-card .image-container {
+    height: 100%;
+  }
+  .about-us-container .staff-list .staff-card .player-text {
+    width: 50%;
+  }
 }/*# sourceMappingURL=AboutUs.css.map */

@@ -6,7 +6,13 @@
   margin: 0 5vw;
   padding-top: 4vw;
 
+  .drop-shadow {
+    margin-left: 1vw;
+    filter: drop-shadow(6px 6px 10px #000000);
+  }
+
   .intro {
+    padding: 0 1vw;
     .word-box {
       padding: 1vw;
       border-radius: 2px;
@@ -21,11 +27,6 @@
         @include h1;
         margin-bottom: 4vw;
       }
-    }
-
-    .drop-shadow {
-      margin-left: 1vw;
-      filter: drop-shadow(6px 6px 10px #000000);
     }
 
     .main-wrp-about {
@@ -68,5 +69,46 @@
     place-content: flex-start;
     align-items: stretch;
     gap: 2vw;
+  }
+}
+
+//Tablet: 1200px
+@media only screen and (max-width: $tablet) {
+  .about-us-container {
+    .intro {
+      padding: 0 2vw;
+    }
+
+    .staff-list {
+      flex-direction: column;
+      .image-container {
+        height: 50vw;
+      }
+
+      .player-text {
+        width: 100%;
+      }
+    }
+  }
+}
+
+//Tablet-small: 768px
+@media only screen and (max-width: $tablet) {
+  .about-us-container {
+    .staff-list {
+      gap: 6vw;
+      .staff-card {
+        flex-direction: column;
+        align-items: center;
+
+        .image-container {
+          height: 100%;
+        }
+
+        .player-text {
+          width: 50%;
+        }
+      }
+    }
   }
 }
