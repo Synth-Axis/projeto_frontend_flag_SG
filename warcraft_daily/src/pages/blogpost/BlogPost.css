@@ -14,7 +14,7 @@
 }
 @media only screen and (max-width: 576px) {
   :root {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
 .post-wrapper {

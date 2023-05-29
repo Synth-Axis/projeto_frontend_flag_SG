@@ -59,3 +59,21 @@
     }
   }
 }
+
+@media only screen and (max-width: $mobile) {
+  .home-container {
+    .featured-post-wrapper {
+      margin: 0 5vw;
+    }
+
+    .home-posts {
+      display: flex;
+      flex-direction: column;
+
+      .all-post-wrapper {
+        margin: 0 5vw;
+        height: 280px;
+      }
+    }
+  }
+}

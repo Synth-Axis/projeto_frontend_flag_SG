@@ -26,3 +26,9 @@
     margin-bottom: 1.25vw;
   }
 }
+
+@media only screen and (max-width: $mobile) {
+  .author-container {
+    padding: 2.5vw 0;
+  }
+}

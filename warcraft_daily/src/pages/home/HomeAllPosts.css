@@ -14,7 +14,7 @@
 }
 @media only screen and (max-width: 576px) {
   :root {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
 .all-post-wrapper {
@@ -77,4 +77,18 @@
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
+}
+
+@media only screen and (max-width: 576px) {
+  .home-container .featured-post-wrapper {
+    margin: 0 5vw;
+  }
+  .home-container .home-posts {
+    display: flex;
+    flex-direction: column;
+  }
+  .home-container .home-posts .all-post-wrapper {
+    margin: 0 5vw;
+    height: 280px;
+  }
 }/*# sourceMappingURL=HomeAllPosts.css.map */
