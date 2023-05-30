@@ -55,7 +55,7 @@
       }
 
       .category-icon {
-        width: 3vw;
+        width: 6vw;
         margin-bottom: 1vw;
       }
 
@@ -77,7 +77,7 @@
   background-color: $primaryaccent-yellow;
 }
 
-@media only screen and (max-width: $mobile) {
+@media only screen and (max-width: $tablet) {
   .category-slider-container {
     width: 95%;
 
@@ -86,7 +86,13 @@
       grid-template-columns: 1fr 1fr;
 
       .card-item {
+        @include give-flex-row(center, flex-start);
         width: auto;
+
+        .category-title {
+          letter-spacing: 0;
+          margin-left: 1vw;
+        }
       }
     }
   }

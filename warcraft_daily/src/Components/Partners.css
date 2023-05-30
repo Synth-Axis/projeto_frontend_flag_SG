@@ -14,7 +14,7 @@
 }
 @media only screen and (max-width: 576px) {
   :root {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 .partners-banner {
@@ -38,4 +38,10 @@
 }
 .partners-banner .partners-logos:hover {
   opacity: 1;
+}
+
+@media only screen and (max-width: 1440px) {
+  .partners-banner {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=Partners.css.map */

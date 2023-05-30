@@ -14,7 +14,7 @@
 }
 @media only screen and (max-width: 576px) {
   :root {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 .testimonials-container {
@@ -117,4 +117,15 @@
   color: #ffffff;
   background-color: #232536;
   transform: scale(1.25);
+}
+
+@media only screen and (max-width: 768px) {
+  .testimonials-container .testimonials-details-wrapper .user-details {
+    flex-direction: column;
+  }
+  .testimonials-container .testimonials-details-wrapper .user-details .buttons-container {
+    top: 4vw;
+    position: relative;
+    padding-bottom: 4vw;
+  }
 }/*# sourceMappingURL=Testimonials.css.map */

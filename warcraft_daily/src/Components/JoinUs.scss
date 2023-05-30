@@ -19,3 +19,11 @@
     margin-bottom: 2vw;
   }
 }
+
+@media only screen and (max-width: $tablet) {
+  .join-us {
+    h2 {
+      letter-spacing: 0;
+    }
+  }
+}

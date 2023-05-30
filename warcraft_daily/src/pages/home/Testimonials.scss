@@ -100,3 +100,19 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .testimonials-container {
+    .testimonials-details-wrapper {
+      .user-details {
+        flex-direction: column;
+
+        .buttons-container {
+          top: 4vw;
+          position: relative;
+          padding-bottom: 4vw;
+        }
+      }
+    }
+  }
+}

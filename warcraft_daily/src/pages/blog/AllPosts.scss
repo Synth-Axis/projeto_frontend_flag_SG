@@ -43,6 +43,10 @@
         @include h2;
         letter-spacing: -2px;
         margin-bottom: 1vw;
+
+        @media only screen and (max-width: $tablet) {
+          letter-spacing: -1px;
+        }
       }
 
       .blog-all-posts-details-description {

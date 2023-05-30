@@ -1,5 +1,6 @@
 import "./BlogFeaturedPost.scss";
 import Button from "../../components/Button";
+import { Link } from "react-router-dom";
 
 const BlogFeaturedPost = (props) => {
   return (
@@ -11,7 +12,15 @@ const BlogFeaturedPost = (props) => {
           By <span>{props.data.author}</span> | {props.data.date}
         </p>
         <p className="all-posts-description">{props.data.description}</p>
-        <Button text="Read More >" />
+        <Link
+          key={props.data.id}
+          to={`/blogpost/${props.data.id}`}
+          onClick={() => {
+            props.handleClick(props.data.id);
+          }}
+        >
+          <Button text="Read More >" />
+        </Link>
       </div>
       <div className="post-image-container">
         <img src={props.data.image} alt="Post scenario" />

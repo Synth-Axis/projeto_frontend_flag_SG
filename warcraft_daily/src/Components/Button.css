@@ -14,7 +14,7 @@
 }
 @media only screen and (max-width: 576px) {
   :root {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 .btn {
@@ -32,10 +32,15 @@
 }
 .btn:hover {
   background-color: #edc14a;
+  transform: scale(1.03);
 }
 
 .btn-nav {
   background-color: #ffffff;
   color: #232536;
   margin-right: 5vw;
+}
+
+.btn-burguer {
+  margin-right: 0;
 }/*# sourceMappingURL=Button.css.map */

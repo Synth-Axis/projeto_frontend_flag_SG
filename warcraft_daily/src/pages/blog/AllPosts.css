@@ -14,7 +14,7 @@
 }
 @media only screen and (max-width: 576px) {
   :root {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 .blog-all-posts-wrapper {
@@ -65,6 +65,11 @@
   font-weight: 700;
   letter-spacing: -2px;
   margin-bottom: 1vw;
+}
+@media only screen and (max-width: 1200px) {
+  .blog-all-posts-wrapper .blog-all-posts-container .blog-all-posts-details .blog-all-posts-details-title {
+    letter-spacing: -1px;
+  }
 }
 .blog-all-posts-wrapper .blog-all-posts-container .blog-all-posts-details .blog-all-posts-details-description {
   font-size: 1rem;

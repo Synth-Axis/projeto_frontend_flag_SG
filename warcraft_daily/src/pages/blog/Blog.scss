@@ -17,18 +17,3 @@
     display: none;
   }
 }
-
-@media only screen and (max-width: $mobile) {
-  .category-slider-container {
-    width: 95%;
-
-    .category-card-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-
-      .card-item {
-        width: auto;
-      }
-    }
-  }
-}

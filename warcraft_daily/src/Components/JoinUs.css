@@ -14,7 +14,7 @@
 }
 @media only screen and (max-width: 576px) {
   :root {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 .join-us {
@@ -39,4 +39,10 @@
   line-height: 1.75rem;
   color: #6d6e76;
   margin-bottom: 2vw;
+}
+
+@media only screen and (max-width: 1200px) {
+  .join-us h2 {
+    letter-spacing: 0;
+  }
 }/*# sourceMappingURL=JoinUs.css.map */

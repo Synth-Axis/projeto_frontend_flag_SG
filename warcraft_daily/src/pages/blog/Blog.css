@@ -14,7 +14,7 @@
 }
 @media only screen and (max-width: 576px) {
   :root {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 .blog-container {
@@ -32,17 +32,5 @@
   }
   .blog-image-container {
     display: none;
-  }
-}
-@media only screen and (max-width: 576px) {
-  .category-slider-container {
-    width: 95%;
-  }
-  .category-slider-container .category-card-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .category-slider-container .category-card-container .card-item {
-    width: auto;
   }
 }/*# sourceMappingURL=Blog.css.map */

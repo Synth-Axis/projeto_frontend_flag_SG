@@ -31,11 +31,111 @@
   }
 }
 
+.icon {
+  display: none;
+  background: transparent;
+  position: absolute;
+  top: 35%;
+  right: 5vw;
+  z-index: 5;
+  width: fit-content;
+  height: 44px;
+  cursor: pointer;
+
+  .hamburguer {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2vw;
+    width: 37px;
+    height: 6px;
+    background: transparent;
+    background-color: $white;
+    position: absolute;
+    transition: all 250ms ease;
+    top: 1vw;
+
+    &::before {
+      top: -12px;
+      content: "";
+      position: absolute;
+      width: 37px;
+      height: 6px;
+      background-color: $white;
+    }
+
+    &::after {
+      top: 12px;
+      content: "";
+      position: absolute;
+      width: 37px;
+      height: 6px;
+      background-color: $white;
+    }
+  }
+}
+
+.icon-active {
+  background: transparent;
+  .hamburguer {
+    &::after {
+      top: 0;
+      background-color: $white;
+      transform: rotate(225deg);
+    }
+    &::before {
+      top: 0;
+      background-color: $white;
+      transform: rotate(135deg);
+    }
+  }
+}
+
+.menu {
+  position: absolute;
+  margin-top: 30px;
+  right: 0;
+  background-color: $primary-color;
+
+  .nav-burguer {
+    @include give-flex-column(flex-end, center);
+    padding: 5vw;
+    padding-top: 2vw;
+    height: 100%;
+    li {
+      margin: 3vw;
+      cursor: pointer;
+    }
+  }
+  .menu-close {
+    display: none;
+    width: 0px;
+  }
+
+  .menu-open {
+    width: 30px;
+  }
+}
+
+.hide {
+  display: none;
+}
+
 //Tablet: 1200px
 @media only screen and (max-width: $tablet) {
   .nav {
     margin-left: 4vw;
     justify-content: flex-end;
     flex-wrap: wrap;
+  }
+}
+
+//Tablet-small: 768px
+@media only screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .icon {
+    display: block;
   }
 }

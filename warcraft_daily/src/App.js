@@ -18,6 +18,11 @@ function App() {
     setPostId(number);
   };
 
+  const generateRandomPost = () => {
+    let randomPost = Math.floor(Math.random() * PostData.length - 1);
+    return randomPost;
+  };
+
   return (
     <div className="app-container">
       <Navigation />
@@ -29,7 +34,13 @@ function App() {
           />
           <Route
             path="/blog"
-            element={<Blog postId={getPostId} data={PostData} />}
+            element={
+              <Blog
+                postId={getPostId}
+                data={PostData}
+                featuredPost={PostData[generateRandomPost()]}
+              />
+            }
           />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUs />} />
