@@ -16,17 +16,21 @@
     margin: 0 auto;
     max-width: 1600px;
 
-    .nav-block {
-      @include give-flex-row(center, center);
+    .nav-menu-button {
+      display: flex;
 
-      .nav {
-        li:last-child {
-          display: none;
+      .nav-block {
+        @include give-flex-row(center, center);
+
+        .nav {
+          li:last-child {
+            display: none;
+          }
         }
-      }
 
-      .btn-nav {
-        margin-left: 2vw;
+        .btn-nav {
+          margin-left: 2vw;
+        }
       }
     }
   }

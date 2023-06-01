@@ -20,7 +20,7 @@ const NavMenu = (props) => {
       </div>
 
       <div className={menuMode ? "menu menu-open" : "menu menu-close"}>
-        <ul className={menuMode ? "nav-burguer " + props.class : "hide"}>
+        <ul className={menuMode ? "nav-burguer " : "hide"}>
           <li>
             <Link to="/"> Home</Link>
           </li>
@@ -33,7 +33,7 @@ const NavMenu = (props) => {
           <li>
             <Link to="/contact">Contact Us</Link>
           </li>
-          <li>
+          <li className={props.class}>
             <Link to="/policy"> Privacy Policy</Link>
           </li>
           <li>
@@ -49,7 +49,7 @@ const NavMenu = (props) => {
       </div>
 
       <div className={menuMode ? "hide" : ""}>
-        <ul className={"nav " + props.class}>
+        <ul className="nav">
           <li className="nav-link nav-link-underline">
             <Link to="/"> Home</Link>
           </li>
@@ -62,12 +62,9 @@ const NavMenu = (props) => {
           <li className="nav-link nav-link-underline">
             <Link to="/contact">Contact Us</Link>
           </li>
-          <li className="nav-link nav-link-underline">
+          <li className={`nav-link nav-link-underline ${props.class}`}>
             <Link to="/policy"> Privacy Policy</Link>
           </li>
-          <a href="#subscribe">
-            <Button type="button" class="btn-nav" text="Subscribe" />
-          </a>
         </ul>
       </div>
     </div>
