@@ -1,0 +1,48 @@
+import "./FeaturedPost.scss";
+import JoinUs from "../../components/JoinUs";
+import PostCardSlider from "./PostCardSlider";
+
+const FeaturedPost = (props) => {
+  return (
+    <div className="post-wrapper">
+      <div>
+        <div className="author-details">
+          <img
+            className="post-author"
+            src={props.data.authorPhoto}
+            alt="author"
+          />
+          <div>
+            <p className="post-author-name">{props.data.author}</p>
+            <p className="post-author-date">{props.data.date}</p>
+          </div>
+        </div>
+
+        <h1>{props.data.title}</h1>
+        <p className="post-category">{props.data.category}</p>
+        <div className="post-background-container">
+          <img src={props.data.image} alt="post scenario" />
+        </div>
+        <div className="post-article-wrapper">
+          <div>
+            <h2>{props.data.subTitle1}</h2>
+            <p className="post-sub-text">{props.data.subText1}</p>
+          </div>
+          <div>
+            <h2>{props.data.subTitle2}</h2>
+            <p className="post-sub-text">{props.data.subText2}</p>
+          </div>
+          <div>
+            <h2>{props.data.subTitle3}</h2>
+            <p className="post-sub-text">{props.data.subText3}</p>
+          </div>
+        </div>
+      </div>
+
+      <PostCardSlider data={props.data} />
+      <JoinUs />
+    </div>
+  );
+};
+
+export default FeaturedPost;

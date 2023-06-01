@@ -13,7 +13,7 @@ const CategoryDetail = (props) => {
         <p className="article-spec">{props.data.title}</p>
         <p className="article-title">{props.data.guideTitle}</p>
         <p className="article-sumary">{props.data.guideDescription}</p>
-        <Button text="Discover more >" />
+        <Button type="button" text="Discover more >" />
       </div>
     </article>
   );

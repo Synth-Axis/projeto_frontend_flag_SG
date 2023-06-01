@@ -23,7 +23,7 @@ const Footer = () => {
             type="email"
             placeholder="Enter Your Email"
           />
-          <Button text="Subscribe" />
+          <Button type="button" text="Subscribe" />
         </div>
       </div>
       <div className="footer-bottom">

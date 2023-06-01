@@ -14,12 +14,12 @@ const BlogFeaturedPost = (props) => {
         <p className="all-posts-description">{props.data.description}</p>
         <Link
           key={props.data.id}
-          to={`/blogpost/${props.data.id}`}
+          to={`/blogfeaturedpost/${props.data.id}`}
           onClick={() => {
-            props.handleClick(props.data.id);
+            props.handleClick(props.data.id - 1);
           }}
         >
-          <Button text="Read More >" />
+          <Button type="button" text="Read More >" />
         </Link>
       </div>
       <div className="post-image-container">

@@ -68,6 +68,13 @@
     margin-top: 2vw;
     width: 100%;
 
+    label {
+      @include text-label;
+      font-weight: 500;
+      color: red;
+      padding-left: 1.5vw;
+    }
+
     .input,
     select {
       @include text-primary;

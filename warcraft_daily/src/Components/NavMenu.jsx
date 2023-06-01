@@ -38,12 +38,17 @@ const NavMenu = (props) => {
           </li>
           <li>
             <a href="#subscribe">
-              <Button class="btn-nav btn-burguer" text="Subscribe" />
+              <Button
+                type="button"
+                class="btn-nav btn-burguer"
+                text="Subscribe"
+              />
             </a>
           </li>
         </ul>
       </div>
-      <div className={menuMode && "hide"}>
+
+      <div className={menuMode ? "hide" : ""}>
         <ul className={"nav " + props.class}>
           <li className="nav-link nav-link-underline">
             <Link to="/"> Home</Link>
@@ -61,7 +66,7 @@ const NavMenu = (props) => {
             <Link to="/policy"> Privacy Policy</Link>
           </li>
           <a href="#subscribe">
-            <Button class="btn-nav" text="Subscribe" />
+            <Button type="button" class="btn-nav" text="Subscribe" />
           </a>
         </ul>
       </div>

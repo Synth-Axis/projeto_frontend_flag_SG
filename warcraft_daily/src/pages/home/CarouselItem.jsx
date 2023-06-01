@@ -16,7 +16,11 @@ const CarouselItem = (props) => {
         </p>
         <p className="description">{props.data.description}</p>
         <Link to={`/blogpost/${props.data.id}`}>
-          <Button text="Read More >" onClick={props.handleClick} />
+          <Button
+            type="button"
+            text="Read More >"
+            onClick={props.handleClick}
+          />
         </Link>
       </div>
     </div>

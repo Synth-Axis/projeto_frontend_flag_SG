@@ -11,7 +11,7 @@ const JoinUs = () => {
       </p>
 
       <Link to="/contact">
-        <Button text="Join Now" />
+        <Button type="button" text="Join Now" />
       </Link>
     </div>
   );

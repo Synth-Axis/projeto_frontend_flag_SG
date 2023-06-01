@@ -26,7 +26,7 @@ const HomeFeaturedPost = (props) => {
               props.handleClick(props.data.id - 1);
             }}
           >
-            <Button text="Read More >" />
+            <Button type="button" text="Read More >" />
           </Link>
         </div>
       </div>

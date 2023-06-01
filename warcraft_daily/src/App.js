@@ -7,8 +7,9 @@ import AboutUs from "./pages/about/AboutUs";
 import ContactUs from "./pages/contact/ContactUs";
 import Policy from "./pages/policy/Policy";
 import BlogPost from "./pages/blogpost/BlogPost";
+import FeaturedPost from "./pages/blogpost/FeaturedPost";
 import { Route, Routes } from "react-router-dom";
-import PostData from "../src/assets/objects/PostData";
+import PostData from "./assets/objects/PostData";
 import { useState } from "react";
 
 function App() {
@@ -18,9 +19,10 @@ function App() {
     setPostId(number);
   };
 
-  const generateRandomPost = () => {
-    let randomPost = Math.floor(Math.random() * PostData.length - 1);
-    return randomPost;
+  const [featuredPost, setFeaturedPost] = useState();
+
+  const getFeaturedPost = (number) => {
+    setFeaturedPost(number);
   };
 
   return (
@@ -38,7 +40,7 @@ function App() {
               <Blog
                 postId={getPostId}
                 data={PostData}
-                featuredPost={PostData[generateRandomPost()]}
+                handleClick={getFeaturedPost}
               />
             }
           />
@@ -48,6 +50,10 @@ function App() {
           <Route
             path="/blogpost/:id"
             element={<BlogPost data={PostData[postId]} />}
+          />
+          <Route
+            path="/blogfeaturedpost/:id"
+            element={<FeaturedPost data={PostData[featuredPost]} />}
           />
         </Routes>
       </div>
