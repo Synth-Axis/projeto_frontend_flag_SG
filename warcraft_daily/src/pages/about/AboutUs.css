@@ -22,19 +22,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 8vw;
+  gap: 8rem;
   margin: 60px 5vw 0 5vw;
-  padding-top: 4vw;
+  padding-top: 4rem;
 }
 .about-us-container .drop-shadow {
   margin-left: 1vw;
   filter: drop-shadow(6px 6px 10px #000000);
 }
 .about-us-container .intro {
-  padding: 0 1vw;
+  padding: 0 1rem;
 }
 .about-us-container .intro .word-box {
-  padding: 1vw;
+  padding: 1rem;
   border-radius: 2px;
   border: 0;
   background-color: #232536;
@@ -67,7 +67,7 @@
   align-self: flex-start;
 }
 .about-us-container h2 .word-box {
-  padding: 1vw;
+  padding: 1rem;
   border-radius: 2px;
   border: 0;
   background-color: #232536;
@@ -90,7 +90,7 @@
 
 @media only screen and (max-width: 1200px) {
   .about-us-container .intro {
-    padding: 0 2vw;
+    padding: 0 2rem;
   }
   .about-us-container .staff-list {
     flex-direction: column;

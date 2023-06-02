@@ -2,18 +2,18 @@
 
 .home-container {
   @include give-flex-column(center, center);
-  gap: 8vw;
+  gap: 8rem;
 
   .home-posts {
     display: grid;
     grid-template-columns: 55% 1fr;
     place-content: start;
-    gap: 32px;
+    gap: 2rem;
   }
 
   .categories-wrapper {
     display: flex;
     margin: 5vw;
-    gap: 2vw;
+    gap: 2rem;
   }
 }

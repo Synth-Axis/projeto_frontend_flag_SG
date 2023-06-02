@@ -13,6 +13,7 @@ const NavMenu = (props) => {
   return (
     <div>
       <div
+        id={props.id}
         className={menuMode ? "icon icon-active" : "icon"}
         onClick={toggleMode}
       >
@@ -37,7 +38,7 @@ const NavMenu = (props) => {
             <Link to="/policy"> Privacy Policy</Link>
           </li>
           <li>
-            <a href="#subscribe">
+            <a id="btn-burguer" href="#subscribe">
               <Button
                 type="button"
                 class="btn-nav btn-burguer"
@@ -49,7 +50,7 @@ const NavMenu = (props) => {
       </div>
 
       <div className={menuMode ? "hide" : ""}>
-        <ul className="nav">
+        <ul id={props.id2} className="nav">
           <li className="nav-link nav-link-underline">
             <Link to="/"> Home</Link>
           </li>

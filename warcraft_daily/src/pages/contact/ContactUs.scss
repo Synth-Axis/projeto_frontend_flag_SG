@@ -3,7 +3,7 @@
 .contact-wrapper {
   @include give-flex-column(center, space-between);
   margin: 21vw 21vw 0 21vw;
-  gap: 8vw;
+  gap: 8rem;
 
   .contact-top {
     text-align: center;
@@ -30,8 +30,7 @@
     width: 100%;
 
     .inner-wrapper {
-      margin: 3vw 4vw;
-      width: 100%;
+      margin: 3rem 4rem;
       align-self: baseline;
 
       .inner-title {
@@ -64,7 +63,7 @@
   .form {
     display: flex;
     flex-direction: column;
-    gap: 1vw;
+    gap: 1rem;
     margin-top: 2vw;
     width: 100%;
 

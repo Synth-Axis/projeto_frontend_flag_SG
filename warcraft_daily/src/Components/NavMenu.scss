@@ -1,12 +1,16 @@
 @import "../sassStyles/main";
 
+#footer-menu {
+  @include give-flex-row(center, center);
+}
+
 .nav {
   @include text-primary;
   @include give-flex-row(center, center);
 
   .nav-link {
     position: relative;
-    margin: 0 12px;
+    margin: 0 0.75vw;
     cursor: pointer;
   }
 
@@ -98,8 +102,8 @@
 
   .nav-burguer {
     @include give-flex-column(flex-end, center);
-    padding: 5vw;
-    padding-top: 2vw;
+    padding: 2rem;
+    padding-top: 2rem;
     height: 100%;
     li {
       margin: 3vw;
@@ -120,10 +124,13 @@
   display: none;
 }
 
+#burguer-footer-hide {
+  display: none;
+}
+
 //Tablet: 1200px
 @media only screen and (max-width: $tablet) {
   .nav {
-    margin-left: 4vw;
     justify-content: flex-end;
     flex-wrap: wrap;
   }
@@ -136,6 +143,10 @@
   }
 
   .icon {
+    display: block;
+  }
+
+  #btn-burguer {
     display: block;
   }
 }

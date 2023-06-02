@@ -19,7 +19,7 @@
         transition: all 200ms ease;
 
         span {
-          font-size: 2vw;
+          font-size: 3rem;
         }
 
         &:hover {
@@ -37,9 +37,10 @@
 
       .indicators {
         @include give-flex-row(center, center);
+        flex-wrap: wrap;
         position: absolute;
         bottom: 2vw;
-        gap: 0.5vw;
+        gap: 0.5rem;
         margin-top: 0.5vw;
 
         .indicator-buttons {

@@ -4,7 +4,7 @@
   @include give-flex-column(center, center);
   background-color: $bgaccent-light-grey;
   width: 100%;
-  padding: 2.5vw;
+  padding: 2.5rem;
 
   &:hover {
     background-color: $bgaccent-light-yellow;
@@ -22,6 +22,7 @@
 
   .author-position {
     @include text-secondary;
+    text-align: center;
     color: $bgaccent-grey;
     margin-bottom: 1.25vw;
   }
@@ -29,6 +30,6 @@
 
 @media only screen and (max-width: $mobile) {
   .author-container {
-    padding: 2.5vw 0;
+    padding: 2.5rem 0;
   }
 }

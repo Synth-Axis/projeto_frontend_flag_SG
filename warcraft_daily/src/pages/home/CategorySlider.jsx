@@ -44,30 +44,45 @@ const CategorySlider = (props) => {
     <div className="category-slider-container">
       <h2 className="choose-category">Choose A Category</h2>
       <div className="category-card-container">
-        <button className="btn-prev" onClick={handlePrev}>
+        <button
+          disabled={currentIndex === 0 ? true : false}
+          className={`${currentIndex === 0 ? "btn-disabled" : "btn-prev"}`}
+          onClick={handlePrev}
+        >
           &lt;
         </button>
-
         {newArray &&
-          newArray.map((element) => (
-            <div
-              key={element.id}
-              className={`card-item ${
-                activeCategory === element.title && "card-active"
-              }`}
-              id={element.title}
-              onClick={unhide}
-            >
-              <img
-                className="category-icon"
-                src={element.icon}
-                alt="Class icon"
-              />
-              <h3 className="category-title">{element.title}</h3>
-              <p className="category-description">{element.description}</p>
-            </div>
-          ))}
-        <button className="btn-next" onClick={handleNext}>
+          newArray.map(
+            (element) =>
+              element && (
+                <div
+                  key={element.id}
+                  className={`card-item ${
+                    activeCategory === element.title && "card-active"
+                  }`}
+                  id={element.title}
+                  onClick={unhide}
+                >
+                  <img
+                    className="category-icon"
+                    src={element.icon}
+                    alt="Class icon"
+                  />
+                  <h3 className="category-title">{element.title}</h3>
+                  <p className="category-description">{element.description}</p>
+                </div>
+              )
+          )}
+
+        <button
+          disabled={currentIndex + 3 === props.data.length - 1 ? true : false}
+          className={`${
+            currentIndex + 3 === props.data.length - 1
+              ? "btn-disabled"
+              : "btn-next"
+          }`}
+          onClick={handleNext}
+        >
           &gt;
         </button>
       </div>

@@ -22,15 +22,15 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  margin: 13vw 5vw 0 5vw;
+  margin: 13rem 5rem 0 5rem;
   margin-bottom: 0;
-  gap: 8vw;
+  gap: 8rem;
 }
 .post-wrapper .author-details {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 1vw;
+  gap: 1rem;
   margin: 0 21vw;
   margin-bottom: 1.5vw;
 }
@@ -74,7 +74,7 @@
   align-items: center;
   justify-content: center;
   margin: 0 21vw;
-  gap: 4vw;
+  gap: 4rem;
 }
 .post-wrapper .post-article-wrapper h2 {
   font-size: 2.25rem;

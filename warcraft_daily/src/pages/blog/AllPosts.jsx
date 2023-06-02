@@ -14,11 +14,6 @@ const AllPosts = (props) => {
   ];
 
   const updateSlides = (newSlides) => {
-    // if (currentIndex - 1 < 0) {
-    //   newSlides = categories.length - 1;
-    // } else if (currentIndex >= categories.length) {
-    //   newSlides = 0;
-    // }
     setCurrentIndex(newSlides);
   };
 
@@ -66,7 +61,7 @@ const AllPosts = (props) => {
       <div className="all-posts-buttons">
         <input
           disabled={currentIndex === 0 ? true : false}
-          className={`${currentIndex === 0 && "btn-disabled"}`}
+          className={`${currentIndex === 0 ? "btn-disabled" : ""}`}
           type="button"
           value="< Prev"
           onClick={handlePrev}
@@ -74,7 +69,7 @@ const AllPosts = (props) => {
         <input
           disabled={currentIndex + 1 === props.data.length - 1 ? true : false}
           className={`${
-            currentIndex + 1 === props.data.length - 1 && "btn-disabled"
+            currentIndex + 1 === props.data.length - 1 ? "btn-disabled" : ""
           }`}
           type="button"
           value="Next >"

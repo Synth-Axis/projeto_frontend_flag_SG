@@ -49,7 +49,7 @@ const PostCardSlider = () => {
             onClick={handlePrev}
           />
           <input
-            disabled={currentIndex + 1 === PostData.length - 1 ? true : false}
+            disabled={currentIndex + 1 === PostData.length - 2 ? true : false}
             className={`next material-symbols-outlined ${
               currentIndex + 1 === PostData.length - 1 && "btn-disabled"
             }`}

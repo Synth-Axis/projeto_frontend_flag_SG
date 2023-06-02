@@ -2,13 +2,13 @@
 
 .blog-all-posts-wrapper {
   @include give-flex-column(flex-start, center);
-  gap: 4vw;
+  gap: 4rem;
   margin: 0 5vw;
 
   h1 {
     @include h1;
     width: 100%;
-    padding-bottom: 2vw;
+    padding-bottom: 2rem;
     letter-spacing: -2px;
     border-bottom: 1px solid rgba(109, 110, 118, 0.32);
   }
@@ -27,7 +27,7 @@
 
     .blog-all-posts-details {
       width: 100%;
-      padding: 4vw 2vw;
+      padding: 4rem 2rem;
       margin-right: 5vw;
 
       .blog-all-posts-details-category {

@@ -3,7 +3,7 @@
 .blog-container {
   @include give-flex-column(center, center);
   margin-top: 60px;
-  gap: 8vw;
+  gap: 8rem;
 }
 
 //Mobile: 576px

@@ -1,12 +1,12 @@
 @import "../sassStyles/main";
 
 .header-wrapper {
-  padding: 0 5vw;
+  padding: 0 5rem;
   .header {
     @include give-flex-row(center, space-between);
     background-color: $primary-color;
     color: $white;
-    padding: 0.75vw 0vw;
+    padding: 0.75rem 0vw;
     position: fixed;
     height: 60px;
     top: 0;

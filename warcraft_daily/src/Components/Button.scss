@@ -6,7 +6,7 @@
   font-size: 1.125rem;
   line-height: 1.5rem;
   background-color: $primaryaccent-yellow;
-  padding: 1vw 3vw;
+  padding: 1rem 3rem;
   border: none;
   cursor: pointer;
   transition: all 200ms ease;
@@ -26,4 +26,10 @@
 
 .btn-burguer {
   margin-right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  #btn-nav {
+    display: none;
+  }
 }

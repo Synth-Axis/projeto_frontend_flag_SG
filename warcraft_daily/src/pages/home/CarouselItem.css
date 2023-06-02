@@ -32,7 +32,7 @@
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  gap: 1.5vw;
+  gap: 1.5rem;
   margin-right: 5vw;
 }
 .carrousel-details .posted-on {

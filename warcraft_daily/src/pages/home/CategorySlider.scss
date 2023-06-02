@@ -11,10 +11,10 @@
   }
 
   .category-card-container {
-    @include give-flex-row(stretch, center);
+    @include give-flex-row(stretch, space-between);
     position: relative;
-    gap: 2vw;
-    padding: 0 2vw;
+    gap: 2rem;
+    padding: 0 2rem;
     overflow-x: scroll;
     scroll-behavior: smooth;
     scrollbar-width: none;
@@ -29,7 +29,7 @@
       position: absolute;
       background-color: none;
       border: none;
-      width: 2vw;
+      width: 2rem;
       height: 100%;
       top: 50%;
       transform: translateY(-50%);
@@ -44,8 +44,12 @@
       right: 0;
     }
 
+    .btn-disabled {
+      display: none;
+    }
+
     .card-item {
-      padding: 2vw;
+      padding: 2rem;
       border: 1px solid rgba(109, 110, 118, 0.3);
       cursor: pointer;
       width: 25%;
@@ -55,7 +59,7 @@
       }
 
       .category-icon {
-        width: 6vw;
+        width: 6rem;
         margin-bottom: 1vw;
       }
 

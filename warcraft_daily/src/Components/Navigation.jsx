@@ -14,7 +14,7 @@ const Navigation = () => {
         <div className="nav-menu-button">
           <div className="nav-block">
             <NavMenu class="hide" />
-            <a href="#subscribe">
+            <a id="btn-nav" href="#subscribe">
               <Button type="button" class="btn-nav" text="Subscribe" />
             </a>
           </div>

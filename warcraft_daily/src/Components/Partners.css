@@ -21,15 +21,14 @@
   display: flex;
   align-items: stretch;
   justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0 5vw;
+  padding: 0 5rem;
   background-color: #232536;
 }
 .partners-banner .partners-logos {
   -o-object-fit: contain;
      object-fit: contain;
   cursor: pointer;
-  padding: 1.5vw 0;
+  padding: 1.5rem 0;
   margin: 0 auto;
   height: 50px;
   width: 320px;
@@ -42,6 +41,7 @@
 
 @media only screen and (max-width: 1440px) {
   .partners-banner {
+    flex-wrap: wrap;
     justify-content: center;
   }
 }/*# sourceMappingURL=Partners.css.map */

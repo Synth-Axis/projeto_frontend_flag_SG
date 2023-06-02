@@ -23,7 +23,7 @@
   align-items: center;
   justify-content: space-between;
   margin: 21vw 21vw 0 21vw;
-  gap: 8vw;
+  gap: 8rem;
 }
 .contact-wrapper .contact-top {
   text-align: center;
@@ -51,8 +51,7 @@
   width: 100%;
 }
 .contact-wrapper .company-info .inner-wrapper {
-  margin: 3vw 4vw;
-  width: 100%;
+  margin: 3rem 4rem;
   align-self: baseline;
 }
 .contact-wrapper .company-info .inner-wrapper .inner-title {
@@ -86,9 +85,17 @@
 .contact-wrapper .form {
   display: flex;
   flex-direction: column;
-  gap: 1vw;
+  gap: 1rem;
   margin-top: 2vw;
   width: 100%;
+}
+.contact-wrapper .form label {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  font-weight: 500;
+  color: red;
+  padding-left: 1.5vw;
 }
 .contact-wrapper .form .input,
 .contact-wrapper .form select {

@@ -18,7 +18,7 @@
   }
 }
 .header-wrapper {
-  padding: 0 5vw;
+  padding: 0 5rem;
 }
 .header-wrapper .header {
   display: flex;
@@ -26,7 +26,7 @@
   justify-content: space-between;
   background-color: #232536;
   color: #ffffff;
-  padding: 0.75vw 0vw;
+  padding: 0.75rem 0vw;
   position: fixed;
   height: 60px;
   top: 0;
@@ -36,14 +36,17 @@
   margin: 0 auto;
   max-width: 1600px;
 }
-.header-wrapper .header .nav-block {
+.header-wrapper .header .nav-menu-button {
+  display: flex;
+}
+.header-wrapper .header .nav-menu-button .nav-block {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.header-wrapper .header .nav-block .nav li:last-child {
+.header-wrapper .header .nav-menu-button .nav-block .nav li:last-child {
   display: none;
 }
-.header-wrapper .header .nav-block .btn-nav {
+.header-wrapper .header .nav-menu-button .nav-block .btn-nav {
   margin-left: 2vw;
 }/*# sourceMappingURL=Navigation.css.map */

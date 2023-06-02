@@ -17,6 +17,12 @@
     font-size: 10px;
   }
 }
+#footer-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .nav {
   font-size: 1rem;
   line-height: 1.75rem;
@@ -26,7 +32,7 @@
 }
 .nav .nav-link {
   position: relative;
-  margin: 0 12px;
+  margin: 0 0.75vw;
   cursor: pointer;
 }
 .nav .nav-link::before {
@@ -113,8 +119,8 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  padding: 5vw;
-  padding-top: 2vw;
+  padding: 2rem;
+  padding-top: 2rem;
   height: 100%;
 }
 .menu .nav-burguer li {
@@ -133,9 +139,12 @@
   display: none;
 }
 
+#burguer-footer-hide {
+  display: none;
+}
+
 @media only screen and (max-width: 1200px) {
   .nav {
-    margin-left: 4vw;
     justify-content: flex-end;
     flex-wrap: wrap;
   }
@@ -145,6 +154,9 @@
     display: none;
   }
   .icon {
+    display: block;
+  }
+  #btn-burguer {
     display: block;
   }
 }/*# sourceMappingURL=NavMenu.css.map */

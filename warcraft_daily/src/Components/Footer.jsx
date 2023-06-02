@@ -13,7 +13,7 @@ const Footer = () => {
         <Link to="/">
           <Logo />
         </Link>
-        <NavMenu />
+        <NavMenu id="burguer-footer-hide" id2="footer-menu" />
       </div>
       <div className="subscribe">
         <p>Subscribe to our news letter to get latest updates and news</p>
