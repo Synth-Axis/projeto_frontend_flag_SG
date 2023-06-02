@@ -34,7 +34,7 @@ const ContactUs = () => {
       setErrorSubject("error");
     }
 
-    if (message.length < 10) {
+    if (message.length < 20) {
       setErrorMessage("error");
     }
   };
@@ -122,7 +122,7 @@ const ContactUs = () => {
             }}
           />
           {errorMessage === "error" && (
-            <label>Please type a valid message (min. 10 chars.)</label>
+            <label>Please type a valid message (min. 20 chars.)</label>
           )}
           <Button type="submit" text="Send Message" class="btn-send-msg" />
         </form>
