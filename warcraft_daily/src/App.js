@@ -74,7 +74,13 @@ function App() {
         </Routes>
       </div>
 
-      <Footer />
+      <div
+        onClick={() => {
+          window.scrollTo({ top: 0, left: 0 });
+        }}
+      >
+        <Footer />
+      </div>
     </div>
   );
 }
