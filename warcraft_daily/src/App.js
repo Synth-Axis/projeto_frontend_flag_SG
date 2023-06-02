@@ -32,7 +32,13 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={<Home postId={getPostId} data={PostData} />}
+            element={
+              <Home
+                postId={getPostId}
+                data={PostData}
+                handleClick={getFeaturedPost}
+              />
+            }
           />
           <Route
             path="/blog"

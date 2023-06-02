@@ -23,7 +23,7 @@ const Home = (props) => {
       <Carousel getPostId={props.postId} data={PostData} />
       <div className="home-posts">
         <HomeFeaturedPost
-          handleClick={props.postId}
+          handleClick={props.handleClick}
           data={PostData[generateRandomPost()]}
         />
         <HomeAllPosts handleClick={props.postId} data={PostData} />

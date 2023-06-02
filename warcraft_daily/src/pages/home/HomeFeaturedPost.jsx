@@ -21,7 +21,7 @@ const HomeFeaturedPost = (props) => {
           <p className="description">{props.data.description}</p>
 
           <Link
-            to={`/blogpost/${props.data.id}`}
+            to={`/blogfeaturedpost/${props.data.id}`}
             onClick={() => {
               props.handleClick(props.data.id - 1);
             }}
