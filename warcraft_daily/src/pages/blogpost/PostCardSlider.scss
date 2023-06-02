@@ -3,7 +3,6 @@
 .post-card-slider-container {
   @include give-flex-column(flex-start, center);
   position: relative;
-
   gap: 4rem;
   border-bottom: 1px solid rgba(109, 110, 118, 0.3);
 
@@ -17,35 +16,39 @@
     gap: 2rem;
     padding: 0 2rem;
   }
-}
 
-.post-card-slider-buttons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  .post-card-slider-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  .prev,
-  .next {
-    @include h3;
-    position: absolute;
-    background: none;
-    border: none;
-    cursor: pointer;
-    transition: all 200ms ease;
-  }
+    .prev,
+    .next {
+      @include h3;
+      position: absolute;
+      background: none;
+      border: none;
+      cursor: pointer;
+      transition: all 200ms ease;
 
-  .prev {
-    top: 40%;
-    left: 0;
-  }
+      &:hover {
+        transform: scale(2);
+      }
+    }
 
-  .next {
-    top: 40%;
-    right: 0;
-  }
+    .prev {
+      top: 20vw;
+      left: 0;
+    }
 
-  .btn-disabled {
-    @include h4;
-    color: $bgaccent-grey;
+    .next {
+      top: 20vw;
+      right: 0;
+    }
+
+    .btn-disabled {
+      @include h4;
+      color: $bgaccent-grey;
+    }
   }
 }

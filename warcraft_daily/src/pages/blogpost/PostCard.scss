@@ -6,7 +6,7 @@
 
   .post-image {
     margin-bottom: 2vw;
-    height: 25rem;
+    height: 25vw;
 
     img {
       height: 100%;
@@ -35,5 +35,11 @@
   .post-card-description {
     @include text-primary;
     color: rgba(35, 37, 54, 0.7);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .post-card-description {
+    display: none;
   }
 }
