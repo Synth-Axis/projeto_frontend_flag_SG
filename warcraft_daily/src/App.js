@@ -10,9 +10,13 @@ import BlogPost from "./pages/blogpost/BlogPost";
 import FeaturedPost from "./pages/blogpost/FeaturedPost";
 import { Route, Routes } from "react-router-dom";
 import PostData from "./assets/objects/PostData";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0 });
+  }, []);
+
   const [postId, setPostId] = useState();
 
   const getPostId = (number) => {
@@ -27,7 +31,13 @@ function App() {
 
   return (
     <div className="app-container">
-      <Navigation />
+      <div
+        onClick={() => {
+          window.scrollTo({ top: 0, left: 0 });
+        }}
+      >
+        <Navigation />
+      </div>
       <div>
         <Routes>
           <Route
@@ -51,7 +61,7 @@ function App() {
             }
           />
           <Route path="/about" element={<AboutUs />} />
-          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/contact" exact element={<ContactUs />} />
           <Route path="/policy" element={<Policy />} />
           <Route
             path="/blogpost/:id"
