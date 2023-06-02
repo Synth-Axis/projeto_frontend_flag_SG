@@ -5,9 +5,10 @@ import { Link } from "react-router-dom";
 const CarouselItem = (props) => {
   return (
     <div
-      style={{ backgroundImage: `url(${props.data.image})` }}
+      // style={{ backgroundImage: `url(${props.data.image})` }}
       className="caroussel-item"
     >
+      <img src={props.data.image} alt="Carousel item"></img>
       <div className="carrousel-details">
         <p className="posted-on">Posted on {props.data.category}</p>
         <h1 className="title">{props.data.title}</h1>
