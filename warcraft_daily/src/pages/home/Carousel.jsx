@@ -52,7 +52,8 @@ const Carousel = (props) => {
                 <CarouselItem
                   key={element.id}
                   data={element}
-                  handleClick={props.getPostId(element.id - 1)}
+                  // handleClick={props.getPostId(element.id - 1)}
+                  handleClick={props.getCarouselId}
                 />
               )}
             </div>

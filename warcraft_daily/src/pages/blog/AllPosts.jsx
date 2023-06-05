@@ -25,6 +25,10 @@ const AllPosts = (props) => {
     updateSlides(currentIndex - 5);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0 });
+  };
+
   return (
     <div className="blog-all-posts-wrapper">
       <h1>All Posts</h1>
@@ -50,6 +54,7 @@ const AllPosts = (props) => {
                   to={`/blogpost/${element.id}`}
                   onClick={() => {
                     props.handleClick(element.id - 1);
+                    scrollToTop();
                   }}
                 >
                   Read More &gt;

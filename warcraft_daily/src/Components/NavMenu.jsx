@@ -1,5 +1,5 @@
 import "./NavMenu.scss";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { useState } from "react";
 import Button from "./Button";
 
@@ -52,19 +52,19 @@ const NavMenu = (props) => {
       <div className={menuMode ? "hide" : ""}>
         <ul id={props.id2} className="nav">
           <li className="nav-link nav-link-underline">
-            <Link to="/"> Home</Link>
+            <NavLink to="/"> Home</NavLink>
           </li>
           <li className="nav-link nav-link-underline">
-            <Link to="/blog">Blog</Link>
+            <NavLink to="/blog">Blog</NavLink>
           </li>
           <li className="nav-link nav-link-underline">
-            <Link to="/about">About Us</Link>
+            <NavLink to="/about">About Us</NavLink>
           </li>
           <li className="nav-link nav-link-underline">
-            <Link to="/contact">Contact Us</Link>
+            <NavLink to="/contact">Contact Us</NavLink>
           </li>
           <li className={`nav-link nav-link-underline ${props.class}`}>
-            <Link to="/policy"> Privacy Policy</Link>
+            <NavLink to="/policy"> Privacy Policy</NavLink>
           </li>
         </ul>
       </div>

@@ -3,6 +3,10 @@ import Button from "../../components/Button";
 import { Link } from "react-router-dom";
 
 const HomeFeaturedPost = (props) => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0 });
+  };
+
   return (
     <div className="featured-post-wrapper">
       <p className="featured-post-header">Featured Post</p>
@@ -24,6 +28,7 @@ const HomeFeaturedPost = (props) => {
             to={`/blogfeaturedpost/${props.data.id}`}
             onClick={() => {
               props.handleClick(props.data.id - 1);
+              scrollToTop();
             }}
           >
             <Button type="button" text="Read More >" />

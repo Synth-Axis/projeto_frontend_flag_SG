@@ -39,14 +39,13 @@
   gap: 2rem;
   padding: 0 2rem;
 }
-
-.post-card-slider-buttons {
+.post-card-slider-container .post-card-slider-buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.post-card-slider-buttons .prev,
-.post-card-slider-buttons .next {
+.post-card-slider-container .post-card-slider-buttons .prev,
+.post-card-slider-container .post-card-slider-buttons .next {
   font-size: 1.75rem;
   line-height: 2.25rem;
   font-weight: 700;
@@ -56,15 +55,19 @@
   cursor: pointer;
   transition: all 200ms ease;
 }
-.post-card-slider-buttons .prev {
-  top: 40%;
+.post-card-slider-container .post-card-slider-buttons .prev:hover,
+.post-card-slider-container .post-card-slider-buttons .next:hover {
+  transform: scale(2);
+}
+.post-card-slider-container .post-card-slider-buttons .prev {
+  top: 20vw;
   left: 0;
 }
-.post-card-slider-buttons .next {
-  top: 40%;
+.post-card-slider-container .post-card-slider-buttons .next {
+  top: 20vw;
   right: 0;
 }
-.post-card-slider-buttons .btn-disabled {
+.post-card-slider-container .post-card-slider-buttons .btn-disabled {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;

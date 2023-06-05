@@ -29,13 +29,13 @@ function App() {
     setFeaturedPost(number);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0 });
+  };
+
   return (
     <div className="app-container">
-      <div
-        onClick={() => {
-          window.scrollTo({ top: 0, left: 0 });
-        }}
-      >
+      <div onClick={scrollToTop}>
         <Navigation />
       </div>
       <div>

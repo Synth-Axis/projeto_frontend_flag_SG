@@ -143,6 +143,10 @@
   display: none;
 }
 
+.active {
+  color: #ffd050;
+}
+
 @media only screen and (max-width: 1200px) {
   .nav {
     justify-content: flex-end;

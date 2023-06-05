@@ -1,1 +1,41 @@
 @import "../../sassStyles/main";
+
+.privacy-policy-wrapper {
+  @include give-flex-column(flex-start, center);
+  margin: 0 5vw;
+  margin-top: 12rem;
+  gap: 4rem;
+
+  h1 {
+    @include give-flex-row(center, center);
+    @include h1;
+
+    .word-box {
+      padding: 1rem;
+      border: 0;
+      background-color: $primary-color;
+      color: $white;
+      box-shadow: 6px 6px 10px #000000;
+    }
+
+    .drop-shadow {
+      margin-left: 1vw;
+      filter: drop-shadow(6px 6px 10px #000000);
+    }
+  }
+
+  .policy-inner-wrapper {
+    @include give-flex-column(flex-start, center);
+    gap: 1rem;
+
+    h4 {
+      @include h4;
+    }
+
+    .privacy-text-primary {
+      @include give-flex-column(flex-start, center);
+      @include text-primary;
+      gap: 1rem;
+    }
+  }
+}

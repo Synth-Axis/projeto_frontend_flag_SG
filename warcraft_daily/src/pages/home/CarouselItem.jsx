@@ -4,10 +4,7 @@ import { Link } from "react-router-dom";
 
 const CarouselItem = (props) => {
   return (
-    <div
-      // style={{ backgroundImage: `url(${props.data.image})` }}
-      className="caroussel-item"
-    >
+    <div className="caroussel-item">
       <img src={props.data.image} alt="Carousel item"></img>
       <div className="carrousel-details">
         <p className="posted-on">Posted on {props.data.category}</p>
@@ -16,12 +13,13 @@ const CarouselItem = (props) => {
           By <span>{props.data.author}</span> | {props.data.date}
         </p>
         <p className="description">{props.data.description}</p>
-        <Link to={`/blogpost/${props.data.id}`}>
-          <Button
-            type="button"
-            text="Read More >"
-            onClick={props.handleClick}
-          />
+        <Link
+          to={`/blogfeaturedpost/${props.data.id}`}
+          onClick={() => {
+            props.handleClick(props.data.id - 1);
+          }}
+        >
+          <Button type="button" text="Read More >" />
         </Link>
       </div>
     </div>

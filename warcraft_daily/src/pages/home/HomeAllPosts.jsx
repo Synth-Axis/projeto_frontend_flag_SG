@@ -2,6 +2,9 @@ import "./HomeAllPosts.scss";
 import { Link } from "react-router-dom";
 
 const HomeAllPosts = (props) => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0 });
+  };
   return (
     <div className="all-post-wrapper">
       <div className="all-post-header">
@@ -18,6 +21,7 @@ const HomeAllPosts = (props) => {
                 className="all-post-inner"
                 onClick={() => {
                   props.handleClick(element.id - 1);
+                  scrollToTop();
                 }}
               >
                 <p>

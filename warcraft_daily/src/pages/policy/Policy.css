@@ -16,4 +16,53 @@
   :root {
     font-size: 10px;
   }
+}
+.privacy-policy-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 5vw;
+  margin-top: 12rem;
+  gap: 4rem;
+}
+.privacy-policy-wrapper h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  line-height: 4rem;
+  font-weight: 700;
+}
+.privacy-policy-wrapper h1 .word-box {
+  padding: 1rem;
+  border: 0;
+  background-color: #232536;
+  color: #ffffff;
+  box-shadow: 6px 6px 10px #000000;
+}
+.privacy-policy-wrapper h1 .drop-shadow {
+  margin-left: 1vw;
+  filter: drop-shadow(6px 6px 10px #000000);
+}
+.privacy-policy-wrapper .policy-inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+}
+.privacy-policy-wrapper .policy-inner-wrapper h4 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+.privacy-policy-wrapper .policy-inner-wrapper .privacy-text-primary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  gap: 1rem;
 }/*# sourceMappingURL=Policy.css.map */

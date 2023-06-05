@@ -20,7 +20,11 @@ const Home = (props) => {
 
   return (
     <div className="home-container">
-      <Carousel getPostId={props.postId} data={PostData} />
+      <Carousel
+        getPostId={props.postId}
+        data={PostData}
+        getCarouselId={props.handleClick}
+      />
       <div className="home-posts">
         <HomeFeaturedPost
           handleClick={props.handleClick}
