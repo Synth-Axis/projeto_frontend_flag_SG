@@ -16,9 +16,9 @@ const AboutUs = () => {
         <section className="main-wrp-about">
           <div className="about-us-text">
             <p>
-              <strong>Wildcard Esports</strong> is a semi-professional
-              competitive gaming Guild founded in 2007 by some of the most
-              successful World of Warcraft players in{" "}
+              <strong>Wow Daily</strong> is a news website developed by Wildcard
+              Esports, a competitive gaming Guild founded in 2007 by some of the
+              most successful World of Warcraft players in{" "}
               <strong> EU-Ravenholdt</strong> server, and carried on in 2019
               ahead in <strong>EU-Sylvanas</strong>.
             </p>
@@ -34,14 +34,15 @@ const AboutUs = () => {
             <p>
               Continuing the standard of excellence set by our former founding
               members, we integrate our personal values into our business
-              practices, making the Wildcard brand stand out as an organisation.
+              practices, making the Wow Daily brand stand out as an
+              organisation.
             </p>
 
             <p>
-              But there is much more than just being an Esports team. We take
-              pride on our ability to use our platform, skills and social media
-              to help generate meaningful changes. We work close with charities
-              such as
+              But there is much more than just being an Esports enterprise. We
+              take pride on our ability to use our platform, skills and social
+              media to help generate meaningful changes. We work close with
+              charities such as
               <strong> IRA</strong>,<strong> Above the Disorder </strong>
               and
               <strong> INHOPE </strong>
