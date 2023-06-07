@@ -48,7 +48,7 @@
 
   .post-article-wrapper {
     @include give-flex-column(center, center);
-    margin: 0 21vw;
+    margin: 0 21rem;
     gap: 4rem;
 
     h2 {

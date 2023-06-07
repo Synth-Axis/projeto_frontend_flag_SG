@@ -1,10 +1,9 @@
 import "./Carousel.scss";
 import CarouselItem from "./CarouselItem";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 const Carousel = (props) => {
   const [activeIndex, SetActiveIndex] = useState(0);
-  const timeoutRef = useRef(null);
 
   const updateIndex = (newIndex) => {
     if (newIndex < 0) {
@@ -24,21 +23,31 @@ const Carousel = (props) => {
     updateIndex(activeIndex + 1);
   };
 
-  function resetTimeout() {
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-    }
-  }
+  // function resetTimeout() {
+  //   if (timeoutRef.current) {
+  //     clearTimeout(timeoutRef.current);
+  //   }
+  // }
+
+  // useEffect(() => {
+  //   resetTimeout();
+  //   timeoutRef.current = setTimeout(() => {
+  //     SetActiveIndex((state) =>
+  //       state < props.data.length - 1 ? state + 1 : 0
+  //     );
+  //   }, 5000);
+  //   return () => {
+  //     resetTimeout();
+  //   };
+  // }, [activeIndex]);
 
   useEffect(() => {
-    resetTimeout();
-    timeoutRef.current = setTimeout(() => {
-      SetActiveIndex((state) =>
-        state < props.data.length - 1 ? state + 1 : 0
-      );
+    const setTimer = setInterval(() => {
+      handleClickNext();
     }, 5000);
+
     return () => {
-      resetTimeout();
+      clearInterval(setTimer);
     };
   }, [activeIndex]);
 
