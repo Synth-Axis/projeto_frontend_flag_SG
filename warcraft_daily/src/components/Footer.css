@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "myFont";
+  src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
+}
+@media only screen and (max-width: 1440px) {
+  :root {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  :root {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  :root {
+    font-size: 10px;
+  }
+}
+.footer {
+  background-color: #232536;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 3.75rem 5rem;
+  margin-top: 8vw;
+}
+.footer .footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .footer-top .footer-menu-button {
+  display: flex;
+  align-items: center;
+}
+.footer .subscribe {
+  font-size: 2.25rem;
+  line-height: 3rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  margin: 3.75vw 0 3vw 0;
+  padding: 5rem 4rem;
+}
+.footer .subscribe p {
+  letter-spacing: -2px;
+  width: 592px;
+}
+.footer .subscribe .hero-box {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+.footer .subscribe .hero-box .input-email {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color: #6d6e76;
+  width: 15rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0 1.5vw 0 4vw;
+  border: 1px solid #4c4c4c;
+}
+.footer .footer-bottom {
+  color: #ffffff;
+  opacity: 0.7;
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer-bottom p {
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+.footer .footer-bottom div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1440px) {
+  .footer #subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+  }
+  .footer #subscribe .input-email {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .footer .subscribe {
+    flex-direction: column;
+  }
+  .footer .subscribe p {
+    text-align: center;
+    width: 100%;
+    letter-spacing: 0;
+  }
+  .footer #subscribe {
+    margin-left: 3vw;
+  }
+}/*# sourceMappingURL=Footer.css.map */

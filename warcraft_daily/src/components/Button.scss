@@ -1,0 +1,35 @@
+@import "../sassStyles/main";
+
+.btn {
+  @include give-flex-row(center, center);
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  background-color: $primaryaccent-yellow;
+  padding: 1rem 3rem;
+  border: none;
+  cursor: pointer;
+  transition: all 200ms ease;
+
+  &:hover {
+    background-color: $button-hover;
+    transform: scale(1.03);
+  }
+}
+
+.btn-nav {
+  background-color: $white;
+  color: $primary-color;
+  margin-right: 5vw;
+  margin-left: 2vw;
+}
+
+.btn-burguer {
+  margin-right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  #btn-nav {
+    display: none;
+  }
+}

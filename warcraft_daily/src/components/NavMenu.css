@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "myFont";
+  src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
+}
+@media only screen and (max-width: 1440px) {
+  :root {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  :root {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  :root {
+    font-size: 10px;
+  }
+}
+#footer-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav .nav-link {
+  position: relative;
+  margin: 0 0.75vw;
+  cursor: pointer;
+}
+.nav .nav-link::before {
+  content: "";
+  position: absolute;
+  transition: 250ms;
+  height: 2px;
+  left: 50%;
+  background-color: #ffffff;
+  transition: all 250ms ease;
+}
+.nav .nav-link-underline::before {
+  width: 0%;
+  bottom: -4px;
+}
+.nav .nav-link-underline:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.icon {
+  display: none;
+  background: transparent;
+  position: absolute;
+  top: 35%;
+  right: 5vw;
+  z-index: 5;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 44px;
+  cursor: pointer;
+}
+.icon .hamburguer {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2vw;
+  width: 37px;
+  height: 6px;
+  background: transparent;
+  background-color: #ffffff;
+  position: absolute;
+  transition: all 250ms ease;
+  top: 1vw;
+}
+.icon .hamburguer::before {
+  top: -12px;
+  content: "";
+  position: absolute;
+  width: 37px;
+  height: 6px;
+  background-color: #ffffff;
+}
+.icon .hamburguer::after {
+  top: 12px;
+  content: "";
+  position: absolute;
+  width: 37px;
+  height: 6px;
+  background-color: #ffffff;
+}
+
+.icon-active {
+  background: transparent;
+}
+.icon-active .hamburguer::after {
+  top: 0;
+  background-color: #ffffff;
+  transform: rotate(225deg);
+}
+.icon-active .hamburguer::before {
+  top: 0;
+  background-color: #ffffff;
+  transform: rotate(135deg);
+}
+
+.menu {
+  position: absolute;
+  margin-top: 30px;
+  right: 0;
+  background-color: #232536;
+}
+.menu .nav-burguer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 2rem;
+  padding-top: 2rem;
+  height: 100%;
+}
+.menu .nav-burguer li {
+  margin: 3vw;
+  cursor: pointer;
+}
+.menu .menu-close {
+  display: none;
+  width: 0px;
+}
+.menu .menu-open {
+  width: 30px;
+}
+
+.hide {
+  display: none;
+}
+
+#burguer-footer-hide {
+  display: none;
+}
+
+.active {
+  color: #ffd050;
+}
+
+@media only screen and (max-width: 1200px) {
+  .nav {
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  .icon {
+    display: block;
+  }
+  #btn-burguer {
+    display: block;
+  }
+}/*# sourceMappingURL=NavMenu.css.map */

@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "myFont";
+  src: url(../assets/fonts/PPObjectSans-Regular.otf) format(opentype);
+}
+@media only screen and (max-width: 1440px) {
+  :root {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  :root {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  :root {
+    font-size: 10px;
+  }
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  background-color: #ffd050;
+  padding: 1rem 3rem;
+  border: none;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+.btn:hover {
+  background-color: #edc14a;
+  transform: scale(1.03);
+}
+
+.btn-nav {
+  background-color: #ffffff;
+  color: #232536;
+  margin-right: 5vw;
+  margin-left: 2vw;
+}
+
+.btn-burguer {
+  margin-right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  #btn-nav {
+    display: none;
+  }
+}/*# sourceMappingURL=Button.css.map */
