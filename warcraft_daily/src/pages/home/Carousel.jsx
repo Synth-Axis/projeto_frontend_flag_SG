@@ -44,7 +44,7 @@ const Carousel = (props) => {
   useEffect(() => {
     const setTimer = setInterval(() => {
       handleClickNext();
-    }, 5000);
+    }, 10000);
 
     return () => {
       clearInterval(setTimer);
