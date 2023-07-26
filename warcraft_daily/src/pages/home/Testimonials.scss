@@ -1,11 +1,10 @@
 @import "../../sassStyles/main";
 
 .testimonials-container {
-  display: grid;
-  grid-template-columns: 40% 1fr;
+  display: flex;
   background-color: $bgaccent-light-yellow;
-  padding: 5rem 7rem;
   margin: 0 5vw;
+  max-width: 100%;
 
   .testimonials-sumary,
   .testimonials-details {
@@ -13,7 +12,7 @@
   }
 
   .testimonials-sumary {
-    padding-right: 6rem;
+    padding: 6rem;
     border-right: 1px solid rgba(109, 110, 118, 0.4);
 
     .testimonials-title {
@@ -35,19 +34,20 @@
   }
 
   .testimonials-details-wrapper {
-    padding-left: 6rem;
     margin-right: 4vw;
 
     .testimonials-details {
       position: relative;
+      padding: 6rem;
+      padding-bottom: 0;
 
       h4 {
         @include h4;
-        margin-bottom: 7.5vw;
       }
 
       .user-details {
         @include give-flex-row(flex-start, flex-start);
+        padding-top: 6rem;
 
         img {
           width: 48px;
@@ -113,6 +113,15 @@
           padding-bottom: 4rem;
         }
       }
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .testimonials-container {
+    flex-direction: column;
+    .testimonials-sumary {
+      border: 0;
     }
   }
 }
