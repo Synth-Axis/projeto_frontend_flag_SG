@@ -3,12 +3,12 @@
 .blog-featured-post-wrapper {
   @include give-flex-row(center, center);
   background-color: $bgaccent-lavander;
-  padding: 5rem;
   gap: 8.75rem;
 
   .all-post-details {
     @include give-flex-column(flex-start, flex-start);
     gap: 1rem;
+    margin: 5rem;
     width: 100%;
 
     .all-posts-posted-on {
@@ -43,6 +43,7 @@
   .post-image-container {
     width: 100%;
     height: 100%;
+    margin: 5rem;
 
     img {
       height: 22.5rem;

@@ -4,6 +4,7 @@
   @include give-flex-column(center, center);
   background-color: $bgaccent-light-grey;
   padding: 2.5rem;
+  width: 100%;
 
   &:hover {
     background-color: $bgaccent-light-yellow;
