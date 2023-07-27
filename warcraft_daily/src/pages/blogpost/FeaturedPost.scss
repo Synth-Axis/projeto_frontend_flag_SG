@@ -48,7 +48,7 @@
 
   .post-article-wrapper {
     @include give-flex-column(center, center);
-    margin: 0 21rem;
+    margin: 0;
     gap: 4rem;
 
     h2 {
@@ -63,5 +63,8 @@
       text-align: center;
       color: $bgaccent-grey;
     }
+  }
+  .btn {
+    margin-left: 0;
   }
 }
