@@ -18,7 +18,7 @@ const staff = [
     name: "Alexa",
     position: "COMMUNITY MANAGER",
     description:
-      "You know her as Jahel. She is the life-long teen sweetheart to Synthaxis. With diverse background including a degree in UX/UI, CRM and Graphic Design, she is a true creative mind that is deeply-rooted in the Wildcard Community, alongside being a dog mum to Perky, The Pug. Alexa is an idea machine with a work ethic that can't be rivaled.",
+      "You know her as Jahel. With diverse background including a degree in UX/UI, CRM and Graphic Design, she is a true creative mind that is deeply-rooted in the Wildcard Community, alongside being a dog mum to Perky, The Pug. Alexa is an idea machine with a work ethic that can't be rivaled.",
   },
   {
     id: 3,
